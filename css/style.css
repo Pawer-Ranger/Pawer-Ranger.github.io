@@ -5,10 +5,10 @@ body {
 }
 
 .container {
-     max-width: 1000px;
-     margin: 0 auto;
-     padding: 30px;
-     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 1.5in; /* Add padding of 30px on top and bottom, 1.5 inches on left and right */
+    text-align: center;
 }
 
 .navbar {
