@@ -1,68 +1,62 @@
 /* General Styles */
 body {
-     font-family: 'Assistant', sans-serif; /* general font */
-     background-color: #F5F6F3; /* background color */
+    font-family: 'Assistant', sans-serif; /* general font */
+    background-color: #F5F6F3; /* background color */
+    padding-left: 1.5in; /* Add padding to the left side */
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 30px 1.5in; /* Add padding of 30px on top and bottom, 1.5 inches on left and right */
+    padding: 30px;
     text-align: center;
 }
 
 .navbar {
-     margin-top: 20px;
+    margin-top: 20px;
 }
 
 .navbar a {
-     margin: 0 40px; /* Increase spacing between each link */
-     text-decoration: none;
-     font-size: 1.3em; /* Increase font size */
-     color: #6D8B85; /* Set the caption color */
+    margin: 0 40px; /* Increase spacing between each link */
+    text-decoration: none;
+    font-size: 1.3em; /* Increase font size */
+    color: #6D8B85; /* Set the caption color */
 }
 
 .main-title {
-     font-size: 50px; /* header size */
-     margin-top: 7px; /* smaller space from above */
-     color: #1B7895; /* Set the color of the main title */
+    font-size: 50px; /* header size */
+    margin-top: 7px; /* smaller space from above */
+    color: #1B7895; /* Set the color of the main title */
 }
 
-
 .section {
-     padding: 50px 0;
+    padding: 50px 0;
 }
 
 .logo {
-     position: absolute; /* Positioning */
-     top: 1.5px; /* Distance from the top */
-     left: 1.5px; /* Distance from the left */
+    position: absolute; /* Positioning */
+    top: 1.5px; /* Distance from the top */
+    left: 1.5px; /* Distance from the left */
 }
 .logo img {
-     width: 5cm; /* Set the width of the logo to 4.5 centimeters */
-     height: auto; /* Maintain aspect ratio */
-     margin-top: 0.5cm; /* Set the top margin to half a centimeter */
-     margin-left: 0.5cm; /* Set the left margin to half a centimeter */
-}
-footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #Black; /* Copyright text color */
+    width: 5cm; /* Set the width of the logo to 4.5 centimeters */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 0.5cm; /* Set the top margin to half a centimeter */
+    margin-left: 0.5cm; /* Set the left margin to half a centimeter */
 }
 
-
-/*תוכן- מי אני*/
+/* Content - Who am I */
 #who-am-i {
-      text-align: right; /* Set text alignment to right */
-      color: black; /* Set text color to black */
+    text-align: right; /* Set text alignment to right */
+    color: black; /* Set text color to black */
 }
 
 #who-am-i h2 {
-      text-align: right; /* Set text alignment to right */
-      color: #1B7895; /* Set title color to #1B7895 */
+    text-align: right; /* Set text alignment to right */
+    color: #1B7895; /* Set title color to #1B7895 */
 }
 
-/*תוכן- כלבנות טיפולית*/
+/* Content - Therapeutic Puppies */
 #therapeutic-puppies {
     text-align: right; /* Set text alignment to right */
     color: black; /* Set text color to black */
@@ -73,15 +67,23 @@ footer {
     color: #1B7895; /* Set title color to #1B7895 */
 }
 
-
-
-/*תוכן- השירותים שלנו*/
+/* Content - Our Services */
 #our-services {
     text-align: right; /* Set text alignment to right */
     color: black; /* Set text color to black */
 }
 
-##our-services h2 {
+#our-services h2 {
     text-align: right; /* Set text alignment to right */
     color: #1B7895; /* Set title color to #1B7895 */
+}
+
+footer {
+    text-align: center; /* Align footer text to the center */
+    padding-top: 50px; /* Add padding to the top */
+}
+
+footer p {
+    font-size: 1.2em; /* Set font size */
+    color: #6D8B85; /* Set text color */
 }
