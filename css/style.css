@@ -46,11 +46,21 @@ body {
 }
 
 #who-am-i {
-     text-align: right; /* Set text alignment to right */
-     color: black; /* Set text color to black */
+    position: absolute; /* Position the section */
+    top: 0; /* Distance from the top */
+    right: 0; /* Distance from the right */
+    background-image: url('images/Pic1.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    opacity: 0.7; /* Set opacity to 70% */
+    padding: 20px; /* Padding for the content */
+    width: 33%; /* Width of the rectangular frame */
+    height: 100%; /* Height of the rectangular frame */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: 1px solid black; /* Border for the rectangular frame */
 }
 
 #who-am-i h2 {
-     text-align: right; /* Set text alignment to right */
-     color: #1B7895; /* Set title color to #1B7895 */
+    text-align: right; /* Set text alignment to right */
+    color: #1B7895; /* Set title color to #1B7895 */
 }
