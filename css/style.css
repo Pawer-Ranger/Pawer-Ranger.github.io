@@ -16,7 +16,7 @@ body {
 }
 
 .navbar a {
-    margin: 0 20px; /* Increase spacing between each link */
+    margin: 0 30px; /* Increase spacing between each link */
     text-decoration: none;
     font-size: 1.2em; /* Increase font size */
     color: #6D8B85; /* Set the caption color */
@@ -24,7 +24,7 @@ body {
 }
 
 .main-title {
-    font-size: 48px; /* גודל כותרת ראשית */
+    font-size: 50px; /* גודל כותרת ראשית */
     margin-top: 50px; /* מרווח מלמעלה */
 	color:#1B7895;
 }
@@ -39,8 +39,12 @@ body {
     left: 2px; /* Distance from the left */
 }
 .logo img {
-    width: 2cm; /* Set the width of the logo to 2 centimeters */
+    width: 3.5cm; /* Set the width of the logo to 3.5 centimeters */
     height: auto; /* Maintain aspect ratio */
     margin-top: 0.5cm; /* Set the top margin to half a centimeter */
     margin-left: 0.5cm; /* Set the left margin to half a centimeter */
+}
+
+#who-am-i h2 {
+    text-align: right; /* Set text alignment to right */
 }
