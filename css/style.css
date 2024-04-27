@@ -16,10 +16,11 @@ body {
 }
 
 .navbar a {
-    margin: 0 20px;
+    margin: 0 20px; /* Increase spacing between each link */
     text-decoration: none;
-    color: #007bff;
-	color:#6D8B85;
+    font-size: 1.2em; /* Increase font size */
+    color: #6D8B85; /* Set the caption color */
+}
 }
 
 .main-title {
@@ -36,8 +37,10 @@ body {
     position: absolute; /* Positioning */
     top: 2px; /* Distance from the top */
     left: 2px; /* Distance from the left */
-    width: 1.5px; /* Adjust the width as needed */
+}
+.logo img {
+    width: 2cm; /* Set the width of the logo to 2 centimeters */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 2px; /* Add space between logo and navigation links */
-    margin-top: 1px; /* Adjust the top margin to position the logo */
+    margin-top: 0.5cm; /* Set the top margin to half a centimeter */
+    margin-left: 0.5cm; /* Set the left margin to half a centimeter */
 }
