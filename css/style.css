@@ -24,7 +24,7 @@ body {
 
 .main-title {
      font-size: 50px; /* header size */
-     margin-top: 20px; /* smaller space from above */
+     margin-top: 10px; /* smaller space from above */
      color: #1B7895; /* Set the color of the main title */
 }
 
@@ -39,7 +39,7 @@ body {
      left: 2px; /* Distance from the left */
 }
 .logo img {
-     width: 3.5cm; /* Set the width of the logo to 3.5 centimeters */
+     width: 4.5cm; /* Set the width of the logo to 4.5 centimeters */
      height: auto; /* Maintain aspect ratio */
      margin-top: 0.5cm; /* Set the top margin to half a centimeter */
      margin-left: 0.5cm; /* Set the left margin to half a centimeter */
@@ -47,9 +47,10 @@ body {
 
 #who-am-i {
      text-align: right; /* Set text alignment to right */
-	 color: #1B7895;
+     color: black; /* Set text color to black */
 }
 
 #who-am-i h2 {
      text-align: right; /* Set text alignment to right */
+     color: #1B7895; /* Set title color to #1B7895 */
 }
