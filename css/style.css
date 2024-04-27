@@ -1,50 +1,53 @@
 /* General Styles */
 body {
-    font-family: 'Assistant', sans-serif; /* גופן כללי */
-    background-color: #F5F6F3; /* צבע רקע */
+     font-family: 'Assistant', sans-serif; /* general font */
+     background-color: #F5F6F3; /* background color */
 }
 
-.container { 
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 30px;
-    text-align: center;
+.container {
+     max-width: 1000px;
+     margin: 0 auto;
+     padding: 30px;
+     text-align: center;
 }
 
 .navbar {
-    margin-top: 20px;
+     margin-top: 20px;
 }
 
 .navbar a {
-    margin: 0 30px; /* Increase spacing between each link */
-    text-decoration: none;
-    font-size: 1.2em; /* Increase font size */
-    color: #6D8B85; /* Set the caption color */
-}
+     margin: 0 30px; /* Increase spacing between each link */
+     text-decoration: none;
+     font-size: 1.2em; /* Increase font size */
+     color: #6D8B85; /* Set the caption color */
 }
 
 .main-title {
-    font-size: 50px; /* גודל כותרת ראשית */
-    margin-top: 50px; /* מרווח מלמעלה */
-	color:#1B7895;
+     font-size: 50px; /* header size */
+     margin-top: 50px; /* space from above */
+     color: #1B7895; /* Set the color of the main title */
 }
 
 .section {
-    padding: 50px 0;
+     padding: 50px 0;
 }
 
 .logo {
-    position: absolute; /* Positioning */
-    top: 2px; /* Distance from the top */
-    left: 2px; /* Distance from the left */
+     position: absolute; /* Positioning */
+     top: 2px; /* Distance from the top */
+     left: 2px; /* Distance from the left */
 }
 .logo img {
-    width: 3.5cm; /* Set the width of the logo to 3.5 centimeters */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 0.5cm; /* Set the top margin to half a centimeter */
-    margin-left: 0.5cm; /* Set the left margin to half a centimeter */
+     width: 3.5cm; /* Set the width of the logo to 3.5 centimeters */
+     height: auto; /* Maintain aspect ratio */
+     margin-top: 0.5cm; /* Set the top margin to half a centimeter */
+     margin-left: 0.5cm; /* Set the left margin to half a centimeter */
+}
+
+#who-am-i {
+     text-align: right; /* Set text alignment to right */
 }
 
 #who-am-i h2 {
-    text-align: right; /* Set text alignment to right */
+     text-align: right; /* Set text alignment to right */
 }
