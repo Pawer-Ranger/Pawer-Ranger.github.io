@@ -16,15 +16,15 @@ body {
 }
 
 .navbar a {
-     margin: 0 30px; /* Increase spacing between each link */
+     margin: 0 40px; /* Increase spacing between each link */
      text-decoration: none;
-     font-size: 1.2em; /* Increase font size */
+     font-size: 1.3em; /* Increase font size */
      color: #6D8B85; /* Set the caption color */
 }
 
 .main-title {
      font-size: 50px; /* header size */
-     margin-top: 10px; /* smaller space from above */
+     margin-top: 7px; /* smaller space from above */
      color: #1B7895; /* Set the color of the main title */
 }
 
@@ -35,32 +35,22 @@ body {
 
 .logo {
      position: absolute; /* Positioning */
-     top: 2px; /* Distance from the top */
-     left: 2px; /* Distance from the left */
+     top: 1.5px; /* Distance from the top */
+     left: 1.5px; /* Distance from the left */
 }
 .logo img {
-     width: 4.5cm; /* Set the width of the logo to 4.5 centimeters */
+     width: 5cm; /* Set the width of the logo to 4.5 centimeters */
      height: auto; /* Maintain aspect ratio */
      margin-top: 0.5cm; /* Set the top margin to half a centimeter */
      margin-left: 0.5cm; /* Set the left margin to half a centimeter */
 }
 
 #who-am-i {
-    position: absolute; /* Position the section */
-    top: 0; /* Distance from the top */
-    right: 0; /* Distance from the right */
-    background-image: url('images/Pic1.jpg'); /* Background image */
-    background-size: cover; /* Cover the entire element with the background image */
-    background-position: center; /* Center the background image */
-    opacity: 0.7; /* Set opacity to 70% */
-    padding: 20px; /* Padding for the content */
-    width: 33%; /* Width of the rectangular frame */
-    height: 100%; /* Height of the rectangular frame */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    border: 1px solid black; /* Border for the rectangular frame */
+      text-align: right; /* Set text alignment to right */
+      color: black; /* Set text color to black */
 }
 
 #who-am-i h2 {
-    text-align: right; /* Set text alignment to right */
-    color: #1B7895; /* Set title color to #1B7895 */
+      text-align: right; /* Set text alignment to right */
+      color: #1B7895; /* Set title color to #1B7895 */
 }
