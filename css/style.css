@@ -7,9 +7,8 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
-	color:#DBEFE1;
 }
 
 .navbar {
@@ -20,6 +19,7 @@ body {
     margin: 0 20px;
     text-decoration: none;
     color: #007bff;
+	color:#DBEFE1;
 }
 
 .main-title {
@@ -36,5 +36,8 @@ body {
     position: absolute; /* Positioning */
     top: 20px; /* Distance from the top */
     left: 20px; /* Distance from the left */
-    /* Add your logo styles here */
+    width: 15px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add space between logo and navigation links */
+    margin-top: 10px; /* Adjust the top margin to position the logo */
 }
