@@ -57,12 +57,25 @@ body {
 }
 
 /*תוכן- כלבנות טיפולית*/
-#therapeutic-puppiesi {
-      text-align: right; /* Set text alignment to right */
-      color: black; /* Set text color to black */
+#therapeutic-puppies {
+    text-align: right; /* Set text alignment to right */
+    color: black; /* Set text color to black */
 }
 
-#therapeutic-puppiesi h2 {
-      text-align: right; /* Set text alignment to right */
-      color: #1B7895; /* Set title color to #1B7895 */
+#therapeutic-puppies h2 {
+    text-align: right; /* Set text alignment to right */
+    color: #1B7895; /* Set title color to #1B7895 */
+}
+
+
+
+/*תוכן- השירותים שלנו*/
+#our-services {
+    text-align: right; /* Set text alignment to right */
+    color: black; /* Set text color to black */
+}
+
+##our-services h2 {
+    text-align: right; /* Set text alignment to right */
+    color: #1B7895; /* Set title color to #1B7895 */
 }
