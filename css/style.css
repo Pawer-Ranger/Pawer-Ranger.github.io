@@ -24,9 +24,10 @@ body {
 
 .main-title {
      font-size: 50px; /* header size */
-     margin-top: 50px; /* space from above */
+     margin-top: 20px; /* smaller space from above */
      color: #1B7895; /* Set the color of the main title */
 }
+
 
 .section {
      padding: 50px 0;
@@ -46,6 +47,7 @@ body {
 
 #who-am-i {
      text-align: right; /* Set text alignment to right */
+	 color: #1B7895;
 }
 
 #who-am-i h2 {
