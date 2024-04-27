@@ -4,7 +4,7 @@ body {
     background-color: #F5F6F3; /* צבע רקע */
 }
 
-.container {
+.container { 
     max-width: 1000px;
     margin: 0 auto;
     padding: 30px;
@@ -19,7 +19,7 @@ body {
     margin: 0 20px;
     text-decoration: none;
     color: #007bff;
-	color:#DBEFE1;
+	color:#6D8B85;
 }
 
 .main-title {
@@ -34,10 +34,10 @@ body {
 
 .logo {
     position: absolute; /* Positioning */
-    top: 20px; /* Distance from the top */
-    left: 20px; /* Distance from the left */
-    width: 15px; /* Adjust the width as needed */
+    top: 2px; /* Distance from the top */
+    left: 2px; /* Distance from the left */
+    width: 1.5px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Add space between logo and navigation links */
-    margin-top: 10px; /* Adjust the top margin to position the logo */
+    margin-right: 2px; /* Add space between logo and navigation links */
+    margin-top: 1px; /* Adjust the top margin to position the logo */
 }
