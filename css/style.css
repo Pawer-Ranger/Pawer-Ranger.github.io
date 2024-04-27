@@ -1,0 +1,31 @@
+/* General Styles */
+body {
+    font-family: 'Assistant', sans-serif; /* גופן כללי */
+    background-color: #F5F6F3; /* צבע רקע */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.main-title {
+    font-size: 48px; /* גודל כותרת ראשית */
+    margin-top: 50px; /* מרווח מלמעלה */
+}
+
+.section {
+    padding: 50px 0;
+}
