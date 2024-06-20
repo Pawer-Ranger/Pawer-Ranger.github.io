@@ -1,0 +1,526 @@
+/* General Styles */
+body {
+    font-family: 'Assistant', sans-serif; /* general font */
+    background-color: #F5F6F3; /* background color */
+    padding-left: 1.5in; /* Add padding to the left side */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 1.5in; /* Add padding of 20px on top and bottom, 1.5 inches on left and right */
+    text-align: center;
+}
+
+.navbar {
+    margin-top: 10px; /* Adjust margin-top for the navbar */
+}
+
+.navbar a {
+    font-family: "Fb Liddar", sans-serif;
+    font-weight: bold;
+    margin: 0 60px; /* Increase the horizontal margin to 60px */
+    text-decoration: none;
+    font-size: 40px;
+    color: #6D8B85;
+}
+
+.main-title {
+    font-size: 36px; /* Decreased font size */
+    color: #1B7895; /* Set the color of the main title */
+    text-align: center; /* Center-align the title */
+}
+
+.first-line {
+    font-family: "Monotype Corsiva", cursive; /* Set font for the first line */
+    font-size: 110px; /* Decreased font size */
+    position: relative; /* Set relative position for absolute positioning */
+    left: 0px; /* Adjust left position */
+    top: -30px; /* Move the text up by 20px */
+}
+
+.second-line {
+    font-family: "Fb Liddar", cursive; /* Set font for the second line */
+    position: relative; /* Set relative position for absolute positioning */
+    left: -180px; /* Adjust left position */
+    font-size: 120px; /* Restore the original font size */
+	  top: -30px; /* Move the text up by 20px */
+}
+
+.section {
+    padding: 20px 0; /* Decrease padding */
+}
+
+.logo {
+    position: absolute; /* Positioning */
+    top: 1.5px; /* Distance from the top */
+    left: 1.5px; /* Distance from the left */
+}
+
+.logo img {
+    width: 5cm; /* Set the width of the logo to 4.5 centimeters */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 0.5cm; /* Set the top margin to half a centimeter */
+    margin-left: -0.2cm; /* Set the left margin to half a centimeter */
+}
+
+.bold-text {
+font-weight: bold;
+}
+
+
+
+/* Content - Who am I */
+#who-am-i {
+    text-align: right; /* Set text alignment to right */
+    color: black; /* Set text color to black */
+    margin-top: -20px; /* Reduce the margin-top to bring the section closer to the previous section */
+}
+
+#who-am-i h2 {
+    text-align: right; /* Set text alignment to right */
+    color: #1B7895; /* Set title color to #1B7895 */
+    font-family: "Fb Liddar", bold; /* Set font for the first line */
+    font-size: 65px; /* Increase font size */
+    position: relative; /* Make positioning relative */
+    left: -1cm; /* Move the title slightly to the left */
+    margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
+}
+
+/* Text Box */
+.text-box {
+    width: 15cm; /* Set width to 15cm */
+    height: auto; /* Let the height adjust to content */
+    position: relative; /* Set position to relative for absolute positioning of frames */
+    margin: 0 auto; /* Center the text box horizontally */
+    overflow: hidden; /* Hide overflow content */
+    padding: 20px; /* Add padding inside the text box */
+    left: 7cm; /* Move the text box 4 centimeters to the right */
+}
+
+.text-box::before, .text-box::after {
+    content: "";
+    position: absolute;
+    border: 3px solid #8C756A; /* Increase the thickness of each frame */
+}
+
+.text-box::before {
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+}
+
+.text-box::after {
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    left: 7px;
+    transform: rotate(2deg); /* Apply a small angle to the second frame */
+}
+
+.text-box h2 {
+    color: #8C756A; /* Set the color of the title text */
+    text-align: center; /* Center-align the title */
+    font-family: "Fb Liddar", bold; /* Set font for the first line */
+    font-size: 40px; /* Increase font size */
+}
+
+.text-box p {
+    color: black; /* Set the color of the paragraph text */
+    text-align: justify; /* Justify the paragraph text */
+}
+
+/* Add this CSS to style the circle and the image */
+.circle {
+    width: 530px; /* Set the width of the circle */
+    height: 530px; /* Set the height of the circle */
+    background-color: transparent; /* Set background color */
+    border: 5px solid #8C756A; /* Set border color and thickness */
+    border-radius: 50%; /* Make it a circle */
+    position: absolute; /* Positioning */
+    left: 30%; /* Position it in the center horizontally */
+    top: 112%; /* Position it in the center vertically */
+    transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
+    overflow: hidden; /* Hide overflow */
+}
+
+.circle img {
+    width: 100%; /* Ensure the image fills the circle */
+    height: 100%; /* Ensure the image fills the circle */
+    object-fit: cover; /* Maintain aspect ratio and cover the circle */
+}
+
+/* Content - Therapeutic Puppies */
+#therapeutic-puppies {
+    text-align: right; /* Set text alignment to right */
+    color: black; /* Set text color to black */
+    margin-top: -20px; /* Reduce the margin-top to bring the section closer to the previous section */
+}
+
+#therapeutic-puppies h2 {
+    text-align: right; /* Set text alignment to right */
+    color: #1B7895; /* Set title color to #1B7895 */
+    font-family: "Fb Liddar", bold; /* Set font for the first line */
+    font-size: 65px; /* Increase font size */
+    position: relative; /* Make positioning relative */
+    left: -1cm; /* Move the title slightly to the left */
+    margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
+}
+
+#therapeutic-puppies .text-box {
+    width: 30cm; /* Increase the width to 20cm */
+    height: auto; /* Let the height adjust to content */
+    position: relative; /* Set position to relative for absolute positioning of frames */
+    margin: 0 auto; /* Center the text box horizontally */
+    overflow: hidden; /* Hide overflow content */
+    padding: 20px; /* Add padding inside the text box */
+    left: -1cm; /* Move the text box slightly to the left */
+}
+
+#therapeutic-puppies .text-box::before,
+#therapeutic-puppies .text-box::after {
+    content: "";
+    position: absolute;
+    border: 3px solid #8C756A; /* Increase the thickness of each frame */
+}
+
+#therapeutic-puppies .text-box::before {
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+}
+
+#therapeutic-puppies .text-box::after {
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    left: 7px;
+    transform: rotate(2deg); /* Apply a small angle to the second frame */
+}
+
+#therapeutic-puppies .text-box h2 {
+    color: #8C756A; /* Set the color of the title text */
+    text-align: center; /* Center-align the title */
+}
+
+#therapeutic-puppies .text-box p {
+    color: black; /* Set the color of the paragraph text */
+    text-align: justify; /* Justify the paragraph text */
+}
+
+
+
+
+/* Content - Our Services */
+#our-services {
+    text-align: right; /* Aligns section text to the right */
+    color: black; /* Sets text color to black */
+    margin-top: -20px; /* Reduces the margin-top to bring the section closer to the previous section */
+}
+
+#our-services h2 {
+    text-align: right; /* Aligns title text to the right */
+    color: #1B7895; /* Sets title color */
+    font-family: "Fb Liddar", bold; /* Sets font for the title */
+    font-size: 65px; /* Sets font size for the title */
+    position: relative; /* Positions the title relative to its normal position */
+    left: -1cm; /* Moves the title slightly to the left */
+    margin-bottom: 10px; /* Reduces the bottom margin to bring the title closer to the content below */
+}
+
+#our-services .text-box-container {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes space between text boxes */
+    margin-top: 20px; /* Adds top margin */
+    padding-left: 1.5in; /* Adds left padding */
+}
+
+#our-services .text-box {
+    width: 12cm; /* Sets width of text box */
+    height: auto; /* Allows height to adjust to content */
+    position: relative; /* Positions text box relative to its normal position */
+    overflow: hidden; /* Hides overflow content */
+    padding: 20px; /* Adds padding inside the text box */
+    border: 3px solid #8C756A; /* Sets border color and thickness */
+    box-sizing: border-box; /* Ensures padding and border are included in total width and height */
+    left: -1.3in; /* Moves the text box closer to the right */
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+#our-services .text-box:first-child {
+    left: -1.2in; /* Further adjusts positioning of the first text box */
+}
+
+#our-services .text-box::before,
+#our-services .text-box::after {
+    content: ""; /* Adds empty content for decorative frames */
+    position: absolute; /* Positions frames absolutely within the text box */
+    border: inherit; /* Inherits border properties from the text box */
+    top: 5px; /* Sets top position for the frames */
+    right: 5px; /* Sets right position for the frames */
+    bottom: 5px; /* Sets bottom position for the frames */
+    left: 5px; /* Sets left position for the frames */
+}
+
+#our-services .text-box::after {
+    top: 7px; /* Adjusts top position for the second frame */
+    right: 7px; /* Adjusts right position for the second frame */
+    bottom: 7px; /* Adjusts bottom position for the second frame */
+    left: 7px; /* Adjusts left position for the second frame */
+    transform: rotate(2deg); /* Applies a slight rotation to the second frame */
+}
+
+#our-services .text-box h2 {
+    color: #6D8B85; /* Sets color of the title text */
+    text-align: center; /* Centers the title text */
+    font-family: "Fb Liddar", bold; /* Sets font for the title */
+    font-size: 55px; /* Sets font size for the title */
+    margin-bottom: 10px; /* Adjusts the bottom margin to raise the title higher */
+    position: relative; /* Positions the title relative to its normal position */
+    top: -47px; /* Raises the title higher */
+    left: 10px; /* Moves the title to the right */
+}
+
+#our-services .text-box p {
+    color: black; /* Sets color of paragraph text */
+    text-align: justify; /* Justifies the paragraph text */
+	
+	
+}
+
+#image-carousel {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.carousel {
+    max-width: 50%; /* Adjust maximum width as needed */
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid  #8C756A;
+    border-radius: 20px;
+    position: relative; /* Ensure this is set to relative */
+    height: 400px; /* Adjust height of carousel frame */
+    left: -50px; /* Adjust this value to move the carousel to the left */
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: none; /* Hide all images by default */
+}
+
+.carousel img.active {
+    display: block; /* Display only the image with 'active' class */
+}
+
+/* Content - Contact Us */
+#contact-us {
+    text-align: right;
+    color: black;
+    margin-top: -20px; /* Reduce the margin-top to bring the section closer to the previous section */
+}
+
+#contact-us h2 {
+    text-align: right;
+    color: #1B7895;
+    font-family: "Fb Liddar", bold;
+    font-size: 65px;
+    position: relative;
+    left: -1cm;
+    margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
+}
+
+#contact-us .text-box {
+    width: 12cm;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#contact-us .text-box::before,
+#contact-us .text-box::after {
+    content: "";
+    position: absolute;
+    border: inherit;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+}
+
+#contact-us .text-box::after {
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    left: 7px;
+    transform: rotate(2deg);
+}
+
+#contact-us .text-box h2 {
+    color: #8C756A;
+    text-align: center;
+    font-family: "Fb Liddar", bold;
+    font-size: 55px;
+	color: #6D8B85;
+}
+
+#contact-us .text-box p {
+    color: black;
+    text-align: justify;
+}
+
+
+/* Content - Contact Us */
+#contact-us {
+    text-align: right;
+    color: black;
+    margin-top: -20px; /* Reduce the margin-top to bring the section closer to the previous section */
+}
+
+#contact-us h2 {
+    text-align: right;
+    color: #1B7895;
+    font-family: "Fb Liddar", bold;
+    font-size: 65px;
+    position: relative;
+    left: -1cm;
+    margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
+}
+
+#contact-us .text-box {
+    width: 12cm;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border: 5px solid #8C756A;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#contact-us .text-box::before,
+#contact-us .text-box::after {
+    content: "";
+    position: absolute;
+    border: 5px solid #8C756A; /* Increase the thickness of each frame */
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+}
+
+#contact-us .text-box::after {
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    left: 7px;
+    transform: rotate(2deg);
+}
+
+#contact-us .text-box h2 {
+    color: #8C756A;
+    text-align: center;
+    font-weight: bold; /* Make the title bold */
+    font-size: 55px;
+	color: #6D8B85;
+}
+
+#contact-us .text-box p {
+    color: black;
+    text-align: justify;
+}
+
+
+/* Contact form styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Assistant', sans-serif; /* general font */
+}
+
+.form-group {
+    display: flex; /* Add flexbox to align caption and input side by side */
+    flex-direction: column; /* Stack labels above inputs */
+    margin-bottom: 15px;
+    width: 180%;
+    max-width: 500px;
+    align-items: flex-end; /* Right-align the items */
+}
+
+.form-group label {
+    margin-bottom: 5px; /* Add some space between the label and the input */
+    color: #6D8B85; /* Change the color of the titles to #6D8B85 */
+    font-weight: bold; /* Make the title bold */
+}
+
+.contact-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #DBEFE1; /* Change the frame color to #DBEFE1 */
+    border-radius: 5px;
+    direction: rtl; /* Set text direction to right-to-left */
+}
+
+.contact-input:focus {
+    border-color: #666;
+}
+
+textarea.contact-input {
+    height: 100px;
+    resize: vertical;
+    direction: rtl; /* Set text direction to right-to-left */
+}
+
+.contact-button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #6D8B85;
+    border: #DBEFE1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Assistant', sans-serif; /* general font */
+    margin-top: 20px; /* Add margin to separate from form */
+    display: block; /* Display button as block */
+    margin-left: auto; /* Center-align the button */
+    margin-right: auto; /* Center-align the button */
+}
+
+.contact-button:hover {
+    background-color: #575757;
+}
+
+.success-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #6D8B85;
+    border-radius: 5px;
+    background-color: #DBEFE1;
+    color: #6D8B85;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.2em;
+}
+
+
+
+header {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1em;
+    color: #6D8B85;
+}
