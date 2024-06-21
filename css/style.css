@@ -506,7 +506,6 @@ footer {
 
 
 
-
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     body {
@@ -603,6 +602,26 @@ footer {
     .text-box {
         padding: 10px;
     }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .contact-input {
+        width: 100%;
+    }
+
+    textarea.contact-input {
+        width: 100%;
+    }
+
+    .contact-button {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -642,5 +661,25 @@ footer {
 
     .service-box img {
         width: 150px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .contact-input {
+        width: 100%;
+    }
+
+    textarea.contact-input {
+        width: 100%;
+    }
+
+    .contact-button {
+        width: 100%;
     }
 }
