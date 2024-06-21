@@ -133,14 +133,14 @@ font-weight: bold;
 
 /* Add this CSS to style the circle and the image */
 .circle {
-    width: 530px; /* Set the width of the circle */
-    height: 530px; /* Set the height of the circle */
+    width: 520px; /* Set the width of the circle */
+    height: 520px; /* Set the height of the circle */
     background-color: transparent; /* Set background color */
     border: 5px solid #8C756A; /* Set border color and thickness */
     border-radius: 50%; /* Make it a circle */
     position: absolute; /* Positioning */
     left: 30%; /* Position it in the center horizontally */
-    top: 112%; /* Position it in the center vertically */
+    top: 108%; /* Position it in the center vertically */
     transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
     overflow: hidden; /* Hide overflow */
 }
@@ -317,9 +317,10 @@ font-weight: bold;
     display: block; /* Display only the image with 'active' class */
 }
 
+
 /* Content - Contact Us */
 #contact-us {
-    text-align: right;
+    text-align: Center;
     color: black;
     margin-top: -20px; /* Reduce the margin-top to bring the section closer to the previous section */
 }
@@ -334,10 +335,38 @@ font-weight: bold;
     margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
 }
 
+
+/*icons*/
+#contact-us .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 10%;
+}
+
+#contact-us .contact-info a {
+    font-family: 'Assistant', sans-serif;
+    font-size: 26px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#contact-us .contact-info a img {
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+}
+
+
+
+/*form*/
 #contact-us .text-box {
     width: 12cm;
     height: auto;
-    position: relative;
+    position: Center;
     overflow: hidden;
     padding: 20px;
     border: 3px solid #8C756A;
@@ -378,97 +407,41 @@ font-weight: bold;
 }
 
 
-/* Content - Contact Us */
-#contact-us {
-    text-align: right;
-    color: black;
-    margin-top: -20px; /* Reduce the margin-top to bring the section closer to the previous section */
-}
 
-#contact-us h2 {
-    text-align: right;
-    color: #1B7895;
-    font-family: "Fb Liddar", bold;
-    font-size: 65px;
-    position: relative;
-    left: -1cm;
-    margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
-}
-
-#contact-us .text-box {
-    width: 12cm;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-    border: 5px solid #8C756A;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-#contact-us .text-box::before,
-#contact-us .text-box::after {
-    content: "";
-    position: absolute;
-    border: 5px solid #8C756A; /* Increase the thickness of each frame */
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
-    left: 5px;
-}
-
-#contact-us .text-box::after {
-    top: 7px;
-    right: 7px;
-    bottom: 7px;
-    left: 7px;
-    transform: rotate(2deg);
-}
-
-#contact-us .text-box h2 {
-    color: #8C756A;
-    text-align: center;
-    font-weight: bold; /* Make the title bold */
-    font-size: 55px;
-	color: #6D8B85;
-}
-
-#contact-us .text-box p {
-    color: black;
-    text-align: justify;
-}
 
 
 /* Contact form styles */
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Assistant', sans-serif; /* general font */
+    width: 50%; /* Set width of form */
+    max-width: 500px; /* Limit maximum width */
+    margin: 90px auto; /* Center the form horizontally with top margin */
+    font-family: 'Assistant', sans-serif; /* General font */
 }
 
 .form-group {
-    display: flex; /* Add flexbox to align caption and input side by side */
-    flex-direction: column; /* Stack labels above inputs */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
     margin-bottom: 15px;
-    width: 180%;
-    max-width: 500px;
-    align-items: flex-end; /* Right-align the items */
+    width: 40%;
 }
 
 .form-group label {
-    margin-bottom: 5px; /* Add some space between the label and the input */
-    color: #6D8B85; /* Change the color of the titles to #6D8B85 */
-    font-weight: bold; /* Make the title bold */
+    margin-bottom: 5px;
+    color: #6D8B85;
+    font-weight: bold;
+    text-align: right; /* Align label text to the right */
+    width: 100%; /* Ensure labels take full width */
 }
 
 .contact-input {
-    width: 100%;
+    width: 70%; /* Adjust width of input fields */
     padding: 10px;
     font-size: 1em;
-    border: 2px solid #DBEFE1; /* Change the frame color to #DBEFE1 */
+    border: 2px solid #DBEFE1;
     border-radius: 5px;
     direction: rtl; /* Set text direction to right-to-left */
+    margin-bottom: 10px; /* Add margin below input fields */
 }
 
 .contact-input:focus {
@@ -476,29 +449,30 @@ font-weight: bold;
 }
 
 textarea.contact-input {
+    width: 70%; /* Adjust width of textarea */
     height: 100px;
     resize: vertical;
     direction: rtl; /* Set text direction to right-to-left */
 }
 
+
 .contact-button {
     padding: 10px 20px;
+	font-family: 'Assistant', sans-serif;
     font-size: 1.5em;
     color: #fff;
     background-color: #6D8B85;
-    border: #DBEFE1;
+    border: none; /* Remove border to ensure a cleaner look */
+	width: 20%;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Assistant', sans-serif; /* general font */
-    margin-top: 20px; /* Add margin to separate from form */
-    display: block; /* Display button as block */
-    margin-left: auto; /* Center-align the button */
-    margin-right: auto; /* Center-align the button */
+    margin-top: 15px; /* Add margin to separate from form */
 }
 
 .contact-button:hover {
     background-color: #575757;
 }
+
 
 .success-message {
     text-align: center;
@@ -523,4 +497,150 @@ footer {
     padding-top: 20px;
     font-size: 1em;
     color: #6D8B85;
+}
+
+
+.footer p {
+    margin: 0;
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    body {
+        padding-left: 0.5in;
+    }
+
+    .container {
+        padding: 20px 1in;
+    }
+
+    .navbar a {
+        margin: 0 30px;
+        font-size: 30px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .first-line {
+        font-size: 80px;
+        left: 0;
+    }
+
+    .second-line {
+        font-size: 90px;
+        left: -50px;
+    }
+
+    #who-am-i h2,
+    #therapeutic-puppies h2,
+    #our-services h2,
+    #contact-us h2 {
+        font-size: 50px;
+        left: 0;
+    }
+
+    .text-box {
+        width: 100%;
+        left: 0;
+    }
+
+    .circle {
+        width: 300px;
+        height: 300px;
+        top: 100%;
+    }
+
+    .service-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-box img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .text-box::before, .text-box::after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 24px;
+        margin: 0 15px;
+    }
+
+    .main-title {
+        font-size: 20px;
+    }
+
+    .first-line,
+    .second-line {
+        font-size: 50px;
+        left: 0;
+        top: 0;
+    }
+
+    #who-am-i h2,
+    #therapeutic-puppies h2,
+    #our-services h2,
+    #contact-us h2 {
+        font-size: 40px;
+        left: 0;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-box {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    .main-title {
+        font-size: 16px;
+    }
+
+    .first-line,
+    .second-line {
+        font-size: 40px;
+    }
+
+    #who-am-i h2,
+    #therapeutic-puppies h2,
+    #our-services h2,
+    #contact-us h2 {
+        font-size: 30px;
+    }
+
+    .text-box {
+        padding: 5px;
+    }
+
+    .service-box {
+        margin-bottom: 20px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .service-box img {
+        width: 150px;
+    }
 }

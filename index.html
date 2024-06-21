@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
+
     <title>כלבנות טיפולית Pawer Ranger</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -98,7 +102,7 @@
         </div>
     </div>
 
-          <section id="image-carousel">
+    <section id="image-carousel">
             <div class="carousel">
                 <img src="img/Harel.jpg" alt="Harel">
                 <img src="img/Group.jpg" alt="Group">
@@ -109,32 +113,42 @@
         </section>
     </section>
 
-<div id="contact-us" class="section">
-        <h2>צרו קשר</h2>
-        <div class="contact-form">
-            <form action="send_email.php" method="post">
-                <div class="form-group">
-                    <label for="first-name">שם פרטי</label>
-                    <input type="text" id="first-name" name="first-name" class="contact-input" required>
-                </div>
-                <div class="form-group">
-                    <label for="last-name">שם משפחה</label>
-                    <input type="text" id="last-name" name="last-name" class="contact-input" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone-number">מספר טלפון</label>
-                    <input type="text" id="phone-number" name="phone-number" class="contact-input" required>
-                </div>
-                <div class="form-group">
-                    <label for="free-text">טקסט חופשי</label>
-                    <textarea id="free-text" name="free-text" class="contact-input" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="contact-button">שלח/י</button>
-                </div>
-            </form>
-        </div>
-    </div>
+  <main>
+        <section id="contact-us">
+            <h2>צרו קשר</h2>
+            <div class="contact-info">
+			
+			  <a href="mailto:Rotem.pawerranger@gmail.com">
+                    <img src="img/email-icon.png" alt="Email Icon"> Rotem.pawerranger@gmail.com
+                </a>
+               <a href="https://wa.me/972523668685" target="_blank">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp Icon"> 052-3668685
+                </a>
+            </div>
+		
+		
+ <form id="contact-form">
+  <div class="form-group">
+    <label for="first-name">שם פרטי</label>
+    <input type="text" id="first-name" class="contact-input" required>
+  </div>
+  <div class="form-group">
+    <label for="last-name">שם משפחה</label>
+    <input type="text" id="last-name" class="contact-input" required>
+  </div>
+  <div class="form-group">
+    <label for="phone-number">מספר טלפון</label>
+    <input type="text" id="phone-number" class="contact-input" required>
+  </div>
+  <div class="form-group">
+    <label for="free-text">טקסט חופשי</label>
+    <textarea id="free-text" class="contact-input" required></textarea>
+  </div>
+  <button type="submit" class="contact-button">שלח/י</button>
+</form>
+
+<div id="message"></div>
+
 
     <footer>
         <div class="container">
@@ -143,5 +157,44 @@
     </footer>
 
     <script src="js/carousel.js"></script>
+	<script type="text/javascript">
+
+  (function() {
+    emailjs.init("IJFKbCsA25WoNjR1l"); // Replace with your EmailJS user ID
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form values
+    var firstName = document.getElementById('first-name').value;
+    var lastName = document.getElementById('last-name').value;
+    var phoneNumber = document.getElementById('phone-number').value;
+    var freeText = document.getElementById('free-text').value;
+
+    // Sanitize input data to prevent injection attacks
+    firstName = DOMPurify.sanitize(firstName);
+    lastName = DOMPurify.sanitize(lastName);
+    phoneNumber = DOMPurify.sanitize(phoneNumber);
+    freeText = DOMPurify.sanitize(freeText);
+
+    // Define the email parameters
+    var templateParams = {
+      first_name: firstName,
+      last_name: lastName,
+      phone_number: phoneNumber,
+      free_text: freeText
+    };
+
+    emailjs.send('service_26xu4y3', 'template_ovxgnfn', templateParams)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        document.getElementById('message').innerText = '!ההודעה נשלחה בהצלחה';
+      }, function(error) {
+        console.log('FAILED...', error);
+        document.getElementById('message').innerText = '.שליחת ההודעה נכשלה';
+      });
+  });
+</script>
 </body>
 </html>
