@@ -54,7 +54,6 @@ body {
     padding: 0.1vw 0vw; /* Decrease padding */
 }
 
-
 .logo {
     position: absolute; /* Positioning */
     top: 0vw; /* Distance from the top */
@@ -71,7 +70,6 @@ body {
 .bold-text {
     font-weight: bold;
 }
-
 
 /* Content - Who am I */
 #who-am-i {
@@ -140,7 +138,7 @@ body {
     border: 3px solid #8C756A; /* Set border color and thickness */
     border-radius: 10px; /* Adjust border radius for rounded corners if needed */
     position: relative; /* Positioning */
-    margin: 20px auto; /* Center horizontally with top and bottom margin */
+    margin: 0 auto; /* Center horizontally with top and bottom margin */
     overflow: hidden; /* Hide overflow */
 }
 
@@ -149,7 +147,6 @@ body {
     height: 100%; /* Ensure the image fills the container */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
-
 
 /* Content - Therapeutic Puppies */
 #therapeutic-puppies {
@@ -253,60 +250,72 @@ body {
 #our-services .text-box::after {
     content: ""; /* Adds empty content for decorative frames */
     position: absolute; /* Positions frames absolutely within the text box */
-    border: 3px solid #8C756A; /* Sets border color and thickness for frames */
-    z-index: -1; /* Places frames behind text box content */
-    transform: rotate(-2deg); /* Rotates frames slightly */
+    border: 3px solid #8C756A; /* Sets border color and thickness */
+    box-sizing: border-box; /* Ensures padding and border are included in total width and height */
+	width: calc(100% + 6px);
+	height: calc(100% + 6px); 
+    z-index: -1; /* Moves frames behind the text box content */
 }
 
 #our-services .text-box::before {
-    top: -3px; /* Positions top frame */
-    left: -3px; /* Positions left frame */
-    width: calc(100% + 6px); /* Sets width to cover entire text box plus border */
-    height: 50%; /* Sets height of frame */
+    top: -3px; /* Positions top frame slightly above text box */
+    left: -3px; /* Positions left frame slightly to the left of text box */
+    /*width: calc(100% + 12px); /* Sets frame width to cover text box and extend beyond borders */
+   /* height: calc(100% + 12px); /* Sets frame height to cover text box and extend beyond borders */
+   /* transform: rotate(-2deg); /* Rotates frame slightly for a decorative effect */
 }
 
 #our-services .text-box::after {
-    bottom: -3px; /* Positions bottom frame */
-    right: -3px; /* Positions right frame */
-    width: calc(100% + 6px); /* Sets width to cover entire text box plus border */
-    height: 50%; /* Sets height of frame */
+    bottom: -3px; /* Positions bottom frame slightly below text box */
+    right: -3px; /* Positions right frame slightly to the right of text box */
+   /* width: calc(100% + 12px); /* Sets frame width to cover text box and extend beyond borders */
+   /* height: calc(100% + 12px); /* Sets frame height to cover text box and extend beyond borders */
+ /*   transform: rotate(2deg); /* Rotates frame slightly for a decorative effect */
 }
 
-#our-services .text-box h3 {
-    color: #8C756A; /* Sets color of heading */
-    font-size: 4vw; /* Sets font size of heading */
-    text-align: center; /* Centers heading text */
-    position: relative; /* Positions heading relative to its normal position */
-    top: -1cm; /* Moves heading slightly upward */
+#our-services .text-box h2 {
+    color: #6D8B85; /* Sets text color */
+    font-size: 5.5vw; /* Sets font size */
+    text-align: center; /* Centers text within the text box */
+    position: relative; /* Positions text relative to its normal position */
+    bottom: 0.5cm; /* Moves text down slightly */
+    margin: 0; /* Removes default margin */
 }
 
 #our-services .text-box p {
-    color: black; /* Sets color of paragraph text */
-    text-align: justify; /* Justifies paragraph text */
+    color: black; /* Sets text color */
+    text-align: justify; /* Justifies text within the text box */
+    position: relative; /* Positions text relative to its normal position */
+    top: -0.5cm; /* Moves text up slightly */
+    margin: 0; /* Removes default margin */
 }
 
-/* Carousel */
-.carousel-container {
-    width: 90vw; /* Sets width of carousel container */
-    max-width: 100%; /* Sets maximum width of carousel container */
-    margin: 20px auto; /* Centers carousel container with top and bottom margin */
-    overflow: hidden; /* Hides overflow content */
+
+#image-carousel {
+    text-align: center;
+    margin-top: 50px;
 }
 
 .carousel {
-    display: flex; /* Uses flexbox for carousel items */
-    width: max-content; /* Sets width of carousel items to maximum content width */
-    transition: transform 0.5s ease; /* Adds smooth transition for transform property */
+    max-width: 50%; /* Adjust maximum width as needed */
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid  #8C756A;
+    border-radius: 20px;
+    position: relative; /* Ensure this is set to relative */
+    height: 50vh; /* Adjust height of carousel frame */
+    left: -50px; /* Adjust this value to move the carousel to the left */
 }
 
 .carousel img {
-    width: 100%; /* Sets width of carousel images to 100% */
-    height: auto; /* Allows height to adjust to content */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: none; /* Hide all images by default */
 }
 
-
 .carousel img.active {
-    display: block;
+    display: block; /* Display only the image with 'active' class */
 }
 
 
@@ -536,16 +545,10 @@ footer {
         margin-bottom: 10px;
     }
 
-    .carousel {
-        max-width: 80%;
-    }
-	
     .text-box::before, .text-box::after {
         display: none;
     }
 }
-
-
 /* Mobile Styles */
 @media (max-width: 768px) {
     body {
@@ -561,10 +564,10 @@ footer {
     }
 
     .navbar a {
-        font-size: 3vw; /* Adjusts font size of navbar links */
-        margin: 0 3vw; /* Adjusts horizontal margin of navbar links */
+        margin: 0 3vw;
+        font-size: 4vw;
     }
-	
+
     .main-title {
         font-size: 4vw;
     }
@@ -583,12 +586,6 @@ footer {
         margin-left: 0;
     }
 
-    #who-am-i h2,
-    #therapeutic-puppies h2,
-    #our-services h2 {
-        font-size: 4vw; /* Adjusts font size of section titles */
-    }
-	
     .text-box {
         width: 90%;
         margin: 0 auto;
@@ -600,27 +597,16 @@ footer {
         left: 0;
     }
 
-   #our-services .text-box-container {
-        flex-direction: column; /* Stacks text boxes vertically on smaller screens */
-        align-items: center; /* Centers text boxes horizontally on smaller screens */
+    #our-services .text-box-container {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
     }
 
-	
-    #our-services h2 {
-        font-size: 6vw;
-    }
-
-      #our-services .text-box {
-        width: 90vw; /* Adjusts width of text box */
-        margin-top: 20px; /* Increases top margin of text boxes */
-    }
-
-    #our-services .text-box:first-child {
-        margin-right: 20px; /* Reverted to original margin */
-    }
-
-    .carousel-container {
-        width: 90vw; /* Adjusts width of carousel container */
+    #our-services .text-box {
+        width: 90%;
+        left: 0;
+        margin-top: 20px;
     }
 
       .rectangle {
@@ -633,7 +619,11 @@ footer {
         width: 120px; /* Adjust image width */
     }
 	
-    
+    .carousel {
+        max-width: 90%;
+        left: 0;
+    }
+
     .text-box input[type="text"],
     .text-box input[type="email"],
     .text-box input[type="submit"] {
@@ -642,9 +632,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-      .navbar a {
-        font-size: 4vw; /* Adjusts font size of navbar links */
-        margin: 0 2vw; /* Adjusts horizontal margin of navbar links */
+    .navbar a {
+        font-size: 18px;
+        margin: 0 10px;
     }
 
     .main-title {
@@ -658,9 +648,7 @@ footer {
 
     #who-am-i h2,
     #therapeutic-puppies h2,
-    #our-services h2 {
-        font-size: 3.5vw; /* Adjusts font size of section titles */
-    }
+    #our-services h2,
     #contact-us h2 {
         font-size: 30px;
     }
@@ -688,28 +676,6 @@ footer {
         object-fit: cover; /* Maintain aspect ratio */
     }
 	
-    #our-services h2 {
-        font-size: 10vw;
-    }
-
-      #our-services .text-box-container {
-        flex-direction: column; /* Stacks text boxes vertically on smaller screens */
-        align-items: center; /* Centers text boxes horizontally on smaller screens */
-    }
-
-    #our-services .text-box {
-        width: 90vw; /* Adjusts width of text box */
-        margin-top: 20px; /* Increases top margin of text boxes */
-    }
-
-    #our-services .text-box:first-child {
-        margin-right: 0; /* Adjusted to stack text boxes */
-    }
-
-     .carousel-container {
-        width: 90vw; /* Adjusts width of carousel container */
-    }
-
     .service-box img {
         width: 150px;
     }
