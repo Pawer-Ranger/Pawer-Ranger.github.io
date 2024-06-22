@@ -345,7 +345,7 @@ body {
 
 #contact-us .contact-info a {
     font-family: 'Assistant', sans-serif; /* Set font family */
-    font-size: 26px; /* Set font size */
+    font-size: 24px; /* Set font size */
     color: black; /* Set text color */
     text-decoration: none; /* Remove text underline */
     display: flex; /* Use flexbox for layout */
@@ -353,14 +353,14 @@ body {
 }
 
 #contact-us .contact-info a img {
-    width: 26px; /* Set image width */
-    height: 26px; /* Set image height */
+    width: 25px; /* Set image width */
+    height: 25px; /* Set image height */
     margin-right: 8px; /* Add right margin */
 }
 
 /*form*/
 #contact-us .text-box {
-    width: 80vw; /* Set text box width to 80% of the viewport width */
+    width: 40vw; /* Set text box width to 80% of the viewport width */
     height: auto; /* Set text box height to auto */
     overflow: hidden; /* Hide overflow content */
     border: 3px solid #8C756A; /* Set border */
@@ -382,8 +382,8 @@ body {
 
 /* Contact form styles */
 .contact-form {
-    width: 80vw; /* Set width of form to 80% of the viewport width */
-    max-width: 80vw; /* Limit maximum width */
+    width: 40vw; /* Set width of form to 80% of the viewport width */
+    max-width: 40vw; /* Limit maximum width */
     font-family: 'Assistant', sans-serif; /* Set general font */
     margin: 0 auto; /* Center align the form */
 }
@@ -393,7 +393,7 @@ body {
     flex-direction: column; /* Arrange items in a column */
     align-items: flex-end; /* Align items to the right */
     margin-bottom: 15px; /* Add bottom margin */
-    width: 80vw; /* Set width of form group to 80% of the viewport width */
+    width: 40vw; /* Set width of form group to 80% of the viewport width */
 }
 
 .form-group label {
@@ -405,7 +405,7 @@ body {
 }
 
 .contact-input {
-    width: 80vw; /* Set width of input fields to 80% of the viewport width */
+    width: 40vw; /* Set width of input fields to 80% of the viewport width */
     padding: 10px; /* Add padding */
     font-size: 1em; /* Set font size */
     border: 2px solid #DBEFE1; /* Set border */
@@ -419,7 +419,7 @@ body {
 }
 
 textarea.contact-input {
-    width: 80vw; /* Set width of textarea to 80% of the viewport width */
+    width: 40vw; /* Set width of textarea to 80% of the viewport width */
     height: 10vh; /* Set height of textarea */
     resize: vertical; /* Allow vertical resize */
     direction: rtl; /* Set text direction to right-to-left */
@@ -432,7 +432,7 @@ textarea.contact-input {
     color: #fff; /* Set text color */
     background-color: #6D8B85; /* Set background color */
     border: none; /* Remove border */
-    width: 40vw; /* Set width of submit button to 40% of the viewport width */
+    width: 20vw; /* Set width of submit button to 40% of the viewport width */
     border-radius: 5px; /* Set border radius */
     cursor: pointer; /* Set cursor to pointer */
     margin-top: 1.5vh; /* Add top margin */
