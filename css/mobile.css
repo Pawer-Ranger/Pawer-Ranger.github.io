@@ -164,7 +164,7 @@ font-weight: bold;
 #therapeutic-puppies {
     text-align: center;
     color: black;
-    margin-top: -30vh;
+    margin-top: -3vh;
 	
 }
 
@@ -222,13 +222,13 @@ font-weight: bold;
 
 /* Content - Our Services */
 #our-services {
-    text-align:Center; /* Aligns section text to the right */
+    text-align:right; /* Aligns section text to the right */
     color: black; /* Sets text color to black */
     margin-top: -20px; /* Reduces the margin-top to bring the section closer to the previous section */
 }
 
 #our-services h2 {
-    text-align: right; /* Aligns title text to the right */
+    text-align: Center; /* Aligns title text to the right */
     color: #1B7895; /* Sets title color */
     font-family: "Fb Liddar", bold; /* Sets font for the title */
     font-size: 50px; /* Sets font size for the title */
