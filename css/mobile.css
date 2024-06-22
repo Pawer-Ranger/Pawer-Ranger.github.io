@@ -3,26 +3,26 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    font-family: 'Assistant', sans-serif; /* general font */
-    background-color: #F5F6F3; /* background color */
-    padding-left: 1.5in; /* Add padding to the left side */
+    font-family: 'Assistant', sans-serif;
+    background-color: #F5F6F3;
+    padding-left: 1.5in;
 }
 
 .container {
     max-width: 100vw;
     margin: 0 auto;
-    padding: 2vw 1.5in; /* Add padding of 2vw on top and bottom, 1.5 inches on left and right */
+    padding: 2vw 1.5in;
     text-align: center;
 }
 
 .navbar {
-    margin-top: 5vh; /* Adjust margin-top for the navbar */
+    margin-top: 5vh;
 }
 
 .navbar a {
     font-family: "Levenim MT", sans-serif;
     font-weight: bold;
-    margin: 0 6vw; /* Increase the horizontal margin to 6vw */
+    margin: 0 6vw;
     text-decoration: none;
     font-size: 2vw;
     color: #6D8B85;
@@ -208,114 +208,107 @@ body {
 
 /* Content - Our Services */
 #our-services {
-    text-align: center; /* Centers the section content */
-    color: black; /* Sets text color */
-    margin-top: -20px; /* Adjusts margin top to position the section */
+    text-align: center;
+    color: black;
+    margin-top: -20px;
 }
 
 #our-services h2 {
-    text-align: center; /* Centers the title */
-    color: #1B7895; /* Sets title color */
-    font-family: "Levenim MT", sans-serif; /* Sets font for the title */
-    font-size: 5.5vw; /* Sets font size for the title */
-    position: relative; /* Positions the title relative to its normal position */
-    left: -1cm; /* Moves the title slightly to the left */
-    margin-bottom: -3vh; /* Reduces the bottom margin to bring the title closer to the content below */
+    text-align: center;
+    color: #1B7895;
+    font-family: "Levenim MT", sans-serif;
+    font-size: 5.5vw;
+    position: relative;
+    left: -1cm;
+    margin-bottom: -3vh;
 }
 
 #our-services .text-box-container {
-    width: 90vw; /* Sets the width of the container */
-    display: flex; /* Uses flexbox for layout */
-    justify-content: center; /* Centers the text boxes horizontally */
-    align-items: flex-start; /* Aligns items at the start of the flex container */
-    margin: 0 auto; /* Centers the container itself */
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
 }
 
 #our-services .text-box {
-    width: 40vw; /* Sets width of text box */
-    height: auto; /* Allows height to adjust to content */
-    position: relative; /* Positions text box relative to its normal position */
-    overflow: hidden; /* Hides overflow content */
-    padding: 20px; /* Adds padding inside the text box */
-    border: 3px solid #8C756A; /* Sets border color and thickness */
-    box-sizing: border-box; /* Ensures padding and border are included in total width and height */
-    margin-top: 20px; /* Adds top margin */
+    width: 40vw;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
+    margin-top: 20px;
 }
 
 #our-services .text-box:first-child {
-    margin-right: 20px; /* Adds space between the two text boxes */
+    margin-right: 20px;
 }
 
 #our-services .text-box::before,
 #our-services .text-box::after {
-    content: ""; /* Adds empty content for decorative frames */
-    position: absolute; /* Positions frames absolutely within the text box */
-    border: 3px solid #8C756A; /* Sets border color and thickness */
-    box-sizing: border-box; /* Ensures padding and border are included in total width and height */
-	width: calc(100% + 6px);
-	height: calc(100% + 6px); 
-    z-index: -1; /* Moves frames behind the text box content */
+    content: "";
+    position: absolute;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    z-index: -1;
 }
 
 #our-services .text-box::before {
-    top: -3px; /* Positions top frame slightly above text box */
-    left: -3px; /* Positions left frame slightly to the left of text box */
-    /*width: calc(100% + 12px); /* Sets frame width to cover text box and extend beyond borders */
-   /* height: calc(100% + 12px); /* Sets frame height to cover text box and extend beyond borders */
-   /* transform: rotate(-2deg); /* Rotates frame slightly for a decorative effect */
+    top: -3px;
+    left: -3px;
 }
 
 #our-services .text-box::after {
-    bottom: -3px; /* Positions bottom frame slightly below text box */
-    right: -3px; /* Positions right frame slightly to the right of text box */
-   /* width: calc(100% + 12px); /* Sets frame width to cover text box and extend beyond borders */
-   /* height: calc(100% + 12px); /* Sets frame height to cover text box and extend beyond borders */
- /*   transform: rotate(2deg); /* Rotates frame slightly for a decorative effect */
+    bottom: -3px;
+    right: -3px;
 }
 
 #our-services .text-box h2 {
-    color: #6D8B85; /* Sets text color */
-    font-size: 5.5vw; /* Sets font size */
-    text-align: center; /* Centers text within the text box */
-    position: relative; /* Positions text relative to its normal position */
-    bottom: 0.5cm; /* Moves text down slightly */
-    margin: 0; /* Removes default margin */
+    color: #6D8B85;
+    font-size: 5.5vw;
+    text-align: center;
+    position: relative;
+    bottom: 0.5cm;
+    margin: 0;
 }
 
 #our-services .text-box p {
-    color: black; /* Sets text color */
-    text-align: justify; /* Justifies text within the text box */
-    position: relative; /* Positions text relative to its normal position */
-    top: -0.5cm; /* Moves text up slightly */
-    margin: 0; /* Removes default margin */
+    color: black;
+    text-align: justify;
+    position: relative;
+    top: -0.5cm;
+    margin: 0;
 }
 
-
+/* Carousel */
 #image-carousel {
     text-align: center;
     margin-top: 50px;
 }
 
 .carousel {
-    max-width: 50%; /* Adjust maximum width as needed */
+    max-width: 90%;
     margin: 0 auto;
     overflow: hidden;
-    border: 5px solid  #8C756A;
+    border: 5px solid #8C756A;
     border-radius: 20px;
-    position: relative; /* Ensure this is set to relative */
-    height: 50vh; /* Adjust height of carousel frame */
-    left: -50px; /* Adjust this value to move the carousel to the left */
+    position: relative;
+    aspect-ratio: 4 / 3; /* Ensure the carousel maintains a 4:3 aspect ratio */
 }
 
 .carousel img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: none; /* Hide all images by default */
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire carousel area without empty parts */
+    display: none;
 }
 
 .carousel img.active {
-    display: block; /* Display only the image with 'active' class */
+    display: block;
 }
 
 
@@ -548,7 +541,13 @@ footer {
     .text-box::before, .text-box::after {
         display: none;
     }
+	
+	 .carousel {
+        max-width: 80%;
+    }
 }
+
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     body {
@@ -563,9 +562,9 @@ footer {
         margin-top: 20px;
     }
 
-    .navbar a {
-        margin: 0 3vw;
-        font-size: 4vw;
+   .navbar a {
+        margin: 0 4vw;
+        font-size: 3vw;
     }
 
     .main-title {
@@ -597,16 +596,22 @@ footer {
         left: 0;
     }
 
-    #our-services .text-box-container {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
+    #our-services h2 {
+        font-size: 6vw;
     }
 
     #our-services .text-box {
-        width: 90%;
-        left: 0;
-        margin-top: 20px;
+        width: 45vw;
+        padding: 10px;
+    }
+
+    #our-services .text-box:first-child {
+        margin-right: 10px;
+    }
+
+    .carousel {
+        max-width: 95%;
+        border-width: 4px;
     }
 
       .rectangle {
