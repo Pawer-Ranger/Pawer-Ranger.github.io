@@ -1,21 +1,17 @@
 /* General Styles */
 body {
-	margin: 0;
+    margin: 0;
     width: 100vw;
     height: 100vh;
     font-family: 'Assistant', sans-serif; /* general font */
     background-color: #F5F6F3; /* background color */
     padding-left: 1.5in; /* Add padding to the left side */
-}/*
-div {
-    width: 100vw;
-    height: 100vh;
 }
-*/
+
 .container {
     max-width: 100vw;
     margin: 0 auto;
-    padding: 2vw 1.5in; /* Add padding of 20px on top and bottom, 1.5 inches on left and right */
+    padding: 2vw 1.5in; /* Add padding of 2vw on top and bottom, 1.5 inches on left and right */
     text-align: center;
 }
 
@@ -26,7 +22,7 @@ div {
 .navbar a {
     font-family: "Fb Liddar", sans-serif;
     font-weight: bold;
-    margin: 0 6vw; /* Increase the horizontal margin to 60px */
+    margin: 0 6vw; /* Increase the horizontal margin to 6vw */
     text-decoration: none;
     font-size: 2vw;
     color: #6D8B85;
@@ -43,7 +39,7 @@ div {
     font-size: 8vh; /* Decreased font size */
     position: relative; /* Set relative position for absolute positioning */
     left: 0vw; /* Adjust left position */
-    top: -0.3vw; /* Move the text up by 20px */
+    top: -0.3vw; /* Move the text up by 0.3vw */
 }
 
 .second-line {
@@ -51,7 +47,7 @@ div {
     position: relative; /* Set relative position for absolute positioning */
     left: -9.8vw; /* Adjust left position */
     font-size: 8vh; /* Restore the original font size */
-	top: -1vw; /* Move the text up by 20px */
+    top: -1vw; /* Move the text up by 1vw */
 }
 
 .section {
@@ -65,16 +61,15 @@ div {
 }
 
 .logo img {
-    width: 10vw; /* Set the width of the logo to 4.5 centimeters */
+    width: 10vw; /* Set the width of the logo */
     height: auto; /* Maintain aspect ratio */
-    margin-top: 0vw; /* Set the top margin to half a centimeter */
-    margin-left: 0vw; /* Set the left margin to half a centimeter */
+    margin-top: 0vw; /* Set the top margin */
+    margin-left: 0vw; /* Set the left margin */
 }
 
 .bold-text {
-font-weight: bold;
+    font-weight: bold;
 }
-
 
 /* Content - Who am I */
 #who-am-i {
@@ -90,9 +85,7 @@ font-weight: bold;
     margin-bottom: 10px;
 }
 
-
 /* Text Box */
-
 #who-am-i .text-box {
     width: 90vw;
     margin: 0 auto;
@@ -137,8 +130,7 @@ font-weight: bold;
     text-align: justify;
 }
 
-
-/* Add this CSS to style the circle and the image */
+/* Circle */
 .circle {
     width: 30vw; /* Set the width of the circle */
     height: 50vh; /* Set the height of the circle */
@@ -147,7 +139,6 @@ font-weight: bold;
     border-radius: 50%; /* Make it a circle */
     position: absolute; /* Positioning */
     left: 30%; /* Position it in the center horizontally */
-    /*top: 108%; /* Position it in the center vertically */
     transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
     overflow: hidden; /* Hide overflow */
 }
@@ -159,13 +150,11 @@ font-weight: bold;
 }
 
 
-
 /* Content - Therapeutic Puppies */
 #therapeutic-puppies {
     text-align: center;
     color: black;
-	margin-top: -20px;
-	
+    margin-top: -20px;
 }
 
 #therapeutic-puppies h2 {
@@ -241,7 +230,7 @@ font-weight: bold;
     display: flex; /* Uses flexbox for layout */
     justify-content: center; /* Centers the text boxes horizontally */
     align-items: flex-start; /* Aligns items at the start of the flex container */
-    margin-top: 20px; /* Adds top margin */
+    margin: 0 auto; /* Centers the container itself */
 }
 
 #our-services .text-box {
@@ -252,7 +241,7 @@ font-weight: bold;
     padding: 20px; /* Adds padding inside the text box */
     border: 3px solid #8C756A; /* Sets border color and thickness */
     box-sizing: border-box; /* Ensures padding and border are included in total width and height */
-    margin-top: 20px; /* Adjust the value as needed */
+    margin-top: 20px; /* Adds top margin */
 }
 
 #our-services .text-box:first-child {
@@ -263,36 +252,44 @@ font-weight: bold;
 #our-services .text-box::after {
     content: ""; /* Adds empty content for decorative frames */
     position: absolute; /* Positions frames absolutely within the text box */
-    border: inherit; /* Inherits border properties from the text box */
-    top: 5px; /* Sets top position for the frames */
-    right: 5px; /* Sets right position for the frames */
-    bottom: 5px; /* Sets bottom position for the frames */
-    left: 5px; /* Sets left position for the frames */
+    border: 3px solid #8C756A; /* Sets border color and thickness */
+    box-sizing: border-box; /* Ensures padding and border are included in total width and height */
+    z-index: -1; /* Moves frames behind the text box content */
+}
+
+#our-services .text-box::before {
+    top: -6px; /* Positions top frame slightly above text box */
+    left: -6px; /* Positions left frame slightly to the left of text box */
+    width: calc(100% + 12px); /* Sets frame width to cover text box and extend beyond borders */
+    height: calc(100% + 12px); /* Sets frame height to cover text box and extend beyond borders */
+    transform: rotate(-2deg); /* Rotates frame slightly for a decorative effect */
 }
 
 #our-services .text-box::after {
-    top: 7px; /* Adjusts top position for the second frame */
-    right: 7px; /* Adjusts right position for the second frame */
-    bottom: 7px; /* Adjusts bottom position for the second frame */
-    left: 7px; /* Adjusts left position for the second frame */
-    transform: rotate(2deg); /* Applies a slight rotation to the second frame */
+    bottom: -6px; /* Positions bottom frame slightly below text box */
+    right: -6px; /* Positions right frame slightly to the right of text box */
+    width: calc(100% + 12px); /* Sets frame width to cover text box and extend beyond borders */
+    height: calc(100% + 12px); /* Sets frame height to cover text box and extend beyond borders */
+    transform: rotate(2deg); /* Rotates frame slightly for a decorative effect */
 }
 
 #our-services .text-box h2 {
-    color: #6D8B85; /* Sets color of the title text */
-    text-align: center; /* Centers the title text */
-    font-family: "Fb Liddar", bold; /* Sets font for the title */
-    font-size: 5.5vw; /* Sets font size for the title */
-    margin-bottom: 10px; /* Adjusts the bottom margin to raise the title higher */
-    position: relative; /* Positions the title relative to its normal position */
-    top: -47px; /* Raises the title higher */
-    left: 10px; /* Moves the title to the right */
+    color: #8C756A; /* Sets text color */
+    font-size: 5.5vw; /* Sets font size */
+    text-align: center; /* Centers text within the text box */
+    position: relative; /* Positions text relative to its normal position */
+    bottom: 0.5cm; /* Moves text down slightly */
+    margin: 0; /* Removes default margin */
 }
 
 #our-services .text-box p {
-    color: black; /* Sets color of paragraph text */
-    text-align: justify; /* Justifies the paragraph text */
+    color: black; /* Sets text color */
+    text-align: justify; /* Justifies text within the text box */
+    position: relative; /* Positions text relative to its normal position */
+    top: -0.5cm; /* Moves text up slightly */
+    margin: 0; /* Removes default margin */
 }
+
 
 #image-carousel {
     text-align: center;
