@@ -113,7 +113,7 @@ body {
 #our-services {
     text-align: center;
     color: black;
-    margin-top: 80px; /* Adjusted upper distance */
+    margin-top: 50px; /* Adjusted upper distance */
 }
 
 #our-services .text-box-container {
@@ -122,7 +122,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin: 0 auto 30px; /* Center horizontally with margin at the bottom */
-	
 }
 
 #our-services .text-box {
@@ -165,6 +164,7 @@ body {
     color: #6D8B85;
     font-size: 5.5vw;
     text-align: center;
+	 margin-top: 40px;
 }
 
 #our-services .text-box p {
@@ -203,11 +203,11 @@ body {
 #contact-us {
     text-align: center;
     color: black;
-    margin-top: 80px; /* Adjusted upper distance */
+    margin-top: 50px; /* Adjusted upper distance */
 }
 
 #contact-us #image-carousel {
-    margin-top: 30px; /* Adjusted distance */
+    margin-top: 40px; /* Adjusted distance */
 }
 
 #contact-us h2 {
@@ -216,7 +216,7 @@ body {
     font-family: "Levenim MT";
     font-size: 6.5vh;
     position: relative;
-    margin-bottom: 10px;
+    margin-top: 40;
 }
 
 #contact-us .contact-info {
