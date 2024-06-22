@@ -132,8 +132,8 @@ body {
 
 /* Circle */
 .circle {
-    width: 30vw; /* Adjust width of the circle relative to viewport width */
-    height: 30vw; /* Maintain a square aspect ratio */
+    width: 50vw; /* Adjust width of the circle relative to viewport width */
+    height: 50vw; /* Maintain a square aspect ratio */
     max-width: 150px; /* Limit maximum width */
     max-height: 150px; /* Limit maximum height */
     background-color: transparent; /* Set background color */
@@ -534,8 +534,8 @@ footer {
     }
 
     .circle {
-        width: 20vw; /* Adjust dimensions for tablets */
-        height: 20vw; /* Maintain aspect ratio */
+        width: 40vw; /* Adjust dimensions for tablets */
+        height: 40vw; /* Maintain aspect ratio */
         max-width: 120px; /* Limit maximum width */
         max-height: 120px; /* Limit maximum height */
     }
