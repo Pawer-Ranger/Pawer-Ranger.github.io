@@ -217,7 +217,6 @@ body {
     color: black;
     text-align: justify;
 }
-
 /* Content - Our Services */
 #our-services {
     text-align: center;
@@ -310,7 +309,7 @@ body {
 #individual-sessions .text-box {
     width: 90vw;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px 20px; /* Increase padding at the top to create space between title and text box */
     border: 3px solid #8C756A;
     box-sizing: border-box;
     text-align: justify;
@@ -344,7 +343,7 @@ body {
     color: #8C756A;
     font-size: 5.5vw;
     text-align: center;
-    margin-top: 20px; /* Added margin-top to create space between title and text box */
+    margin: 0; /* Reset margin */
 }
 
 #individual-sessions .text-box p {
@@ -362,7 +361,7 @@ body {
 #group-sessions .text-box {
     width: 90vw;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px 20px; /* Increase padding at the top to create space between title and text box */
     border: 3px solid #8C756A;
     box-sizing: border-box;
     text-align: justify;
@@ -396,7 +395,7 @@ body {
     color: #8C756A;
     font-size: 5.5vw;
     text-align: center;
-    margin-top: 20px; /* Added margin-top to create space between title and text box */
+    margin: 0; /* Reset margin */
 }
 
 #group-sessions .text-box p {
@@ -775,7 +774,7 @@ footer {
         margin-top: 20px; /* Adjusted for smaller screens */
     }
 
-  #our-services .text-box {
+      #our-services .text-box {
         width: 80vw;
     }
 
@@ -893,21 +892,22 @@ footer {
     }
 
    #our-services .text-box {
-        width: 80vw;
+        width: 90vw;
     }
 
     #our-services .text-box h2 {
-        font-size: 6vw;
+        font-size: 7vw;
     }
 
     #individual-sessions .text-box,
     #group-sessions .text-box {
-        width: 80vw;
+        width: 90vw;
     }
 
     #individual-sessions .text-box h2,
     #group-sessions .text-box h2 {
-        font-size: 6vw;
+        font-size: 7vw;
+    }
     }
 
     #our-services .text-box p {
