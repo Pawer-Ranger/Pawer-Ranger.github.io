@@ -20,7 +20,7 @@ body {
 }
 
 .navbar a {
-    font-family: "Levenim MT", sans-serif;
+    font-family: "levenim_mt";
     font-weight: bold;
     margin: 0 6vw; /* Increase the horizontal margin to 6vw */
     text-decoration: none;
@@ -138,7 +138,7 @@ body {
     border: 3px solid #8C756A; /* Set border color and thickness */
     border-radius: 10px; /* Adjust border radius for rounded corners if needed */
     position: relative; /* Positioning */
-    margin: 20px auto; /* Center horizontally with top and bottom margin */
+    margin: 0 auto; /* Center horizontally with top and bottom margin */
     overflow: hidden; /* Hide overflow */
 }
 
