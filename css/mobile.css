@@ -81,7 +81,7 @@ font-weight: bold;
 #who-am-i {
     text-align: center; /* Adjust text alignment */
     color: black;
-    margin-top: -20px;
+    margin-top: -20px; /* Fine-tune margin */
 }
 
 #who-am-i h2 {
@@ -91,38 +91,37 @@ font-weight: bold;
     margin-bottom: 10px;
 }
 
-
 /* Text Box */
-
 #who-am-i .text-box {
+    position: relative; /* Ensure position relative for absolute positioning */
     width: 90vw; /* Adjust width for responsiveness */
     margin: 0 auto; /* Center the text box horizontally */
-    padding: 20px;
-    border: 3px solid #8C756A;
-    box-sizing: border-box;
+    padding: 20px; /* Padding for content inside the text box */
     text-align: justify; /* Justify text inside text box */
-}
-.text-box::before, .text-box::after {
-    content: "";
-    position: absolute;
-    border: 3px solid #8C756A; /* Increase the thickness of each frame */
+    overflow: hidden; /* Hide overflow content */
 }
 
-.text-box::before {
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
-    left: 5px;
+#who-am-i .text-box::before,
+#who-am-i .text-box::after {
+    content: ""; /* Empty content for the rectangles */
+    position: absolute; /* Position absolutely relative to .text-box */
+    background-color: #8C756A; /* Color of the rectangles */
+    width: 100%; /* Full width */
+    height: 50%; /* Half height (two rectangles) */
+    z-index: -1; /* Behind the text */
 }
 
-.text-box::after {
-    top: 7px;
-    right: 7px;
-    bottom: 7px;
-    left: 7px;
-    transform: rotate(2deg); /* Apply a small angle to the second frame */
+#who-am-i .text-box::before {
+    top: 0; /* Top half */
+    left: 0; /* Left aligned */
+    transform: skew(0deg, -2deg); /* Skew for an angled effect */
 }
 
+#who-am-i .text-box::after {
+    bottom: 0; /* Bottom half */
+    right: 0; /* Right aligned */
+    transform: skew(0deg, 2deg); /* Skew opposite for angled effect */
+}
 
 #who-am-i .text-box h2 {
     color: #8C756A;
@@ -158,11 +157,12 @@ font-weight: bold;
 
 
 
+
 /* Content - Therapeutic Puppies */
 #therapeutic-puppies {
     text-align: center; /* Adjust text alignment */
     color: black;
-    margin-top: -3vh;
+    margin-top: -3vh; /* Fine-tune margin */
 }
 
 #therapeutic-puppies h2 {
@@ -173,36 +173,35 @@ font-weight: bold;
 }
 
 #therapeutic-puppies .text-box {
+    position: relative; /* Ensure position relative for absolute positioning */
     width: 90vw; /* Adjust width for responsiveness */
     margin: 0 auto; /* Center the text box horizontally */
-    padding: 20px;
-    border: 3px solid #8C756A;
-    box-sizing: border-box;
+    padding: 20px; /* Padding for content inside the text box */
     text-align: justify; /* Justify text inside text box */
+    overflow: hidden; /* Hide overflow content */
 }
 
 #therapeutic-puppies .text-box::before,
 #therapeutic-puppies .text-box::after {
-    content: "";
-    position: absolute;
-    border: 3px solid #8C756A; /* Increase the thickness of each frame */
+    content: ""; /* Empty content for the rectangles */
+    position: absolute; /* Position absolutely relative to .text-box */
+    background-color: #8C756A; /* Color of the rectangles */
+    width: 100%; /* Full width */
+    height: 50%; /* Half height (two rectangles) */
+    z-index: -1; /* Behind the text */
 }
 
 #therapeutic-puppies .text-box::before {
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
-    left: 5px;
+    top: 0; /* Top half */
+    left: 0; /* Left aligned */
+    transform: skew(0deg, -2deg); /* Skew for an angled effect */
 }
 
 #therapeutic-puppies .text-box::after {
-    top: 7px;
-    right: 7px;
-    bottom: 7px;
-    left: 7px;
-    transform: rotate(2deg); /* Apply a small angle to the second frame */
+    bottom: 0; /* Bottom half */
+    right: 0; /* Right aligned */
+    transform: skew(0deg, 2deg); /* Skew opposite for angled effect */
 }
-
 
 #therapeutic-puppies .text-box h2 {
     color: #8C756A;
@@ -214,7 +213,6 @@ font-weight: bold;
     color: black;
     text-align: justify;
 }
-
 
 /* Content - Our Services */
 #our-services {
