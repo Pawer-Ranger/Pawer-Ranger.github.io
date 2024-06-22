@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-	margin: 0;
+    margin: 0;
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
     font-family: 'Assistant', sans-serif; /* General font */
@@ -15,6 +15,7 @@ body {
     text-align: center; /* Center-align text */
 }
 
+/* Navigation */
 .navbar {
     margin-top: 5vh; /* Top margin for navbar */
 }
@@ -28,12 +29,45 @@ body {
     color: #6D8B85; /* Color of navbar links */
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hide by default */
+    position: absolute; /* Absolute positioning */
+    top: 5vh; /* Distance from top */
+    right: 5vw; /* Distance from right */
+    cursor: pointer; /* Cursor style */
+    z-index: 999; /* Higher z-index for visibility */
+}
+
+.hamburger .bar {
+    width: 35px; /* Width of bars */
+    height: 5px; /* Height of bars */
+    background-color: #6D8B85; /* Bar color */
+    margin: 6px 0; /* Vertical margin between bars */
+    transition: 0.4s; /* Smooth transition */
+}
+
+/* Hamburger Menu - Active State */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px); /* Rotate and translate first bar */
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0; /* Hide second bar */
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px); /* Rotate and translate third bar */
+}
+
+/* Main Title */
 .main-title {
     font-size: 2vh; /* Font size of main title */
     color: #1B7895; /* Color of main title */
     text-align: center; /* Center-align main title */
 }
 
+/* First Line */
 .first-line {
     font-family: "Monotype Corsiva", cursive; /* Font for the first line */
     font-size: 8vh; /* Font size of the first line */
@@ -42,17 +76,20 @@ body {
     top: -0.3vw; /* Adjust top position */
 }
 
+/* Second Line */
 .second-line {
     font-family: "Fb Liddar", cursive; /* Font for the second line */
     position: relative; /* Relative positioning */
     left: -9.8vw; /* Adjust left position */
     font-size: 8vh; /* Font size of the second line */
-	top: -1vw; /* Adjust top position */
+    top: -1vw; /* Adjust top position */
 }
 
+/* Section Styles */
 .section {
     padding: 0.1vw 0vw; /* Padding for sections */
 }
+
 
 .logo {
     position: absolute; /* Absolute positioning */
@@ -493,15 +530,10 @@ header {
 }
 
 footer {
-     position: fixed; /* Fixed position */
-    left: 0; /* Distance from the left */
-    bottom: 0; /* Distance from the bottom */
-    width: 100vw; /* Full viewport width */
-    background-color: #6D8B85; /* Background color */
-    color: white; /* Text color */
-    text-align: center; /* Center-align text */
-    padding: 10px; /* Padding inside the footer */
-    font-size: 2vw; /* Font size of footer text */
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1em;
+    color: #6D8B85;
 }
 
 
