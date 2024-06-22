@@ -218,12 +218,11 @@ body {
     text-align: justify;
 }
 
-
 /* Content - Our Services */
 #our-services {
     text-align: center;
     color: black;
-    margin-top: 70px; /* Increase upper distance between title and text box */
+    margin-top: 90px; /* Increase upper distance between title and text box */
 }
 
 #our-services .text-box-container {
@@ -301,6 +300,110 @@ body {
     margin: 0;
 }
 
+/* Content - Individual Sessions */
+#individual-sessions {
+    text-align: center;
+    color: black;
+    margin-top: 100px; /* Increased upper distance between title and text box */
+}
+
+#individual-sessions .text-box {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
+    text-align: justify;
+    position: relative;
+}
+
+#individual-sessions .text-box::before,
+#individual-sessions .text-box::after {
+    content: "";
+    position: absolute;
+    background-color: #8C756A;
+    width: calc(100% + 6px); /* Adjusted width to cover the border */
+    height: 50%;
+    z-index: -1;
+    transform-origin: center top;
+}
+
+#individual-sessions .text-box::before {
+    top: -3px; /* Move up by half of the border width */
+    left: -3px; /* Move left by half of the border width */
+    transform: rotate(-2deg);
+}
+
+#individual-sessions .text-box::after {
+    bottom: -3px; /* Move down by half of the border width */
+    right: -3px; /* Move right by half of the border width */
+    transform: rotate(2deg);
+}
+
+#individual-sessions .text-box h2 {
+    color: #8C756A;
+    font-size: 5.5vw;
+    text-align: center;
+    margin-top: 20px; /* Added margin-top to create space between title and text box */
+}
+
+#individual-sessions .text-box p {
+    color: black;
+    text-align: justify;
+}
+
+/* Content - Group Sessions */
+#group-sessions {
+    text-align: center;
+    color: black;
+    margin-top: 100px; /* Increased upper distance between title and text box */
+}
+
+#group-sessions .text-box {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
+    text-align: justify;
+    position: relative;
+}
+
+#group-sessions .text-box::before,
+#group-sessions .text-box::after {
+    content: "";
+    position: absolute;
+    background-color: #8C756A;
+    width: calc(100% + 6px); /* Adjusted width to cover the border */
+    height: 50%;
+    z-index: -1;
+    transform-origin: center top;
+}
+
+#group-sessions .text-box::before {
+    top: -3px; /* Move up by half of the border width */
+    left: -3px; /* Move left by half of the border width */
+    transform: rotate(-2deg);
+}
+
+#group-sessions .text-box::after {
+    bottom: -3px; /* Move down by half of the border width */
+    right: -3px; /* Move right by half of the border width */
+    transform: rotate(2deg);
+}
+
+#group-sessions .text-box h2 {
+    color: #8C756A;
+    font-size: 5.5vw;
+    text-align: center;
+    margin-top: 20px; /* Added margin-top to create space between title and text box */
+}
+
+#group-sessions .text-box p {
+    color: black;
+    text-align: justify;
+}
+
 /* Carousel */
 #image-carousel {
     text-align: center;
@@ -328,12 +431,11 @@ body {
     display: block;
 }
 
-
 /* Content - Contact Us */
 #contact-us {
     text-align: center;
     color: black;
-    margin-top: 70px; /* Increase upper distance between title and gallery */
+    margin-top: 90px; /* Increase upper distance between title and gallery */
 }
 
 #contact-us #image-carousel {
@@ -593,15 +695,15 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    body {
+   body {
         padding-left: 0;
     }
 
     .container {
         padding: 5vw;
     }
-	
-   .navbar {
+
+    .navbar {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: flex-start;
@@ -641,13 +743,13 @@ footer {
         margin-left: 0;
     } */
 
-    .text-box {
+     .text-box {
         width: 90%;
-        margin: 0 auto;
+        margin: 20px auto; /* Create space between text boxes and headings */
         left: 0;
     }
 
-   #therapeutic-puppies {
+    #therapeutic-puppies {
         margin-top: 30px; /* Adjusted for smaller screens */
     }
 
@@ -659,7 +761,6 @@ footer {
         width: 90%;
         left: 0;
     }
-
 
     #our-services {
         margin-top: 30px; /* Adjusted for smaller screens */
@@ -687,20 +788,19 @@ footer {
         border-width: 4px;
     }
 
-      .rectangle {
+    .rectangle {
         width: 70vw; /* Adjust width for small screens */
         height: 25vh; /* Adjust height for small screens */
         margin: 15px auto; /* Center the rectangle horizontally with top and bottom margin */
+        left: 0; /* Ensure it's centered */
     }
-	
-    .service-box img {
-        width: 120px; /* Adjust image width */
+
+    .rectangle img {
+        width: 100%; /* Ensure the image fills the rectangle */
+        height: 100%; /* Ensure the image fills the rectangle */
+        object-fit: cover; /* Maintain aspect ratio */
     }
-	
-    .carousel {
-        max-width: 90%;
-        left: 0;
-    }
+
     #contact-us {
         margin-top: 30px; /* Adjusted for smaller screens */
     }
@@ -716,15 +816,17 @@ footer {
     }
 }
 
+
 @media (max-width: 480px) {
      .navbar a {
         font-size: 18px;
         padding: 8px;
     }
-	
-	 .logo img {
+
+    .logo img {
         width: 70vw; /* Adjust width for smaller screens */
     }
+
 	
    /* .main-title {
         font-size: 16px;
@@ -744,15 +846,10 @@ footer {
 
     .text-box {
         padding: 5px;
-		width: 100vw;
+        width: 100vw;
     }
 
-    .service-box {
-        margin-bottom: 20px;
-    }
-
-
-     .rectangle {
+    .rectangle {
         width: 80vw; /* Adjust width for extra small screens */
         height: 30vh; /* Adjust height for extra small screens */
         margin: 20px auto; /* Center the rectangle horizontally with top and bottom margin */
@@ -764,8 +861,8 @@ footer {
         height: 100%; /* Ensure the image fills the rectangle */
         object-fit: cover; /* Maintain aspect ratio */
     }
-	
-	  #therapeutic-puppies {
+
+    #therapeutic-puppies {
         margin-top: 20px; /* Further adjustment for extra small screens */
     }
 
@@ -788,7 +885,7 @@ footer {
     #our-services .text-box p {
         margin-top: 10px; /* Add margin above the paragraph text */
     }
-	
+
     #contact-us {
         margin-top: 20px; /* Further adjustment for extra small screens */
     }
@@ -796,34 +893,33 @@ footer {
     #contact-us #image-carousel {
         margin-top: 15px; /* Further adjustment for extra small screens */
     }
-	
-	
+
     .service-box img {
         width: 150px;
     }
 
     .form-group {
-        width: 50hw;
-		display: inline-block;
-		margin-left: auto;
-		margin-right: auto;
+        width: 50vw;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .contact-input {
-        width: 50hw;
-		max-width: 50hw;
+        width: 50vw;
+        max-width: 50vw;
     }
 
     textarea.contact-input {
-		display: inline-block;
-		margin-left: auto;
-		margin-right: auto;
-        width: 50hw;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
     }
 
     .contact-button {
-		margin-left: auto;
-		margin-right: auto;
-        width: 50hw;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
     }
 }
