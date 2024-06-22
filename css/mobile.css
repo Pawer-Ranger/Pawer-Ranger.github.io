@@ -76,7 +76,6 @@ font-weight: bold;
 }
 
 
-
 /* Content - Who am I */
 #who-am-i {
     text-align: center;
@@ -93,39 +92,38 @@ font-weight: bold;
 
 
 /* Text Box */
+
 #who-am-i .text-box {
-width: 90vw;
+    width: 90vw;
     margin: 0 auto;
     padding: 20px;
     border: 3px solid #8C756A;
     box-sizing: border-box;
     text-align: justify;
     position: relative;
-    z-index: 1;
 }
 
-/* Content - Who am I */
 #who-am-i .text-box::before,
 #who-am-i .text-box::after {
     content: "";
     position: absolute;
     background-color: #8C756A;
-    width: 100%;
+    width: calc(100% + 6px); /* Adjusted width to cover the border */
     height: 50%;
     z-index: -1;
-    transform-origin: center center; /* Set rotation origin */
+    transform-origin: center top;
 }
 
 #who-am-i .text-box::before {
-    top: -3px; /* Adjusted to account for border */
-    left: 0;
-    transform: rotate(-2deg); /* Rotate -2 degrees */
+    top: -3px; /* Move up by half of the border width */
+    left: -3px; /* Move left by half of the border width */
+    transform: rotate(-2deg);
 }
 
 #who-am-i .text-box::after {
-    bottom: -3px; /* Adjusted to account for border */
-    right: 0;
-    transform: rotate(2deg); /* Rotate 2 degrees */
+    bottom: -3px; /* Move down by half of the border width */
+    right: -3px; /* Move right by half of the border width */
+    transform: rotate(2deg);
 }
 
 #who-am-i .text-box h2 {
@@ -138,6 +136,8 @@ width: 90vw;
     color: black;
     text-align: justify;
 }
+
+
 /* Add this CSS to style the circle and the image */
 .circle {
     width: 30vw; /* Set the width of the circle */
@@ -182,29 +182,29 @@ width: 90vw;
     box-sizing: border-box;
     text-align: justify;
     position: relative;
-    z-index: 1;
 }
+
 #therapeutic-puppies .text-box::before,
 #therapeutic-puppies .text-box::after {
     content: "";
     position: absolute;
     background-color: #8C756A;
-    width: 100%;
+    width: calc(100% + 6px); /* Adjusted width to cover the border */
     height: 50%;
     z-index: -1;
-    transform-origin: center center; /* Set rotation origin */
+    transform-origin: center top;
 }
 
 #therapeutic-puppies .text-box::before {
-    top: -3px; /* Adjusted to account for border */
-    left: 0;
-    transform: rotate(-2deg); /* Rotate -2 degrees */
+    top: -3px; /* Move up by half of the border width */
+    left: -3px; /* Move left by half of the border width */
+    transform: rotate(-2deg);
 }
 
 #therapeutic-puppies .text-box::after {
-    bottom: -3px; /* Adjusted to account for border */
-    right: 0;
-    transform: rotate(2deg); /* Rotate 2 degrees */
+    bottom: -3px; /* Move down by half of the border width */
+    right: -3px; /* Move right by half of the border width */
+    transform: rotate(2deg);
 }
 
 #therapeutic-puppies .text-box h2 {
