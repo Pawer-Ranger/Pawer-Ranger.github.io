@@ -441,7 +441,7 @@ font-weight: bold;
 }
 
 .contact-input {
-    width: 70%; /* Adjust width of input fields */
+    width: 60vw; /* Adjust width of input fields */
     padding: 10px;
     font-size: 1em;
     border: 2px solid #DBEFE1;
@@ -455,7 +455,7 @@ font-weight: bold;
 }
 
 textarea.contact-input {
-    width: 70%; /* Adjust width of textarea */
+    width: 60vw; /* Adjust width of textarea */
     height: 10vh;
     resize: vertical;
     direction: rtl; /* Set text direction to right-to-left */
@@ -469,10 +469,13 @@ textarea.contact-input {
     color: #fff;
     background-color: #6D8B85;
     border: none; /* Remove border to ensure a cleaner look */
-	width: 20%;
+	width: 10vw;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1.5vh; /* Add margin to separate from form */
+	display: block; /* Make the button a block element */
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
 }
 
 .contact-button:hover {
