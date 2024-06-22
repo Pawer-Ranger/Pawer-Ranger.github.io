@@ -576,13 +576,60 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    body {
+    body	{
         padding-left: 0;
     }
 
     .container {
         padding: 5vw;
     }
+
+
+.nav-links {
+        display: none; /* Hide original nav links */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Adjust top distance from the header */
+        right: 0;
+        background-color: #f5f6f3; /* Background color */
+        width: 200px; /* Adjust width as needed */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+        z-index: 1000; /* Ensure it's above other content */
+        padding: 20px; /* Optional: Add padding */
+        transform: translateX(100%); /* Off-screen initially */
+        transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 20px; /* Adjust top distance from the header */
+        right: 20px; /* Adjust right distance from the header */
+        z-index: 1500; /* Ensure it's above other content */
+    }
+
+    .hamburger .line {
+        width: 30px; /* Width of each line */
+        height: 3px; /* Height of each line */
+        background-color: #1B7895; /* Color of each line */
+        margin: 5px; /* Spacing between lines */
+        transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+
+    /* Rotate lines to form 'X' or 'Close' icon */
+    .hamburger.active .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .hamburger.active .line:nth-child(2) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Show nav links when hamburger is active */
+    .hamburger.active + .nav-links {
+        transform: translateX(0);
+    }
+
 
     .navbar {
         margin-top: 20px;
