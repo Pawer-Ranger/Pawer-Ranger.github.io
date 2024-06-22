@@ -60,7 +60,7 @@ body {
 
 .logo {
     margin-right: auto;
-    margin-top: -15px; /* Adjusted position to raise the logo slightly */
+    margin-top: -25px; /* Adjusted position to raise the logo slightly */
 }
 
 .logo img {
@@ -657,6 +657,11 @@ footer {
         font-size: 18px;
         padding: 8px;
     }
+	
+	 .logo img {
+        width: 70vw; /* Adjust width for smaller screens */
+    }
+	
     .main-title {
         font-size: 16px;
     }
