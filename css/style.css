@@ -365,7 +365,7 @@ font-weight: bold;
 
 /*form*/
 #contact-us .text-box {
-    width: 80vw; /* Set text box width */
+    width: 60vw; /* Set text box width */
     height: auto; /* Set text box height to auto */
     position: center; /* Center position */
     overflow: hidden; /* Hide overflow content */
@@ -389,7 +389,7 @@ font-weight: bold;
 
 /* Contact form styles */
 .contact-form {
-    width: 80vw; /* Set width of form */
+    width: 60vw; /* Set width of form */
     max-width: 80vw; /* Limit maximum width */
     font-family: 'Assistant', sans-serif; /* Set general font */
 }
@@ -399,7 +399,7 @@ font-weight: bold;
     flex-direction: column; /* Arrange items in a column */
     align-items: flex-end; /* Align items to the right */
     margin-bottom: 15px; /* Add bottom margin */
-    width: 80vw; /* Set width of form group */
+    width: 60vw; /* Set width of form group */
 }
 
 .form-group label {
@@ -411,7 +411,7 @@ font-weight: bold;
 }
 
 .contact-input {
-    width: 80vw; /* Set width of input fields */
+    width: 60vw; /* Set width of input fields */
     padding: 10px; /* Add padding */
     font-size: 1em; /* Set font size */
     border: 2px solid #DBEFE1; /* Set border */
@@ -425,7 +425,7 @@ font-weight: bold;
 }
 
 textarea.contact-input {
-    width: 80vw; /* Set width of textarea */
+    width: 60vw; /* Set width of textarea */
     height: 10vh; /* Set height of textarea */
     resize: vertical; /* Allow vertical resize */
     direction: rtl; /* Set text direction to right-to-left */
@@ -438,7 +438,7 @@ textarea.contact-input {
     color: #fff; /* Set text color */
     background-color: #6D8B85; /* Set background color */
     border: none; /* Remove border */
-    width: 40vw; /* Set width of submit button */
+    width: 20vw; /* Set width of submit button */
     border-radius: 5px; /* Set border radius */
     cursor: pointer; /* Set cursor to pointer */
     margin-top: 1.5vh; /* Add top margin */

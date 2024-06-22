@@ -318,179 +318,149 @@ body {
     display: block; /* Display only the image with 'active' class */
 }
 
-
 /* Content - Contact Us */
 #contact-us {
-    text-align: Center;
-    color: black;
+    text-align: center; /* Center align text in the contact section */
+    color: black; /* Set text color to black */
     margin-top: -2vh; /* Reduce the margin-top to bring the section closer to the previous section */
 }
 
 #contact-us h2 {
-    text-align: Center;
-    color: #1B7895;
-    font-family: "Fb Liddar", bold;
-    font-size: 6.5vh;
-    position: relative;
+    text-align: right; /* Align heading text to the right */
+    color: #1B7895; /* Set heading text color */
+    font-family: "Fb Liddar", bold; /* Set font family and weight */
+    font-size: 6.5vh; /* Set font size */
+    position: relative; /* Set position to relative */
     margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
 }
 
-
 /*icons*/
 #contact-us .contact-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    padding: -2vw 10%;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly with space between them */
+    align-items: center; /* Align items vertically centered */
+    margin-top: 20px; /* Add top margin */
+    padding: 0 10%; /* Add padding on left and right */
 }
 
 #contact-us .contact-info a {
-    font-family: 'Assistant', sans-serif;
-    font-size: 23px;
-    color: black;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    font-family: 'Assistant', sans-serif; /* Set font family */
+    font-size: 26px; /* Set font size */
+    color: black; /* Set text color */
+    text-decoration: none; /* Remove text underline */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically centered */
 }
 
 #contact-us .contact-info a img {
-    width: 26px;
-    height: 26px;
-    margin-right: 10px;
+    width: 26px; /* Set image width */
+    height: 26px; /* Set image height */
+    margin-right: 8px; /* Add right margin */
 }
-
-
 
 /*form*/
 #contact-us .text-box {
-    width: 7vw;
-    height: auto;
-    position: Center;
-    overflow: hidden;
-    /*padding: 20px;*/
-    border: 3px solid #8C756A;
-    box-sizing: border-box;
-    margin: 0 auto;
+    width: 80vw; /* Set text box width to 80% of the viewport width */
+    height: auto; /* Set text box height to auto */
+    overflow: hidden; /* Hide overflow content */
+    border: 3px solid #8C756A; /* Set border */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 0 auto; /* Center align text box */
 }
-/*
-#contact-us .text-box::before,
-#contact-us .text-box::after {
-    content: "";
-    position: absolute;
-    border: inherit;
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
-    left: 5px;
-}
-
-#contact-us .text-box::after {
-    top: 7px;
-    right: 7px;
-    bottom: 7px;
-    left: 7px;
-    transform: rotate(2deg);
-}*/
 
 #contact-us .text-box h2 {
-    color: #8C756A;
-    text-align: center;
-    font-family: "Fb Liddar", bold;
-    font-size: 5.5vw;
-	color: #6D8B85;
+    color: #6D8B85; /* Set heading text color */
+    text-align: center; /* Center align heading text */
+    font-family: "Fb Liddar", bold; /* Set font family and weight */
+    font-size: 5.5vw; /* Set font size */
 }
 
 #contact-us .text-box p {
-    color: black;
-    text-align: justify;
+    color: black; /* Set paragraph text color */
+    text-align: justify; /* Justify text alignment */
 }
-
-
-
-
 
 /* Contact form styles */
 .contact-form {
-    width: 40vw; /* Set width of form */
-    max-width: 50vw; /* Limit maximum width */
-    /*margin: 9vw auto;*/ /* Center the form horizontally with top margin */
-    font-family: 'Assistant', sans-serif; /* General font */
+    width: 80vw; /* Set width of form to 80% of the viewport width */
+    max-width: 80vw; /* Limit maximum width */
+    font-family: 'Assistant', sans-serif; /* Set general font */
+    margin: 0 auto; /* Center align the form */
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
     align-items: flex-end; /* Align items to the right */
-    margin-bottom: 15px;
-    width: 40vw;
+    margin-bottom: 15px; /* Add bottom margin */
+    width: 80vw; /* Set width of form group to 80% of the viewport width */
 }
 
 .form-group label {
-    margin-bottom: 5px;
-    color: #6D8B85;
-    font-weight: bold;
+    margin-bottom: 5px; /* Add bottom margin */
+    color: #6D8B85; /* Set label text color */
+    font-weight: bold; /* Set font weight to bold */
     text-align: right; /* Align label text to the right */
     width: 100%; /* Ensure labels take full width */
 }
 
 .contact-input {
-    width: 70%; /* Adjust width of input fields */
-    padding: 10px;
-    font-size: 1em;
-    border: 2px solid #DBEFE1;
-    border-radius: 5px;
+    width: 80vw; /* Set width of input fields to 80% of the viewport width */
+    padding: 10px; /* Add padding */
+    font-size: 1em; /* Set font size */
+    border: 2px solid #DBEFE1; /* Set border */
+    border-radius: 5px; /* Set border radius */
     direction: rtl; /* Set text direction to right-to-left */
-    margin-bottom: 10px; /* Add margin below input fields */
+    margin-bottom: 10px; /* Add bottom margin */
 }
 
 .contact-input:focus {
-    border-color: #666;
+    border-color: #666; /* Change border color on focus */
 }
 
 textarea.contact-input {
-    width: 70%; /* Adjust width of textarea */
-    height: 10vh;
-    resize: vertical;
+    width: 80vw; /* Set width of textarea to 80% of the viewport width */
+    height: 10vh; /* Set height of textarea */
+    resize: vertical; /* Allow vertical resize */
     direction: rtl; /* Set text direction to right-to-left */
 }
 
-
 .contact-button {
-    padding: 1vw 1vh;
-	font-family: 'Assistant', sans-serif;
-    font-size: 1.5em;
-    color: #fff;
-    background-color: #6D8B85;
-    border: none; /* Remove border to ensure a cleaner look */
-	width: 17%;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1.5vh; /* Add margin to separate from form */
+    padding: 1vw 1vh; /* Add padding */
+    font-family: 'Assistant', sans-serif; /* Set font family */
+    font-size: 1.5em; /* Set font size */
+    color: #fff; /* Set text color */
+    background-color: #6D8B85; /* Set background color */
+    border: none; /* Remove border */
+    width: 40vw; /* Set width of submit button to 40% of the viewport width */
+    border-radius: 5px; /* Set border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    margin-top: 1.5vh; /* Add top margin */
+    display: block; /* Make the button a block element */
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
 }
 
 .contact-button:hover {
-    background-color: #575757;
+    background-color: #575757; /* Change background color on hover */
 }
-
 
 .success-message {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    border: 2px solid #6D8B85;
-    border-radius: 5px;
-    background-color: #DBEFE1;
-    color: #6D8B85;
-    font-family: 'Assistant', sans-serif;
-    font-size: 1.5em;
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Add top margin */
+    padding: 10px; /* Add padding */
+    border: 2px solid #6D8B85; /* Set border */
+    border-radius: 5px; /* Set border radius */
+    background-color: #DBEFE1; /* Set background color */
+    color: #6D8B85; /* Set text color */
+    font-family: 'Assistant', sans-serif; /* Set font family */
+    font-size: 1.2em; /* Set font size */
 }
-
-
 
 header {
-    margin-top: 0;
+    margin-top: 0; /* Remove top margin */
 }
+
 
 footer {
     text-align: center;
