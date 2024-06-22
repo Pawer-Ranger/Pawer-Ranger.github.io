@@ -171,6 +171,7 @@ body {
     box-sizing: border-box;
     text-align: justify;
     position: relative;
+	margin-top: -20px; /* This value adjusts the distance */
 }
 
 #therapeutic-puppies .text-box::before,
@@ -231,6 +232,7 @@ body {
     justify-content: center; /* Centers the text boxes horizontally */
     align-items: flex-start; /* Aligns items at the start of the flex container */
     margin: 0 auto; /* Centers the container itself */
+	margin-top: -20px; /* This value adjusts the distance */
 }
 
 #our-services .text-box {
@@ -329,11 +331,12 @@ body {
 }
 
 #contact-us h2 {
-    text-align: right; /* Align heading text to the right */
+    text-align: Center; /* Align heading text to the right */
     color: #1B7895; /* Set heading text color */
     font-family: "Fb Liddar", bold; /* Set font family and weight */
     font-size: 6.5vh; /* Set font size */
     position: relative; /* Set position to relative */
+	margin-top: -20px; /* This value adjusts the distance */
     margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
 }
 
