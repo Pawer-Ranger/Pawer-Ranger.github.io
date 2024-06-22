@@ -164,7 +164,7 @@ font-weight: bold;
 #therapeutic-puppies {
     text-align: center;
     color: black;
-    margin-top: -3vh;
+	margin-top: -20px;
 	
 }
 
@@ -172,7 +172,6 @@ font-weight: bold;
     color: #1B7895;
     font-family: "Fb Liddar", sans-serif;
     font-size: 5.5vw;
-    margin-top: -2em;
 }
 
 #therapeutic-puppies .text-box {
@@ -234,7 +233,6 @@ font-weight: bold;
     font-size: 50px; /* Sets font size for the title */
     position: relative; /* Positions the title relative to its normal position */
     left: -1cm; /* Moves the title slightly to the left */
-	margin-top: -2em;
     margin-bottom: -3vh; /* Reduces the bottom margin to bring the title closer to the content below */
 }
 
@@ -340,7 +338,6 @@ font-weight: bold;
     font-family: "Fb Liddar", bold;
     font-size: 6.5vh;
     position: relative;
-	margin-top: -2em;
     margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
 }
 
