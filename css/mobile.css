@@ -14,12 +14,13 @@ body {
     padding: 2vw 1.5in;
     text-align: center;
 }
+
 .navbar {
     display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Distribute items evenly */
+    justify-content: center; /* Center align items */
     align-items: center; /* Align items vertically centered */
     margin-top: 20px; /* Top margin for the navbar */
-    padding: 0 20px; /* Horizontal padding to separate from edges */
+    padding: 10px 20px; /* Padding around the navbar */
 }
 
 .navbar a {
@@ -29,6 +30,7 @@ body {
     font-size: 2vw; /* Responsive font size */
     color: #6D8B85; /* Text color */
     padding: 10px; /* Padding around each link */
+    transition: color 0.3s; /* Smooth color transition on hover */
 }
 
 .main-title {
@@ -59,7 +61,9 @@ body {
 
 .logo {
     margin-right: auto; /* Push logo to the far left */
+    margin-top: -10px; /* Raise the logo slightly upwards */
 }
+
 
 .logo img {
     width: 10vw; /* Set the width of the logo */
@@ -491,7 +495,7 @@ footer {
         padding: 20px 1in;
     }
 
-     .navbar a {
+    .navbar a {
         font-size: 2.5vw; /* Increase font size for medium screens */
     }
 
@@ -558,15 +562,24 @@ footer {
         padding: 5vw;
     }
 
-   .navbar {
-        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+     .navbar {
+        flex-direction: column; /* Arrange items in a column */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .logo {
+        order: 1; /* Ensure logo appears first */
+        margin-top: 0; /* Reset margin top for logo */
+        margin-bottom: 10px; /* Add margin at the bottom of the logo */
     }
 
     .navbar a {
-        flex: 1 0 50%; /* Each link takes 50% width on small screens */
-        font-size: 4vw; /* Increase font size for smaller screens */
-        margin: 5px; /* Add small margin between links */
-        text-align: center; /* Center align text */
+        flex: 1 0 100%; /* Each link takes 100% width in a single column */
+        margin: 5px 0; /* Add margin between links in a column */
+    }
+
+    .navbar a:nth-child(4) {
+        margin-top: 10px; /* Add top margin for the Contact link */
     }
 
     .main-title {
@@ -582,10 +595,10 @@ footer {
         left: 0;
     }
 
-    .logo img {
+    /*.logo img {
         width: 20vw;
         margin-left: 0;
-    }
+    } */
 
     .text-box {
         width: 90%;
@@ -643,7 +656,6 @@ footer {
         font-size: 18px; /* Set font size for extra small screens */
         padding: 8px; /* Adjust padding for smaller touch targets */
     }
-
     .main-title {
         font-size: 16px;
     }
