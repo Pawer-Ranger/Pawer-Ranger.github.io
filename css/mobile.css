@@ -363,7 +363,7 @@ body {
 
 /* Form */
 #contact-us .text-box {
-    width: 90%; /* Set text box width to 90% of the container width */
+    width: 50hw; /* Set text box width to 90% of the container width */
     height: auto; /* Set text box height to auto */
     overflow: hidden; /* Hide overflow content */
     border: 3px solid #8C756A; /* Set border */
@@ -382,66 +382,78 @@ body {
     color: black; /* Set paragraph text color */
     text-align: justify; /* Justify text alignment */
 }
-
 /* Contact form styles */
 .contact-form {
-    width: 90%; /* Set width of form to 90% of the container width */
-    max-width: 90%; /* Limit maximum width */
-    font-family: 'Assistant', sans-serif; /* Set general font */
-    margin: 0 auto; /* Center align the form */
+    width: 30hw; /* Set width of form */
+    max-width: 30hw; /* Limit maximum width */
+    /margin: 9vw auto;/ /* Center the form horizontally with top margin */
+    font-family: 'Assistant', sans-serif; /* General font */
 }
 
 .form-group {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items in a column */
+    display: flex;
+    flex-direction: column;
     align-items: flex-end; /* Align items to the right */
-    margin-bottom: 15px; /* Add bottom margin */
-    width: 100%; /* Set width of form group to 100% of its parent */
+    margin-bottom: 15px;
+    width: 30hw;
 }
 
 .form-group label {
-    margin-bottom: 5px; /* Add bottom margin */
-    color: #6D8B85; /* Set label text color */
-    font-weight: bold; /* Set font weight to bold */
+    margin-bottom: 5px;
+    color: #6D8B85;
+    font-weight: bold;
     text-align: right; /* Align label text to the right */
-    width: 100%; /* Ensure labels take full width */
+    width: 30hw; /* Ensure labels take full width */
 }
 
 .contact-input {
-    width: 100%; /* Set width of input fields to 100% of its parent */
-    padding: 10px; /* Add padding */
-    font-size: 1em; /* Set font size */
-    border: 2px solid #DBEFE1; /* Set border */
-    border-radius: 5px; /* Set border radius */
+    width: 70%; /* Adjust width of input fields */
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #DBEFE1;
+    border-radius: 5px;
     direction: rtl; /* Set text direction to right-to-left */
-    margin-bottom: 10px; /* Add bottom margin */
+    margin-bottom: 10px; /* Add margin below input fields */
 }
 
 .contact-input:focus {
-    border-color: #666; /* Change border color on focus */
+    border-color: #666;
 }
 
 textarea.contact-input {
-    width: 100%; /* Set width of textarea to 100% of its parent */
-    height: 10vh; /* Set height of textarea */
-    resize: vertical; /* Allow vertical resize */
+    width: 30hw; /* Adjust width of textarea */
+    height: 10vh;
+    resize: vertical;
     direction: rtl; /* Set text direction to right-to-left */
 }
-
 .contact-button {
-    padding: 1vw 1vh; /* Add padding */
-    font-family: 'Assistant', sans-serif; /* Set font family */
-    font-size: 1.5em; /* Set font size */
-    color: #fff; /* Set text color */
-    background-color: #6D8B85; /* Set background color */
-    border: none; /* Remove border */
-    width: 50%; /* Set width of submit button to 50% of the container width */
-    border-radius: 5px; /* Set border radius */
-    cursor: pointer; /* Set cursor to pointer */
-    margin-top: 1.5vh; /* Add top margin */
-    display: block; /* Make the button a block element */
-    margin-left: auto; /* Center the button horizontally */
-    margin-right: auto; /* Center the button horizontally */
+    padding: 1vw 1vh;
+	font-family: 'Assistant', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #6D8B85;
+    border: none; /* Remove border to ensure a cleaner look */
+	width: 30hw;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5vh; /* Add margin to separate from form */
+}
+
+.contact-button:hover {
+    background-color: #575757;
+}
+
+
+.success-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #6D8B85;
+    border-radius: 5px;
+    background-color: #DBEFE1;
+    color: #6D8B85;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.2em;
 }
 
 .contact-button:hover {
