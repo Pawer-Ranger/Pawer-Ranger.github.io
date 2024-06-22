@@ -32,11 +32,11 @@ body {
     transition: color 0.3s;
 }
 
-.main-title {
-    font-size: 2vh; /* Decreased font size */
-    color: #1B7895; /* Set the color of the main title */
-    text-align: center; /* Center-align the title */
-}
+/*.main-title {
+    /*font-size: 2vh; /* Decreased font size */
+    /*color: #1B7895; /* Set the color of the main title */
+    /*text-align: center; /* Center-align the title */
+/*}*/
 
 /* title of the page */
 /*.first-line {
@@ -501,7 +501,7 @@ footer {
         font-size: 2.5vw;
     }
 
-    .main-title {
+    /*.main-title {
         font-size: 28px;
     }
 
@@ -513,7 +513,7 @@ footer {
     .second-line {
         font-size: 90px;
         left: -50px;
-    }
+    }*/
 
     #who-am-i h2,
     #therapeutic-puppies h2,
@@ -586,7 +586,7 @@ footer {
         margin-top: 10px;
     }
 	
-    .main-title {
+   /* .main-title {
         font-size: 4vw;
     }
 
@@ -597,7 +597,7 @@ footer {
     .second-line {
         font-size: 6vw;
         left: 0;
-    }
+    }*/
 
     /*.logo img {
         width: 20vw;
@@ -665,14 +665,14 @@ footer {
         width: 70vw; /* Adjust width for smaller screens */
     }
 	
-    .main-title {
+   /* .main-title {
         font-size: 16px;
     }
 
     .first-line,
     .second-line {
         font-size: 40px;
-    }
+    }*/
 
     #who-am-i h2,
     #therapeutic-puppies h2,
