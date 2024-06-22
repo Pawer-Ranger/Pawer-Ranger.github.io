@@ -208,88 +208,81 @@ body {
 
 /* Content - Our Services */
 #our-services {
-    text-align: center; /* Centers the section content */
-    color: black; /* Sets text color */
-    margin-top: -20px; /* Adjusts margin top to position the section */
+    text-align: center;
+    color: black;
+    margin-top: -20px;
 }
 
 #our-services h2 {
-    text-align: center; /* Centers the title */
-    color: #1B7895; /* Sets title color */
-    font-family: "Levenim MT", sans-serif; /* Sets font for the title */
-    font-size: 5.5vw; /* Sets font size for the title */
-    position: relative; /* Positions the title relative to its normal position */
-    left: -1cm; /* Moves the title slightly to the left */
-    margin-bottom: -3vh; /* Reduces the bottom margin to bring the title closer to the content below */
+    text-align: center;
+    color: #1B7895;
+    font-family: "Levenim MT", sans-serif;
+    font-size: 5.5vw;
+    position: relative;
+    left: -1cm;
+    margin-bottom: -3vh;
 }
 
 #our-services .text-box-container {
-    width: 90vw; /* Sets the width of the container */
-    display: flex; /* Uses flexbox for layout */
-    justify-content: center; /* Centers the text boxes horizontally */
-    align-items: flex-start; /* Aligns items at the start of the flex container */
-    margin: 0 auto; /* Centers the container itself */
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
 }
 
 #our-services .text-box {
-    width: 40vw; /* Sets width of text box */
-    height: auto; /* Allows height to adjust to content */
-    position: relative; /* Positions text box relative to its normal position */
-    overflow: hidden; /* Hides overflow content */
-    padding: 20px; /* Adds padding inside the text box */
-    border: 3px solid #8C756A; /* Sets border color and thickness */
-    box-sizing: border-box; /* Ensures padding and border are included in total width and height */
-    margin-top: 20px; /* Adds top margin */
+    width: 40vw;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
+    margin-top: 20px;
 }
 
 #our-services .text-box:first-child {
-    margin-right: 20px; /* Adds space between the two text boxes */
+    margin-right: 20px;
 }
 
 #our-services .text-box::before,
 #our-services .text-box::after {
-    content: ""; /* Adds empty content for decorative frames */
-    position: absolute; /* Positions frames absolutely within the text box */
-    border: 3px solid #8C756A; /* Sets border color and thickness */
-    box-sizing: border-box; /* Ensures padding and border are included in total width and height */
-	width: calc(100% + 6px);
-	height: calc(100% + 6px); 
-    z-index: -1; /* Moves frames behind the text box content */
+    content: "";
+    position: absolute;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    z-index: -1;
 }
 
 #our-services .text-box::before {
-    top: -3px; /* Positions top frame slightly above text box */
-    left: -3px; /* Positions left frame slightly to the left of text box */
-    /*width: calc(100% + 12px); /* Sets frame width to cover text box and extend beyond borders */
-   /* height: calc(100% + 12px); /* Sets frame height to cover text box and extend beyond borders */
-   /* transform: rotate(-2deg); /* Rotates frame slightly for a decorative effect */
+    top: -3px;
+    left: -3px;
 }
 
 #our-services .text-box::after {
-    bottom: -3px; /* Positions bottom frame slightly below text box */
-    right: -3px; /* Positions right frame slightly to the right of text box */
-   /* width: calc(100% + 12px); /* Sets frame width to cover text box and extend beyond borders */
-   /* height: calc(100% + 12px); /* Sets frame height to cover text box and extend beyond borders */
- /*   transform: rotate(2deg); /* Rotates frame slightly for a decorative effect */
+    bottom: -3px;
+    right: -3px;
 }
 
 #our-services .text-box h2 {
-    color: #6D8B85; /* Sets text color */
-    font-size: 5.5vw; /* Sets font size */
-    text-align: center; /* Centers text within the text box */
-    position: relative; /* Positions text relative to its normal position */
-    bottom: 0.5cm; /* Moves text down slightly */
-    margin: 0; /* Removes default margin */
+    color: #6D8B85;
+    font-size: 5.5vw;
+    text-align: center;
+    position: relative;
+    bottom: 0.5cm;
+    margin: 0;
 }
 
 #our-services .text-box p {
-    color: black; /* Sets text color */
-    text-align: justify; /* Justifies text within the text box */
-    position: relative; /* Positions text relative to its normal position */
-    top: -0.5cm; /* Moves text up slightly */
-    margin: 0; /* Removes default margin */
+    color: black;
+    text-align: justify;
+    position: relative;
+    top: -0.5cm;
+    margin: 0;
 }
-
 
 /* Carousel */
 #image-carousel {
@@ -553,6 +546,8 @@ footer {
         display: none;
     }
 }
+
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     body {
@@ -606,26 +601,25 @@ footer {
         align-items: center;
         padding-left: 0;
     }
-
-   
+	
     #our-services h2 {
         font-size: 6vw;
     }
 
     #our-services .text-box {
-        width: 45vw;
-        padding: 10px;
+        width: 40vw; /* Reverted to original width */
+        padding: 20px; /* Reverted to original padding */
     }
 
     #our-services .text-box:first-child {
-        margin-right: 10px;
+        margin-right: 20px; /* Reverted to original margin */
     }
 
     .carousel {
         max-width: 95%;
         border-width: 4px;
     }
-	
+
       .rectangle {
         width: 70vw; /* Adjust width for small screens */
         height: 25vh; /* Adjust height for small screens */
@@ -645,9 +639,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-        .navbar a {
-        margin: 0 2vw;
-        font-size: 4vw;
+   .navbar a {
+        margin: 0 8px;
+        font-size: 14px;
     }
 
     .main-title {
@@ -689,24 +683,25 @@ footer {
         object-fit: cover; /* Maintain aspect ratio */
     }
 	
-	 #our-services h2 {
-        font-size: 8vw;
+    #our-services h2 {
+        font-size: 10vw;
     }
 
     #our-services .text-box {
-        width: 90vw;
-        padding: 5px;
-        margin: 5px 0;
+        width: 90vw; /* Adjusted for smaller screens */
+        margin: 10px auto;
+        padding: 20px; /* Reverted to original padding */
     }
 
     #our-services .text-box:first-child {
-        margin-right: 0;
+        margin-right: 0; /* Adjusted to stack text boxes */
     }
 
     .carousel {
         max-width: 100%;
-        border-width: 3px;
+        border-width: 2px;
     }
+}
 
 
     .service-box img {
