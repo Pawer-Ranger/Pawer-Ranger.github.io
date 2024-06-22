@@ -79,55 +79,58 @@ font-weight: bold;
 
 /* Content - Who am I */
 #who-am-i {
-    text-align: center; /* Adjust text alignment */
+    text-align: center;
     color: black;
     margin-top: -20px;
 }
 
 #who-am-i h2 {
     color: #1B7895;
-    font-family: "Fb Liddar", sans-serif; /* Correct font family */
-    font-size: 6vw; /* Adjust font size for responsiveness */
+    font-family: "Fb Liddar", sans-serif;
+    font-size: 6vw;
     margin-bottom: 10px;
 }
 
 
 /* Text Box */
 #who-am-i .text-box {
-    width: 90vw; /* Adjust width for responsiveness */
-    margin: 0 auto; /* Center the text box horizontally */
+width: 90vw;
+    margin: 0 auto;
     padding: 20px;
     border: 3px solid #8C756A;
     box-sizing: border-box;
-    text-align: justify; /* Justify text inside text box */
+    text-align: justify;
+    position: relative;
+    z-index: 1;
 }
 
 /* Content - Who am I */
 #who-am-i .text-box::before,
 #who-am-i .text-box::after {
-    content: ""; /* Empty content for the rectangles */
-    position: absolute; /* Position absolutely relative to .text-box */
-    background-color: #8C756A; /* Color of the rectangles */
-    width: 100%; /* Full width */
-    height: 50%; /* Half height (two rectangles) */
-    z-index: -1; /* Behind the text */
+    content: "";
+    position: absolute;
+    background-color: #8C756A;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    transform-origin: center center; /* Set rotation origin */
 }
 
 #who-am-i .text-box::before {
-    top: 0; /* Top half */
-    left: 0; /* Left aligned */
-    transform: skew(0deg, -2deg); /* Skew for an angled effect */
+    top: -3px; /* Adjusted to account for border */
+    left: 0;
+    transform: rotate(-2deg); /* Rotate -2 degrees */
 }
 
 #who-am-i .text-box::after {
-    bottom: 0; /* Bottom half */
-    right: 0; /* Right aligned */
-    transform: skew(0deg, 2deg); /* Skew opposite for angled effect */
+    bottom: -3px; /* Adjusted to account for border */
+    right: 0;
+    transform: rotate(2deg); /* Rotate 2 degrees */
 }
 
 #who-am-i .text-box h2 {
     color: #8C756A;
-    font-size: 5.5vw; /* Adjust font size for responsiveness */
+    font-size: 5.5vw;
     text-align: center;
 }
 
@@ -135,7 +138,6 @@ font-weight: bold;
     color: black;
     text-align: justify;
 }
-
 /* Add this CSS to style the circle and the image */
 .circle {
     width: 30vw; /* Set the width of the circle */
@@ -160,51 +162,54 @@ font-weight: bold;
 
 /* Content - Therapeutic Puppies */
 #therapeutic-puppies {
-    text-align: center; /* Adjust text alignment */
+    text-align: center;
     color: black;
     margin-top: -3vh;
 }
 
 #therapeutic-puppies h2 {
     color: #1B7895;
-    font-family: "Fb Liddar", sans-serif; /* Correct font family */
-    font-size: 5.5vw; /* Adjust font size for responsiveness */
-    margin-bottom: 0.5em; /* Adjust margin bottom */
+    font-family: "Fb Liddar", sans-serif;
+    font-size: 5.5vw;
+    margin-bottom: 0.5em;
 }
 
 #therapeutic-puppies .text-box {
-    width: 90vw; /* Adjust width for responsiveness */
-    margin: 0 auto; /* Center the text box horizontally */
+    width: 90vw;
+    margin: 0 auto;
     padding: 20px;
     border: 3px solid #8C756A;
     box-sizing: border-box;
-    text-align: justify; /* Justify text inside text box */
+    text-align: justify;
+    position: relative;
+    z-index: 1;
 }
 #therapeutic-puppies .text-box::before,
 #therapeutic-puppies .text-box::after {
-    content: ""; /* Empty content for the rectangles */
-    position: absolute; /* Position absolutely relative to .text-box */
-    background-color: #8C756A; /* Color of the rectangles */
-    width: 100%; /* Full width */
-    height: 50%; /* Half height (two rectangles) */
-    z-index: -1; /* Behind the text */
+    content: "";
+    position: absolute;
+    background-color: #8C756A;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    transform-origin: center center; /* Set rotation origin */
 }
 
 #therapeutic-puppies .text-box::before {
-    top: 0; /* Top half */
-    left: 0; /* Left aligned */
-    transform: skew(0deg, -2deg); /* Skew for an angled effect */
+    top: -3px; /* Adjusted to account for border */
+    left: 0;
+    transform: rotate(-2deg); /* Rotate -2 degrees */
 }
 
 #therapeutic-puppies .text-box::after {
-    bottom: 0; /* Bottom half */
-    right: 0; /* Right aligned */
-    transform: skew(0deg, 2deg); /* Skew opposite for angled effect */
+    bottom: -3px; /* Adjusted to account for border */
+    right: 0;
+    transform: rotate(2deg); /* Rotate 2 degrees */
 }
 
 #therapeutic-puppies .text-box h2 {
     color: #8C756A;
-    font-size: 5.5vw; /* Adjust font size for responsiveness */
+    font-size: 5.5vw;
     text-align: center;
 }
 
@@ -212,6 +217,7 @@ font-weight: bold;
     color: black;
     text-align: justify;
 }
+
 
 /* Content - Our Services */
 #our-services {
