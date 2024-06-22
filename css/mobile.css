@@ -503,7 +503,7 @@ body {
     max-width: 30hw; /* Limit maximum width */
     /margin: 9vw auto;/ /* Center the form horizontally with top margin */
     font-family: 'Assistant', sans-serif; /* General font */
-	margin-top: 90px;
+	margin-top: 75px;
 }
 
 .form-group {
@@ -512,7 +512,6 @@ body {
     align-items: flex-end; /* Align items to the right */
     margin-bottom: 15px;
     width: 30hw;
-	margin-top: 90px;
 }
 
 .form-group label {
