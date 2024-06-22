@@ -85,6 +85,9 @@ body {
     top: -1vw; /* Adjust top position */
 }
 
+
+
+
 /* Section Styles */
 .section {
     padding: 0.1vw 0vw; /* Padding for sections */
@@ -135,6 +138,7 @@ body {
     text-align: justify; /* Justify text */
     position: relative; /* Relative positioning */
 }
+
 
 #who-am-i .text-box::before,
 #who-am-i .text-box::after {
@@ -190,6 +194,8 @@ body {
     height: 100%; /* Ensure the image fills the circle */
     object-fit: cover; /* Maintain aspect ratio and cover the circle */
 }
+
+
 
 
 
@@ -257,18 +263,16 @@ body {
 #our-services {
     text-align: center; /* Center-align text */
     color: black; /* Text color */
-    margin-top: -20px; /* Negative top margin */
+    margin-top: -3vh; /* Negative top margin */
 }
 
 #our-services h2 {
-    text-align: center; /* Center-align heading */
     color: #1B7895; /* Color of heading */
-    font-family: "Fb Liddar", bold; /* Font family of heading */
-    font-size: 50px; /* Font size of heading */
-    position: relative; /* Relative positioning */
-    left: -1cm; /* Adjust left position */
-    margin-bottom: 10px; /* Bottom margin of heading */
+    font-family: "Fb Liddar", sans-serif; /* Font family of heading */
+    font-size: 5.5vw; /* Font size of heading */
+    margin-bottom: 0.5em; /* Bottom margin of heading */
 }
+
 
 #our-services .text-box-container {
     width: 90vw; /* Width of text box container */
@@ -280,16 +284,15 @@ body {
 }
 
 #our-services .text-box {
-    width: 50vw; /* Width of text box */
-    height: auto; /* Auto height */
-    position: relative; /* Relative positioning */
-    overflow: hidden; /* Hide overflow */
+   width: 90vw; /* Width of text box */
+    margin: 0 auto; /* Center-align horizontally */
     padding: 20px; /* Padding inside the text box */
     border: 3px solid #8C756A; /* Border color and thickness */
     box-sizing: border-box; /* Include padding and border in width */
-    margin-top: 20px; /* Top margin */
-    left: -1.3in; /* Adjust left position */
+    text-align: justify; /* Justify text */
+    position: relative; /* Relative positioning */
 }
+
 
 #our-services .text-box:first-child {
     left: -1.2in; /* Adjust left position for first child */
