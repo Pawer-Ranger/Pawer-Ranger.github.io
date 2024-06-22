@@ -573,66 +573,83 @@ footer {
         display: none;
     }
 }
-
+/* Mobile Styles */
 @media (max-width: 768px) {
+    body {
+        padding-left: 0;
+    }
+
+    .container {
+        padding: 5vw;
+    }
+
+    .navbar {
+        margin-top: 20px;
+    }
+
     .navbar a {
-        font-size: 24px;
-        margin: 0 15px;
+        margin: 0 3vw;
+        font-size: 4vw;
     }
 
     .main-title {
-        font-size: 20px;
+        font-size: 4vw;
     }
 
-    .first-line,
+    .first-line {
+        font-size: 6vw;
+    }
+
     .second-line {
-        font-size: 50px;
-        left: 0;
-        top: 0;
-    }
-
-    #who-am-i h2,
-    #therapeutic-puppies h2,
-    #our-services h2,
-    #contact-us h2 {
-        font-size: 40px;
+        font-size: 6vw;
         left: 0;
     }
 
-    .circle {
-        width: 200px;
-        height: 200px;
+    .logo img {
+        width: 20vw;
+        margin-left: 0;
     }
 
     .text-box {
-        padding: 10px;
-		width: 100vw;
+        width: 90%;
+        margin: 0 auto;
+        left: 0;
     }
 
-    .contact-form {
-        width: 80%;
+    #therapeutic-puppies .text-box {
+        width: 90%;
+        left: 0;
     }
 
-    .form-group {
-        width: 100%;
+    #our-services .text-box-container {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
     }
 
-    .contact-input {
-        width: 100%;
+    #our-services .text-box {
+        width: 90%;
+        left: 0;
+        margin-top: 20px;
     }
 
-    textarea.contact-input {
-        width: 100%;
+    .circle {
+        width: 80vw;
+        height: auto;
+        left: 10%;
+        margin-top: 20px;
     }
 
-    .contact-button {
-        width: 100%;
+    .carousel {
+        max-width: 90%;
+        left: 0;
     }
-	
-	therapeutic-puppies.text-box {
-		width: 100vw
-	}
-	
+
+    .text-box input[type="text"],
+    .text-box input[type="email"],
+    .text-box input[type="submit"] {
+        width: 90%;
+    }
 }
 
 @media (max-width: 480px) {
