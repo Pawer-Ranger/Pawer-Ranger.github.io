@@ -254,197 +254,66 @@ body {
     position: absolute; /* Positions frames absolutely within the text box */
     border: 3px solid #8C756A; /* Sets border color and thickness */
     box-sizing: border-box; /* Ensures padding and border are included in total width and height */
-    z-index: -1; /* Moves frames behind the text box content */
+    width: calc(100% + 6px); /* Sets width to cover the entire box plus border */
+    height: calc(100% + 6px); /* Sets height to cover the entire box plus border */
+    z-index: -1; /* Ensures frames are behind text */
 }
 
 #our-services .text-box::before {
-    top: -6px; /* Positions top frame slightly above text box */
-    left: -6px; /* Positions left frame slightly to the left of text box */
-    width: calc(100% + 12px); /* Sets frame width to cover text box and extend beyond borders */
-    height: calc(100% + 12px); /* Sets frame height to cover text box and extend beyond borders */
-    transform: rotate(-2deg); /* Rotates frame slightly for a decorative effect */
+    top: -3px; /* Positions frame above text box */
+    left: -3px; /* Positions frame to left of text box */
 }
 
 #our-services .text-box::after {
-    bottom: -6px; /* Positions bottom frame slightly below text box */
-    right: -6px; /* Positions right frame slightly to the right of text box */
-    width: calc(100% + 12px); /* Sets frame width to cover text box and extend beyond borders */
-    height: calc(100% + 12px); /* Sets frame height to cover text box and extend beyond borders */
-    transform: rotate(2deg); /* Rotates frame slightly for a decorative effect */
+    bottom: -3px; /* Positions frame below text box */
+    right: -3px; /* Positions frame to right of text box */
 }
 
-#our-services .text-box h2 {
-    color: #6D8B85; /* Sets text color */
-    font-size: 5.5vw; /* Sets font size */
-    text-align: center; /* Centers text within the text box */
-    position: relative; /* Positions text relative to its normal position */
-    bottom: 0.5cm; /* Moves text down slightly */
-    margin: 0; /* Removes default margin */
-}
-
-#our-services .text-box p {
-    color: black; /* Sets text color */
-    text-align: justify; /* Justifies text within the text box */
-    position: relative; /* Positions text relative to its normal position */
-    top: -0.5cm; /* Moves text up slightly */
-    margin: 0; /* Removes default margin */
-}
-
-
-#image-carousel {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.carousel {
-    max-width: 50%; /* Adjust maximum width as needed */
-    margin: 0 auto;
-    overflow: hidden;
-    border: 5px solid  #8C756A;
-    border-radius: 20px;
-    position: relative; /* Ensure this is set to relative */
-    height: 50vh; /* Adjust height of carousel frame */
-    left: -50px; /* Adjust this value to move the carousel to the left */
-}
-
-.carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: none; /* Hide all images by default */
-}
-
-.carousel img.active {
-    display: block; /* Display only the image with 'active' class */
-}
-
-
-/* Content - Contact Us */
-#contact-us {
-    text-align: center; /* Center align text in the contact section */
-    color: black; /* Set text color to black */
-    margin-top: -2vh; /* Reduce the margin-top to bring the section closer to the previous section */
-}
-
-#contact-us h2 {
-    text-align: right; /* Align heading text to the right */
-    color: #1B7895; /* Set heading text color */
-    font-family: "Fb Liddar", bold; /* Set font family and weight */
-    font-size: 6.5vh; /* Set font size */
-    position: relative; /* Set position to relative */
-    margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
-}
-
-/* Icons */
-#contact-us .contact-info {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space items evenly with space between them */
-    align-items: center; /* Align items vertically centered */
-    margin-top: 20px; /* Add top margin */
-    padding: 0 10%; /* Add padding on left and right */
-}
-
-#contact-us .contact-info a {
-    font-family: 'Assistant', sans-serif; /* Set font family */
-    font-size: 24px; /* Set font size */
-    color: black; /* Set text color */
-    text-decoration: none; /* Remove text underline */
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically centered */
-}
-
-#contact-us .contact-info a img {
-    width: 25px; /* Set image width */
-    height: 25px; /* Set image height */
-    margin-right: 8px; /* Add right margin */
-}
-
-/* Form */
-#contact-us .text-box {
-    width: 90%; /* Set text box width to 90% of the container width */
-    height: auto; /* Set text box height to auto */
-    overflow: hidden; /* Hide overflow content */
-    border: 3px solid #8C756A; /* Set border */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    margin: 0 auto; /* Center align text box */
-}
-
-#contact-us .text-box h2 {
-    color: #6D8B85; /* Set heading text color */
-    text-align: center; /* Center align heading text */
-    font-family: "Fb Liddar", bold; /* Set font family and weight */
-    font-size: 5.5vw; /* Set font size */
-}
-
-#contact-us .text-box p {
-    color: black; /* Set paragraph text color */
-    text-align: justify; /* Justify text alignment */
-}
-
-/* Contact form styles */
+/* Contact Form */
 .contact-form {
-    width: 90%; /* Set width of form to 90% of the container width */
-    max-width: 90%; /* Limit maximum width */
-    font-family: 'Assistant', sans-serif; /* Set general font */
-    margin: 0 auto; /* Center align the form */
+    width: 70%; /* Adjusted width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding inside the form */
+    background-color: #f2f2f2; /* Light gray background color */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
 }
 
-.form-group {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items in a column */
-    align-items: flex-end; /* Align items to the right */
-    margin-bottom: 15px; /* Add bottom margin */
-    width: 100%; /* Set width of form group to 100% of its parent */
+.contact-form h2 {
+    text-align: center; /* Center align the form title */
+    color: #333; /* Dark gray color for the title */
+    margin-bottom: 20px; /* Add space below the title */
 }
 
-.form-group label {
-    margin-bottom: 5px; /* Add bottom margin */
-    color: #6D8B85; /* Set label text color */
-    font-weight: bold; /* Set font weight to bold */
-    text-align: right; /* Align label text to the right */
-    width: 100%; /* Ensure labels take full width */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; /* Make input fields and textarea full width */
+    padding: 10px; /* Add padding inside input fields and textarea */
+    margin-bottom: 15px; /* Add space between fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 3px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in total width */
 }
 
-.contact-input {
-    width: 100%; /* Set width of input fields to 100% of its parent */
-    padding: 10px; /* Add padding */
-    font-size: 1em; /* Set font size */
-    border: 2px solid #DBEFE1; /* Set border */
-    border-radius: 5px; /* Set border radius */
-    direction: rtl; /* Set text direction to right-to-left */
-    margin-bottom: 10px; /* Add bottom margin */
+.contact-form textarea {
+    height: 150px; /* Set height for textarea */
 }
 
-.contact-input:focus {
-    border-color: #666; /* Change border color on focus */
-}
-
-textarea.contact-input {
-    width: 100%; /* Set width of textarea to 100% of its parent */
-    height: 10vh; /* Set height of textarea */
-    resize: vertical; /* Allow vertical resize */
-    direction: rtl; /* Set text direction to right-to-left */
-}
-
-.contact-button {
-    padding: 1vw 1vh; /* Add padding */
-    font-family: 'Assistant', sans-serif; /* Set font family */
-    font-size: 1.5em; /* Set font size */
-    color: #fff; /* Set text color */
-    background-color: #6D8B85; /* Set background color */
+.contact-form input[type="submit"] {
+    background-color: #4CAF50; /* Green background color for submit button */
+    color: white; /* White text color */
+    padding: 12px 20px; /* Add padding inside the button */
     border: none; /* Remove border */
-    width: 50%; /* Set width of submit button to 50% of the container width */
-    border-radius: 5px; /* Set border radius */
-    cursor: pointer; /* Set cursor to pointer */
-    margin-top: 1.5vh; /* Add top margin */
-    display: block; /* Make the button a block element */
-    margin-left: auto; /* Center the button horizontally */
-    margin-right: auto; /* Center the button horizontally */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    font-size: 16px; /* Increase font size */
 }
 
-.contact-button:hover {
-    background-color: #575757; /* Change background color on hover */
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green background color on hover */
 }
+
 
 .success-message {
     text-align: center; /* Center align text */
