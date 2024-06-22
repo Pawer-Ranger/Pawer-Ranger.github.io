@@ -221,43 +221,42 @@ font-weight: bold;
 
 /* Content - Our Services */
 #our-services {
-    text-align:right; /* Aligns section text to the right */
-    color: black; /* Sets text color to black */
-    margin-top: -20px; /* Reduces the margin-top to bring the section closer to the previous section */
+    text-align: center; /* Centers the section content */
+    color: black; /* Sets text color */
+    margin-top: -20px; /* Adjusts margin top to position the section */
 }
 
 #our-services h2 {
-    text-align: Center; /* Aligns title text to the right */
+    text-align: center; /* Centers the title */
     color: #1B7895; /* Sets title color */
-    font-family: "Fb Liddar", bold; /* Sets font for the title */
-    font-size: 50px; /* Sets font size for the title */
+    font-family: "Fb Liddar", sans-serif; /* Sets font for the title */
+    font-size: 5.5vw; /* Sets font size for the title */
     position: relative; /* Positions the title relative to its normal position */
     left: -1cm; /* Moves the title slightly to the left */
     margin-bottom: -3vh; /* Reduces the bottom margin to bring the title closer to the content below */
 }
 
 #our-services .text-box-container {
-	width: 90vw;
+    width: 90vw; /* Sets the width of the container */
     display: flex; /* Uses flexbox for layout */
-    justify-content: space-between; /* Distributes space between text boxes */
+    justify-content: center; /* Centers the text boxes horizontally */
+    align-items: flex-start; /* Aligns items at the start of the flex container */
     margin-top: 20px; /* Adds top margin */
-    padding-left: 1.5in; /* Adds left padding */
 }
 
 #our-services .text-box {
-    width: 50vw; /* Sets width of text box */
+    width: 40vw; /* Sets width of text box */
     height: auto; /* Allows height to adjust to content */
     position: relative; /* Positions text box relative to its normal position */
     overflow: hidden; /* Hides overflow content */
     padding: 20px; /* Adds padding inside the text box */
     border: 3px solid #8C756A; /* Sets border color and thickness */
     box-sizing: border-box; /* Ensures padding and border are included in total width and height */
-    left: -1.3in; /* Moves the text box closer to the right */
     margin-top: 20px; /* Adjust the value as needed */
 }
 
 #our-services .text-box:first-child {
-    left: -1.2in; /* Further adjusts positioning of the first text box */
+    margin-right: 20px; /* Adds space between the two text boxes */
 }
 
 #our-services .text-box::before,
@@ -283,7 +282,7 @@ font-weight: bold;
     color: #6D8B85; /* Sets color of the title text */
     text-align: center; /* Centers the title text */
     font-family: "Fb Liddar", bold; /* Sets font for the title */
-    font-size: 40px; /* Sets font size for the title */
+    font-size: 5.5vw; /* Sets font size for the title */
     margin-bottom: 10px; /* Adjusts the bottom margin to raise the title higher */
     position: relative; /* Positions the title relative to its normal position */
     top: -47px; /* Raises the title higher */
@@ -293,8 +292,6 @@ font-weight: bold;
 #our-services .text-box p {
     color: black; /* Sets color of paragraph text */
     text-align: justify; /* Justifies the paragraph text */
-	
-	
 }
 
 #image-carousel {
