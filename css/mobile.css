@@ -132,13 +132,13 @@ body {
 
 /* Circle */
 .circle {
-    width: 50vw; /* Set the width of the circle */
-    height: 60vh; /* Set the height of the circle */
+    width: 70vw; /* Set the width of the circle */
+    height: 80vh; /* Set the height of the circle */
     background-color: transparent; /* Set background color */
     border: 5px solid #8C756A; /* Set border color and thickness */
     border-radius: 50%; /* Make it a circle */
     position: Center; /* Positioning */
-    left: 30%; /* Position it in the center horizontally */
+    left: -80%; /* Position it in the center horizontally */
     transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
     overflow: hidden; /* Hide overflow */
 }
