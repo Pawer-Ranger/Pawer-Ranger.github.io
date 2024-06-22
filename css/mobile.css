@@ -81,7 +81,7 @@ font-weight: bold;
 #who-am-i {
     text-align: center; /* Adjust text alignment */
     color: black;
-    margin-top: -20px; /* Fine-tune margin */
+    margin-top: -20px;
 }
 
 #who-am-i h2 {
@@ -91,14 +91,15 @@ font-weight: bold;
     margin-bottom: 10px;
 }
 
+
 /* Text Box */
 #who-am-i .text-box {
-    position: relative; /* Ensure position relative for absolute positioning */
     width: 90vw; /* Adjust width for responsiveness */
     margin: 0 auto; /* Center the text box horizontally */
-    padding: 20px; /* Padding for content inside the text box */
+    padding: 20px;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
     text-align: justify; /* Justify text inside text box */
-    overflow: hidden; /* Hide overflow content */
 }
 
 #who-am-i .text-box::before,
@@ -122,7 +123,6 @@ font-weight: bold;
     right: 0; /* Right aligned */
     transform: skew(0deg, 2deg); /* Skew opposite for angled effect */
 }
-
 #who-am-i .text-box h2 {
     color: #8C756A;
     font-size: 5.5vw; /* Adjust font size for responsiveness */
@@ -133,7 +133,6 @@ font-weight: bold;
     color: black;
     text-align: justify;
 }
-
 
 /* Add this CSS to style the circle and the image */
 .circle {
@@ -157,12 +156,11 @@ font-weight: bold;
 
 
 
-
 /* Content - Therapeutic Puppies */
 #therapeutic-puppies {
     text-align: center; /* Adjust text alignment */
     color: black;
-    margin-top: -3vh; /* Fine-tune margin */
+    margin-top: -3vh;
 }
 
 #therapeutic-puppies h2 {
@@ -173,13 +171,14 @@ font-weight: bold;
 }
 
 #therapeutic-puppies .text-box {
-    position: relative; /* Ensure position relative for absolute positioning */
     width: 90vw; /* Adjust width for responsiveness */
     margin: 0 auto; /* Center the text box horizontally */
-    padding: 20px; /* Padding for content inside the text box */
+    padding: 20px;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
     text-align: justify; /* Justify text inside text box */
-    overflow: hidden; /* Hide overflow content */
 }
+
 
 #therapeutic-puppies .text-box::before,
 #therapeutic-puppies .text-box::after {
