@@ -274,7 +274,7 @@ body {
 }
 
 #our-services .text-box h2 {
-    color: #8C756A; /* Sets text color */
+    color: #6D8B85; /* Sets text color */
     font-size: 5.5vw; /* Sets font size */
     text-align: center; /* Centers text within the text box */
     position: relative; /* Positions text relative to its normal position */
@@ -347,7 +347,7 @@ body {
 
 #contact-us .contact-info a {
     font-family: 'Assistant', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     color: black;
     text-decoration: none;
     display: flex;
@@ -364,7 +364,7 @@ body {
 
 /*form*/
 #contact-us .text-box {
-    width: 12vw;
+    width: 9vw;
     height: auto;
     position: Center;
     overflow: hidden;
