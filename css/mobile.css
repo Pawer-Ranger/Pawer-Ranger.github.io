@@ -129,16 +129,19 @@ body {
     color: black;
     text-align: justify;
 }
+
+
 /* Rectangle */
 .rectangle {
-    width: 80vw; /* Adjust width to be slightly narrower than the text box */
-    max-width: 90%; /* Ensure it doesn't exceed 90% of the viewport width */
-    height: 30vh; /* Adjust height */
+    width: 60vw; /* Adjust width for different screen sizes */
+    height: 30vh; /* Adjust height for different screen sizes */
     background-color: transparent; /* Set background color */
-    border: 3px solid #8C756A; /* Set border color and thickness */
+    border: 5px solid #8C756A; /* Set border color and thickness */
     border-radius: 10px; /* Adjust border radius for rounded corners if needed */
     position: relative; /* Positioning */
-    margin: 20px auto; /* Center horizontally with top and bottom margin */
+    left: 50%; /* Adjust horizontal position */
+    transform: translateX(-50%); /* Center horizontally */
+    margin: 10px auto; /* Reduce top margin */
     overflow: hidden; /* Hide overflow */
 }
 
