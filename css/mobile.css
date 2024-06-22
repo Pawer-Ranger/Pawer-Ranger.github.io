@@ -60,13 +60,15 @@ body {
 
 .logo {
     margin-right: auto;
-    top: 0vw; 
+    margin-top: -15px; /* Adjusted position to raise the logo slightly */
 }
 
 .logo img {
-    width: 45vw; /* Enlarge the logo */
-	margin-top: 0vw;
+    width: 45vw; /* Keep the width proportional to the viewport */
     height: auto;
+    display: block; /* Ensure the logo image behaves as a block element */
+    margin-left: auto; /* Center the logo horizontally */
+    margin-right: auto;
 }
 
 .bold-text {
