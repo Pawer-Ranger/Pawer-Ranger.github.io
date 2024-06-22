@@ -132,21 +132,23 @@ body {
 
 /* Circle */
 .circle {
-    width: 70vw; /* Set the width of the circle */
-    height: 80vh; /* Set the height of the circle */
+    width: 30vw; /* Adjust width of the circle relative to viewport width */
+    height: 30vw; /* Maintain a square aspect ratio */
+    max-width: 150px; /* Limit maximum width */
+    max-height: 150px; /* Limit maximum height */
     background-color: transparent; /* Set background color */
     border: 5px solid #8C756A; /* Set border color and thickness */
     border-radius: 50%; /* Make it a circle */
-    position: Center; /* Positioning */
-    left: -80%; /* Position it in the center horizontally */
-    transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
-    overflow: hidden; /* Hide overflow */
+    position: relative; /* Positioning */
+    margin: 20px auto; /* Center align horizontally with top margin */
+    text-align: center; /* Center align content inside circle */
 }
 
 .circle img {
     width: 100%; /* Ensure the image fills the circle */
-    height: 100%; /* Ensure the image fills the circle */
-    object-fit: cover; /* Maintain aspect ratio and cover the circle */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the circle */
+    border-radius: 50%; /* Maintain circle shape */
 }
 
 
@@ -532,11 +534,12 @@ footer {
     }
 
     .circle {
-        width: 30vw;
-        height: 50vh;
-        top: 100%;
+        width: 20vw; /* Adjust dimensions for tablets */
+        height: 20vw; /* Maintain aspect ratio */
+        max-width: 120px; /* Limit maximum width */
+        max-height: 120px; /* Limit maximum height */
     }
-
+	
     .service-box {
         flex-direction: column;
         align-items: flex-start;
@@ -611,13 +614,13 @@ footer {
         margin-top: 20px;
     }
 
-    .circle {
-        width: 80vw;
-        height: auto;
-        left: 10%;
-        margin-top: 20px;
+     .circle {
+        width: 40vw; /* Adjust dimensions for phones */
+        height: 40vw; /* Maintain aspect ratio */
+        max-width: 100px; /* Limit maximum width */
+        max-height: 100px; /* Limit maximum height */
     }
-
+	
     .carousel {
         max-width: 90%;
         left: 0;
@@ -661,11 +664,14 @@ footer {
         margin-bottom: 20px;
     }
 
-    .circle {
-        width: 150px;
-        height: 150px;
+      .circle {
+        width: 60vw; /* Adjust width relative to viewport width */
+        height: 60vw; /* Maintain aspect ratio */
+        max-width: 100px; /* Limit maximum width */
+        max-height: 100px; /* Limit maximum height */
+        margin: 10px auto; /* Center align horizontally with smaller top margin */
     }
-
+	
     .service-box img {
         width: 150px;
     }
