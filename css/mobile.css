@@ -37,22 +37,25 @@ body {
     color: #1B7895; /* Set the color of the main title */
     text-align: center; /* Center-align the title */
 }
-.first-line {
-    font-family: "Bernard MT Condensed", bold; /* Set font family for the first line */
-    font-size: 8vh; /* Decreased font size */
-    font-weight: bold; /* Make the first line bold */
-    position: relative; /* Set relative position for absolute positioning */
-    left: 0vw; /* Adjust left position */
-    top: -0.3vw; /* Move the text up by 0.3vw */
-}
+
+/* title of the page */
+/*.first-line {
+   /* font-family: "Bernard MT Condensed", bold; /* Set font family for the first line */
+    /*font-size: 8vh; /* Decreased font size */
+    /*font-weight: bold; /* Make the first line bold */
+    /*position: relative; /* Set relative position for absolute positioning */
+    /*left: 0vw; /* Adjust left position */
+    /*top: -0.3vw;  /* Move the text up by 0.3vw */ 
+/*} 
 
 .second-line {
     font-family: "Fb Liddar", cursive; /* Set font family for the second line */
-    font-size: 8vh; /* Restore the original font size */
-    position: relative; /* Set relative position for absolute positioning */
-    left: -9.8vw; /* Adjust left position */
-    top: -1vw; /* Move the text up by 1vw */
-}
+  /*  font-size: 8vh; /* Restore the original font size */
+    /*position: relative; /* Set relative position for absolute positioning */
+    /*left: -9.8vw; /* Adjust left position */
+    /*top: -1vw; /* Move the text up by 1vw */
+/*}*/
+ 
 
 .section {
     padding: 0.1vw 0vw; /* Decrease padding */
