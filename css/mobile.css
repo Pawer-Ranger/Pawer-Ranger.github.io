@@ -79,32 +79,29 @@ font-weight: bold;
 
 /* Content - Who am I */
 #who-am-i {
-    text-align: right; /* Set text alignment to right */
-    color: black; /* Set text color to black */
-    margin-top: -20px; /* Reduce the margin-top to bring the section closer to the previous section */
+    text-align: center; /* Adjust text alignment */
+    color: black;
+    margin-top: -20px;
 }
 
 #who-am-i h2 {
-    text-align: right; /* Set text alignment to right */
-    color: #1B7895; /* Set title color to #1B7895 */
-    font-family: "Fb Liddar", bold; /* Set font for the first line */
-    font-size: 65px; /* Increase font size */
-    position: relative; /* Make positioning relative */
-    left: -1cm; /* Move the title slightly to the left */
-    margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
+    color: #1B7895;
+    font-family: "Fb Liddar", sans-serif; /* Correct font family */
+    font-size: 6vw; /* Adjust font size for responsiveness */
+    margin-bottom: 10px;
 }
+
 
 /* Text Box */
-.text-box {
-    width: 15cm; /* Set width to 15cm */
-    height: auto; /* Let the height adjust to content */
-    position: relative; /* Set position to relative for absolute positioning of frames */
-    margin: 0 auto; /* Center the text box horizontally */
-    overflow: hidden; /* Hide overflow content */
-    padding: 20px; /* Add padding inside the text box */
-    left: 7cm; /* Move the text box 4 centimeters to the right */
-}
 
+#who-am-i .text-box {
+    width: 90vw; /* Adjust width for responsiveness */
+    margin: 0 auto; /* Center the text box horizontally */
+    padding: 20px;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
+    text-align: justify; /* Justify text inside text box */
+}
 .text-box::before, .text-box::after {
     content: "";
     position: absolute;
@@ -126,17 +123,18 @@ font-weight: bold;
     transform: rotate(2deg); /* Apply a small angle to the second frame */
 }
 
-.text-box h2 {
-    color: #8C756A; /* Set the color of the title text */
-    text-align: center; /* Center-align the title */
-    font-family: "Fb Liddar", bold; /* Set font for the first line */
-    font-size: 40px; /* Increase font size */
+
+#who-am-i .text-box h2 {
+    color: #8C756A;
+    font-size: 5.5vw; /* Adjust font size for responsiveness */
+    text-align: center;
 }
 
-.text-box p {
-    color: black; /* Set the color of the paragraph text */
-    text-align: justify; /* Justify the paragraph text */
+#who-am-i .text-box p {
+    color: black;
+    text-align: justify;
 }
+
 
 /* Add this CSS to style the circle and the image */
 .circle {
@@ -158,31 +156,29 @@ font-weight: bold;
     object-fit: cover; /* Maintain aspect ratio and cover the circle */
 }
 
+
+
 /* Content - Therapeutic Puppies */
 #therapeutic-puppies {
-    text-align: right; /* Set text alignment to right */
-    color: black; /* Set text color to black */
-    margin-top: -3vh; /* Reduce the margin-top to bring the section closer to the previous section */
+    text-align: center; /* Adjust text alignment */
+    color: black;
+    margin-top: -3vh;
 }
 
 #therapeutic-puppies h2 {
-    text-align: right; /* Set text alignment to right */
-    color: #1B7895; /* Set title color to #1B7895 */
-    font-family: "Fb Liddar", bold; /* Set font for the first line */
-    font-size: 6.5vh; /* Increase font size */
-    position: relative; /* Make positioning relative */
-    left: -0.9vw; /* Move the title slightly to the left */
-    margin-bottom: 0.1vh; /* Reduce the bottom margin to bring the title closer to the content below */
+    color: #1B7895;
+    font-family: "Fb Liddar", sans-serif; /* Correct font family */
+    font-size: 5.5vw; /* Adjust font size for responsiveness */
+    margin-bottom: 0.5em; /* Adjust margin bottom */
 }
 
 #therapeutic-puppies .text-box {
-    width: 100vw; /* Increase the width to 20cm */
-    height: auto; /* Let the height adjust to content */
-    position: relative; /* Set position to relative for absolute positioning of frames */
+    width: 90vw; /* Adjust width for responsiveness */
     margin: 0 auto; /* Center the text box horizontally */
-    overflow: hidden; /* Hide overflow content */
-    padding: 20px; /* Add padding inside the text box */
-    left: -1cm; /* Move the text box slightly to the left */
+    padding: 20px;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
+    text-align: justify; /* Justify text inside text box */
 }
 
 #therapeutic-puppies .text-box::before,
@@ -207,17 +203,17 @@ font-weight: bold;
     transform: rotate(2deg); /* Apply a small angle to the second frame */
 }
 
+
 #therapeutic-puppies .text-box h2 {
-    color: #8C756A; /* Set the color of the title text */
-    text-align: center; /* Center-align the title */
+    color: #8C756A;
+    font-size: 5.5vw; /* Adjust font size for responsiveness */
+    text-align: center;
 }
 
 #therapeutic-puppies .text-box p {
-    color: black; /* Set the color of the paragraph text */
-    text-align: justify; /* Justify the paragraph text */
+    color: black;
+    text-align: justify;
 }
-
-
 
 
 /* Content - Our Services */
