@@ -14,7 +14,6 @@ body {
     padding: 2vw 1.5in;
     text-align: center;
 }
-
 .navbar {
     display: flex;
     justify-content: center;
@@ -33,36 +32,146 @@ body {
     transition: color 0.3s;
 }
 
+/*.main-title {
+    /*font-size: 2vh; /* Decreased font size */
+    /*color: #1B7895; /* Set the color of the main title */
+    /*text-align: center; /* Center-align the title */
+/*}*/
+
+/* title of the page */
+/*.first-line {
+   /* font-family: "Bernard MT Condensed", bold; /* Set font family for the first line */
+    /*font-size: 8vh; /* Decreased font size */
+    /*font-weight: bold; /* Make the first line bold */
+    /*position: relative; /* Set relative position for absolute positioning */
+    /*left: 0vw; /* Adjust left position */
+    /*top: -0.3vw;  /* Move the text up by 0.3vw */ 
+/*} 
+
+.second-line {
+    font-family: "Fb Liddar", cursive; /* Set font family for the second line */
+  /*  font-size: 8vh; /* Restore the original font size */
+    /*position: relative; /* Set relative position for absolute positioning */
+    /*left: -9.8vw; /* Adjust left position */
+    /*top: -1vw; /* Move the text up by 1vw */
+/*}*/
+ 
+
+.section {
+    padding: 0.1vw 0vw; /* Decrease padding */
+}
+
+.logo {
+    margin-right: auto;
+    margin-top: -90px; /* Adjusted position to raise the logo slightly */
+}
+
+.logo img {
+    width: 45vw; /* Keep the width proportional to the viewport */
+    height: auto;
+    display: block; /* Ensure the logo image behaves as a block element */
+    margin-left: auto; /* Center the logo horizontally */
+    margin-right: auto;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+/* Content - Who am I */
+#who-am-i {
+    text-align: center;
+    color: black;
+    margin-top: -20px;
+}
+
+#who-am-i h2 {
+    color: #1B7895;
+    font-family: "Levenim MT";
+    font-size: 6vw;
+    margin-bottom: 10px;
+}
+
+/* Text Box */
+#who-am-i .text-box {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #8C756A;
+    box-sizing: border-box;
+    text-align: justify;
+    position: relative;
+}
+
+#who-am-i .text-box::before,
+#who-am-i .text-box::after {
+    content: "";
+    position: absolute;
+    background-color: #8C756A;
+    width: calc(100% + 6px); /* Adjusted width to cover the border */
+    height: 50%;
+    z-index: -1;
+    transform-origin: center top;
+}
+
+#who-am-i .text-box::before {
+    top: -3px; /* Move up by half of the border width */
+    left: -3px; /* Move left by half of the border width */
+    transform: rotate(-2deg);
+}
+
+#who-am-i .text-box::after {
+    bottom: -3px; /* Move down by half of the border width */
+    right: -3px; /* Move right by half of the border width */
+    transform: rotate(2deg);
+}
+
+#who-am-i .text-box h2 {
+    color: #8C756A;
+    font-size: 5.5vw;
+    text-align: center;
+}
+
+#who-am-i .text-box p {
+    color: black;
+    text-align: justify;
+}
+
+.rectangle {
+    width: 80vw; /* Adjust width to be slightly narrower than the text box */
+    max-width: 90%; /* Ensure it doesn't exceed 90% of the viewport width */
+    height: 30vh; /* Adjust height */
+    background-color: transparent; /* Set background color */
+    border: 3px solid #8C756A; /* Set border color and thickness */
+    border-radius: 10px; /* Adjust border radius for rounded corners if needed */
+    position: relative; /* Positioning */
+    margin: 0 auto; /* Center horizontally with top and bottom margin */
+    overflow: hidden; /* Hide overflow */
+}
+
+.rectangle img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
+
 /* Content - Therapeutic Puppies */
 #therapeutic-puppies {
     text-align: center;
     color: black;
-    margin-top: 50px; /* Adjusted upper distance */
+    margin-top: 50px; /* Increase upper distance between title and rectangle/image */
 }
 
 #therapeutic-puppies .rectangle {
-    width: 80vw; /* Adjusted width */
-    max-width: 90%; /* Ensure it doesn't exceed 90% of the viewport width */
-    height: 30vh; /* Adjusted height */
-    background-color: transparent;
-    border: 3px solid #8C756A;
-    border-radius: 10px;
-    position: relative;
-    margin: 0 auto 25px; /* Center horizontally with margin at the bottom */
-    overflow: hidden;
-}
-
-#therapeutic-puppies .rectangle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin-top: 30px; /* Increase distance between rectangle/image and text box */
 }
 
 #therapeutic-puppies h2 {
     color: #1B7895;
     font-family: "Levenim MT";
     font-size: 5.5vw;
-    margin-top: 40px; /* Adjusted distance */
 }
 
 #therapeutic-puppies .text-box {
@@ -80,21 +189,21 @@ body {
     content: "";
     position: absolute;
     background-color: #8C756A;
-    width: calc(100% + 6px);
+    width: calc(100% + 6px); /* Adjusted width to cover the border */
     height: 50%;
     z-index: -1;
     transform-origin: center top;
 }
 
 #therapeutic-puppies .text-box::before {
-    top: -3px;
-    left: -3px;
+    top: -3px; /* Move up by half of the border width */
+    left: -3px; /* Move left by half of the border width */
     transform: rotate(-2deg);
 }
 
 #therapeutic-puppies .text-box::after {
-    bottom: -3px;
-    right: -3px;
+    bottom: -3px; /* Move down by half of the border width */
+    right: -3px; /* Move right by half of the border width */
     transform: rotate(2deg);
 }
 
@@ -109,11 +218,26 @@ body {
     text-align: justify;
 }
 
+
 /* Content - Our Services */
 #our-services {
     text-align: center;
     color: black;
-    margin-top: 50px; /* Adjusted upper distance */
+    margin-top: 50px; /* Increase upper distance between title and text box */
+}
+
+#our-services .text-box-container {
+    margin-top: 30px; /* Increase distance between text box and gallery */
+}
+
+#our-services h2 {
+    text-align: center;
+    color: #1B7895;
+    font-family: "Levenim MT";
+    font-size: 5.5vw;
+    position: relative;
+    left: -1cm;
+    margin-bottom: -3vh;
 }
 
 #our-services .text-box-container {
@@ -121,7 +245,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 auto 30px; /* Center horizontally with margin at the bottom */
+    margin: 0 auto;
 }
 
 #our-services .text-box {
@@ -132,7 +256,7 @@ body {
     padding: 20px;
     border: 3px solid #8C756A;
     box-sizing: border-box;
-    margin-top: 20px; /* Adjusted distance */
+    margin-top: 20px;
 }
 
 #our-services .text-box:first-child {
@@ -164,18 +288,23 @@ body {
     color: #6D8B85;
     font-size: 5.5vw;
     text-align: center;
-	 margin-top: 40px;
+    position: relative;
+    bottom: 0.5cm;
+    margin: 0;
 }
 
 #our-services .text-box p {
     color: black;
     text-align: justify;
+    position: relative;
+    top: -0.5cm;
+    margin: 0;
 }
 
 /* Carousel */
 #image-carousel {
     text-align: center;
-    margin-top: 50px; /* Adjusted upper distance */
+    margin-top: 50px;
 }
 
 .carousel {
@@ -199,68 +328,177 @@ body {
     display: block;
 }
 
+
 /* Content - Contact Us */
 #contact-us {
     text-align: center;
     color: black;
-    margin-top: 50px; /* Adjusted upper distance */
+    margin-top: 50px; /* Increase upper distance between title and gallery */
 }
 
 #contact-us #image-carousel {
-    margin-top: 40px; /* Adjusted distance */
+    margin-top: 30px; /* Increase distance between gallery and contact form */
 }
 
 #contact-us h2 {
-    text-align: center;
-    color: #1B7895;
-    font-family: "Levenim MT";
-    font-size: 6.5vh;
-    position: relative;
-    margin-top: 40;
+    text-align: center; /* Align heading text to the right */
+    color: #1B7895; /* Set heading text color */
+    font-family: "Levenim MT"; /* Set font family and weight */
+    font-size: 6.5vh; /* Set font size */
+    position: relative; /* Set position to relative */
+    margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
 }
 
+/* Icons */
 #contact-us .contact-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px; /* Adjusted distance */
-    padding: 0 10%;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly with space between them */
+    align-items: center; /* Align items vertically centered */
+    margin-top: 20px; /* Add top margin */
+    padding: 0 10%; /* Add padding on left and right */
 }
 
 #contact-us .contact-info a {
-    font-family: 'Assistant', sans-serif;
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    font-family: 'Assistant', sans-serif; /* Set font family */
+    font-size: 20px; /* Set font size */
+    color: black; /* Set text color */
+    text-decoration: none; /* Remove text underline */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically centered */
 }
 
 #contact-us .contact-info a img {
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
+    width: 25px; /* Set image width */
+    height: 25px; /* Set image height */
+    margin-right: 8px; /* Add right margin */
 }
 
+/* Form */
 #contact-us .text-box {
-    width: 50vw;
-    height: auto;
-    overflow: hidden;
-    border: 3px solid #8C756A;
-    box-sizing: border-box;
-    margin: 0 auto;
+    width: 50hw; /* Set text box width to 90% of the container width */
+    height: auto; /* Set text box height to auto */
+    overflow: hidden; /* Hide overflow content */
+    border: 3px solid #8C756A; /* Set border */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 0 auto; /* Center align text box */
 }
 
 #contact-us .text-box h2 {
-    color: #6D8B85;
-    text-align: center;
-    font-family: "Levenim MT";
-    font-size: 5.5vw;
+    color: #6D8B85; /* Set heading text color */
+    text-align: center; /* Center align heading text */
+    font-family: "Levenim MT"; /* Set font family and weight */
+    font-size: 5.5vw; /* Set font size */
 }
 
 #contact-us .text-box p {
-    color: black;
-    text-align: justify;
+    color: black; /* Set paragraph text color */
+    text-align: justify; /* Justify text alignment */
+}
+/* Contact form styles */
+.contact-form {
+    width: 30hw; /* Set width of form */
+    max-width: 30hw; /* Limit maximum width */
+    /margin: 9vw auto;/ /* Center the form horizontally with top margin */
+    font-family: 'Assistant', sans-serif; /* General font */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+    margin-bottom: 15px;
+    width: 30hw;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #6D8B85;
+    font-weight: bold;
+    text-align: right; /* Align label text to the right */
+    width: 30hw; /* Ensure labels take full width */
+}
+
+.contact-input {
+    width: 70%; /* Adjust width of input fields */
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #DBEFE1;
+    border-radius: 5px;
+    direction: rtl; /* Set text direction to right-to-left */
+    margin-bottom: 10px; /* Add margin below input fields */
+}
+
+.contact-input:focus {
+    border-color: #666;
+}
+
+textarea.contact-input {
+    width: 30hw; /* Adjust width of textarea */
+    height: 10vh;
+    resize: vertical;
+    direction: rtl; /* Set text direction to right-to-left */
+}
+.contact-button {
+    padding: 1vw 1vh;
+	font-family: 'Assistant', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #6D8B85;
+    border: none; /* Remove border to ensure a cleaner look */
+	width: 30hw;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5vh; /* Add margin to separate from form */
+}
+
+.contact-button:hover {
+    background-color: #575757;
+}
+
+
+.success-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #6D8B85;
+    border-radius: 5px;
+    background-color: #DBEFE1;
+    color: #6D8B85;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.2em;
+}
+
+.contact-button:hover {
+    background-color: #575757; /* Change background color on hover */
+}
+
+.success-message {
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Add top margin */
+    padding: 10px; /* Add padding */
+    border: 2px solid #6D8B85; /* Set border */
+    border-radius: 5px; /* Set border radius */
+    background-color: #DBEFE1; /* Set background color */
+    color: #6D8B85; /* Set text color */
+    font-family: 'Assistant', sans-serif; /* Set font family */
+    font-size: 1.2em; /* Set font size */
+}
+
+header {
+    margin-top: 0; /* Remove top margin */
+}
+
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1em;
+    color: #6D8B85;
+}
+
+
+.footer p {
+    margin: 0;
 }
 
 /* Media Queries for Responsiveness */
@@ -273,51 +511,86 @@ body {
         padding: 20px 1in;
     }
 
-    .navbar a {
+     .navbar a {
         font-size: 2.5vw;
     }
 
+    /*.main-title {
+        font-size: 28px;
+    }
+
+    .first-line {
+        font-size: 80px;
+        left: 0;
+    }
+
+    .second-line {
+        font-size: 90px;
+        left: -50px;
+    }*/
+
+    #who-am-i h2,
     #therapeutic-puppies h2,
     #our-services h2,
     #contact-us h2 {
         font-size: 50px;
+        left: 0;
     }
-
+	
     #therapeutic-puppies {
-        margin-top: 40px;
+        margin-top: 40px; /* Adjusted for medium screens */
     }
 
     #therapeutic-puppies .rectangle {
-        margin-top: 25px;
+        margin-top: 25px; /* Adjusted for medium screens */
+    }
+    .text-box {
+        width: 100%;
+        left: 0;
     }
 
-    .rectangle {
-        width: 70vw;
-        height: 25vh;
-        margin: 10px auto;
+     .rectangle {
+        width: 70vw; /* Adjust width for medium screens */
+        height: 25vh; /* Adjust height for medium screens */
+        margin: 10px auto; /* Center the rectangle horizontally with top and bottom margin */
     }
-
-    #our-services {
-        margin-top: 40px;
+	 #our-services {
+        margin-top: 40px; /* Adjusted for medium screens */
     }
 
     #our-services .text-box-container {
-        margin-top: 25px;
+        margin-top: 25px; /* Adjusted for medium screens */
+    }
+	
+    .service-box {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .carousel {
+    .service-box img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .text-box::before, .text-box::after {
+        display: none;
+    }
+	
+	 .carousel {
         max-width: 80%;
     }
-
-    #contact-us {
-        margin-top: 40px;
+	
+	 #contact-us {
+        margin-top: 40px; /* Adjusted for medium screens */
     }
 
     #contact-us #image-carousel {
-        margin-top: 25px;
+        margin-top: 25px; /* Adjusted for medium screens */
     }
 }
 
+
+/* Mobile Styles */
 @media (max-width: 768px) {
     body {
         padding-left: 0;
@@ -326,8 +599,8 @@ body {
     .container {
         padding: 5vw;
     }
-
-    .navbar {
+	
+   .navbar {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: flex-start;
@@ -335,7 +608,7 @@ body {
 
     .logo {
         order: 1;
-        margin-top: -100px;
+        margin-top: -100px; /* Adjust raised position for smaller screens */
         margin-bottom: 10px;
     }
 
@@ -348,72 +621,200 @@ body {
     .navbar a:nth-child(4) {
         margin-top: 10px;
     }
+	
+   /* .main-title {
+        font-size: 4vw;
+    }
 
-    #therapeutic-puppies {
-        margin-top: 30px;
+    .first-line {
+        font-size: 6vw;
+    }
+
+    .second-line {
+        font-size: 6vw;
+        left: 0;
+    }*/
+
+    /*.logo img {
+        width: 20vw;
+        margin-left: 0;
+    } */
+
+    .text-box {
+        width: 90%;
+        margin: 0 auto;
+        left: 0;
+    }
+
+   #therapeutic-puppies {
+        margin-top: 30px; /* Adjusted for smaller screens */
     }
 
     #therapeutic-puppies .rectangle {
-        width: 90vw;
-        height: 20vh;
+        margin-top: 20px; /* Adjusted for smaller screens */
     }
 
     #therapeutic-puppies .text-box {
-        width: 90vw;
+        width: 90%;
+        left: 0;
     }
 
+
     #our-services {
-        margin-top: 30px;
+        margin-top: 30px; /* Adjusted for smaller screens */
+    }
+
+    #our-services h2 {
+        font-size: 6vw;
     }
 
     #our-services .text-box-container {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
+        margin-top: 20px; /* Adjusted for smaller screens */
     }
 
     #our-services .text-box {
-        width: 80vw;
-        margin-top: 20px;
+        width: 45vw;
+        padding: 10px;
     }
 
+    #our-services .text-box:first-child {
+        margin-right: 10px;
+    }
+
+    .carousel {
+        max-width: 95%;
+        border-width: 4px;
+    }
+
+      .rectangle {
+        width: 70vw; /* Adjust width for small screens */
+        height: 25vh; /* Adjust height for small screens */
+        margin: 15px auto; /* Center the rectangle horizontally with top and bottom margin */
+    }
+	
+    .service-box img {
+        width: 120px; /* Adjust image width */
+    }
+	
+    .carousel {
+        max-width: 90%;
+        left: 0;
+    }
     #contact-us {
-        margin-top: 30px;
+        margin-top: 30px; /* Adjusted for smaller screens */
     }
 
-    #contact-us .contact-info {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
+    #contact-us #image-carousel {
+        margin-top: 20px; /* Adjusted for smaller screens */
     }
 
-    #contact-us .text-box {
-        width: 80vw;
-        margin-top: 20px;
+    .text-box input[type="text"],
+    .text-box input[type="email"],
+    .text-box input[type="submit"] {
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    .navbar a {
-        font-size: 4vw;
+     .navbar a {
+        font-size: 18px;
+        padding: 8px;
+    }
+	
+	 .logo img {
+        width: 70vw; /* Adjust width for smaller screens */
+    }
+	
+   /* .main-title {
+        font-size: 16px;
     }
 
+    .first-line,
+    .second-line {
+        font-size: 40px;
+    }*/
+
+    #who-am-i h2,
     #therapeutic-puppies h2,
     #our-services h2,
     #contact-us h2 {
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .text-box {
+        padding: 5px;
+		width: 100vw;
+    }
+
+    .service-box {
+        margin-bottom: 20px;
+    }
+
+
+     .rectangle {
+        width: 80vw; /* Adjust width for extra small screens */
+        height: 30vh; /* Adjust height for extra small screens */
+        margin: 20px auto; /* Center the rectangle horizontally with top and bottom margin */
+        left: 0; /* Ensure it's centered */
+    }
+
+    .rectangle img {
+        width: 100%; /* Ensure the image fills the rectangle */
+        height: 100%; /* Ensure the image fills the rectangle */
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+	
+	  #therapeutic-puppies {
+        margin-top: 20px; /* Further adjustment for extra small screens */
     }
 
     #therapeutic-puppies .rectangle {
-        width: 95vw;
-        height: 15vh;
+        margin-top: 15px; /* Further adjustment for extra small screens */
     }
 
-    #our-services .text-box {
-        width: 90vw;
+    #our-services {
+        margin-top: 20px; /* Further adjustment for extra small screens */
     }
 
-    #contact-us .text-box {
-        width: 90vw;
+    #our-services .text-box-container {
+        margin-top: 15px; /* Further adjustment for extra small screens */
+    }
+
+    #contact-us {
+        margin-top: 20px; /* Further adjustment for extra small screens */
+    }
+
+    #contact-us #image-carousel {
+        margin-top: 15px; /* Further adjustment for extra small screens */
+    }
+	
+	
+    .service-box img {
+        width: 150px;
+    }
+
+    .form-group {
+        width: 50hw;
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+    }
+
+    .contact-input {
+        width: 50hw;
+		max-width: 50hw;
+    }
+
+    textarea.contact-input {
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+        width: 50hw;
+    }
+
+    .contact-button {
+		margin-left: auto;
+		margin-right: auto;
+        width: 50hw;
     }
 }
