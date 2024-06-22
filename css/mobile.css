@@ -781,6 +781,14 @@ footer {
         margin-top: 15px; /* Further adjustment for extra small screens */
     }
 
+    #our-services .text-box h2 {
+        margin-bottom: 10px; /* Add margin below the title */
+    }
+
+    #our-services .text-box p {
+        margin-top: 10px; /* Add margin above the paragraph text */
+    }
+	
     #contact-us {
         margin-top: 20px; /* Further adjustment for extra small screens */
     }
