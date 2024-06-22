@@ -3,7 +3,7 @@ body {
 	margin: 0;
     width: 100vw;
     height: 100vh;
-    font-family: 'Assistant', sans-serif; /* general font */
+    font-family: 'Calibri', sans-serif; /* general font */
     background-color: #F5F6F3; /* background color */
     padding-left: 1.5in; /* Add padding to the left side */
 }/*
@@ -24,7 +24,7 @@ div {
 }
 
 .navbar a {
-    font-family: "Fb Liddar", sans-serif;
+    font-family: "Levenim MT", sans-serif;
     font-weight: bold;
     margin: 0 6vw; /* Increase the horizontal margin to 60px */
     text-decoration: none;
@@ -87,7 +87,7 @@ font-weight: bold;
 #who-am-i h2 {
     text-align: right; /* Set text alignment to right */
     color: #1B7895; /* Set title color to #1B7895 */
-    font-family: "Fb Liddar", bold; /* Set font for the first line */
+    font-family: "Levenim MT", bold; /* Set font for the first line */
     font-size: 65px; /* Increase font size */
     position: relative; /* Make positioning relative */
     left: -1cm; /* Move the title slightly to the left */
@@ -168,7 +168,7 @@ font-weight: bold;
 #therapeutic-puppies h2 {
     text-align: right; /* Set text alignment to right */
     color: #1B7895; /* Set title color to #1B7895 */
-    font-family: "Fb Liddar", bold; /* Set font for the first line */
+    font-family: "Levenim MT", bold; /* Set font for the first line */
     font-size: 6.5vh; /* Increase font size */
     position: relative; /* Make positioning relative */
     left: -0.9vw; /* Move the title slightly to the left */
@@ -230,7 +230,7 @@ font-weight: bold;
 #our-services h2 {
     text-align: right; /* Aligns title text to the right */
     color: #1B7895; /* Sets title color */
-    font-family: "Fb Liddar", bold; /* Sets font for the title */
+    font-family: "Levenim MT", bold; /* Sets font for the title */
     font-size: 65px; /* Sets font size for the title */
     position: relative; /* Positions the title relative to its normal position */
     left: -1cm; /* Moves the title slightly to the left */
@@ -282,7 +282,7 @@ font-weight: bold;
 #our-services .text-box h2 {
     color: #6D8B85; /* Sets color of the title text */
     text-align: center; /* Centers the title text */
-    font-family: "Fb Liddar", bold; /* Sets font for the title */
+    font-family: "Levenim MT", bold; /* Sets font for the title */
     font-size: 55px; /* Sets font size for the title */
     margin-bottom: 10px; /* Adjusts the bottom margin to raise the title higher */
     position: relative; /* Positions the title relative to its normal position */

@@ -20,7 +20,7 @@ body {
 }
 
 .navbar a {
-    font-family: "Fb Liddar", sans-serif;
+    font-family: "Levenim MT", sans-serif;
     font-weight: bold;
     margin: 0 6vw; /* Increase the horizontal margin to 6vw */
     text-decoration: none;
@@ -35,7 +35,7 @@ body {
 }
 
 .first-line {
-    font-family: "Monotype Corsiva", cursive; /* Set font for the first line */
+    font-family: "Bernard MT Condensed", cursive; /* Set font for the first line */
     font-size: 8vh; /* Decreased font size */
     position: relative; /* Set relative position for absolute positioning */
     left: 0vw; /* Adjust left position */
@@ -80,7 +80,7 @@ body {
 
 #who-am-i h2 {
     color: #1B7895;
-    font-family: "Fb Liddar", sans-serif;
+    font-family: "Levenim MT", sans-serif;
     font-size: 6vw;
     margin-bottom: 10px;
 }
@@ -131,24 +131,23 @@ body {
 }
 
 /* Circle */
-.circle {
-    width: 50vw; /* Adjust width of the circle relative to viewport width */
-    height: 50vw; /* Maintain a square aspect ratio */
-    max-width: 150px; /* Limit maximum width */
-    max-height: 150px; /* Limit maximum height */
+.rectangle {
+    width: 70vw; /* Adjust width as needed */
+    height: 80vh; /* Adjust height as needed */
     background-color: transparent; /* Set background color */
     border: 5px solid #8C756A; /* Set border color and thickness */
-    border-radius: 50%; /* Make it a circle */
+    border-radius: 10px; /* Adjust border radius for rounded corners if needed */
     position: relative; /* Positioning */
-    margin: 20px auto; /* Center align horizontally with top margin */
-    text-align: center; /* Center align content inside circle */
+    left: -80%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    overflow: hidden; /* Hide overflow */
 }
 
-.circle img {
-    width: 100%; /* Ensure the image fills the circle */
-    height: 100%; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the circle */
-    border-radius: 50%; /* Maintain circle shape */
+.rectangle img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+
 }
 
 
@@ -161,7 +160,7 @@ body {
 
 #therapeutic-puppies h2 {
     color: #1B7895;
-    font-family: "Fb Liddar", sans-serif;
+    font-family: "Levenim MT", sans-serif;
     font-size: 5.5vw;
 }
 
@@ -220,7 +219,7 @@ body {
 #our-services h2 {
     text-align: center; /* Centers the title */
     color: #1B7895; /* Sets title color */
-    font-family: "Fb Liddar", sans-serif; /* Sets font for the title */
+    font-family: "Levenim MT", sans-serif; /* Sets font for the title */
     font-size: 5.5vw; /* Sets font size for the title */
     position: relative; /* Positions the title relative to its normal position */
     left: -1cm; /* Moves the title slightly to the left */
@@ -333,7 +332,7 @@ body {
 #contact-us h2 {
     text-align: center; /* Align heading text to the right */
     color: #1B7895; /* Set heading text color */
-    font-family: "Fb Liddar", bold; /* Set font family and weight */
+    font-family: "Levenim MT", bold; /* Set font family and weight */
     font-size: 6.5vh; /* Set font size */
     position: relative; /* Set position to relative */
     margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
@@ -533,11 +532,11 @@ footer {
         left: 0;
     }
 
-    .circle {
-        width: 40vw; /* Adjust dimensions for tablets */
-        height: 40vw; /* Maintain aspect ratio */
-        max-width: 120px; /* Limit maximum width */
-        max-height: 120px; /* Limit maximum height */
+    .rectangle {
+          width: 50vw; /* Adjust width for medium screens */
+        height: 60vh; /* Adjust height for medium screens */
+        left: -60%; /* Adjust horizontal position for medium screens */
+ 
     }
 	
     .service-box {
@@ -614,11 +613,10 @@ footer {
         margin-top: 20px;
     }
 
-     .circle {
-        width: 40vw; /* Adjust dimensions for phones */
-        height: 40vw; /* Maintain aspect ratio */
-        max-width: 100px; /* Limit maximum width */
-        max-height: 100px; /* Limit maximum height */
+    .rectangle {
+           width: 80vw; /* Adjust width for small screens */
+        height: 60vh; /* Adjust height for small screens */
+        left: -40%; /* Adjust horizontal position for small screens */
     }
 	
     .carousel {
@@ -664,12 +662,11 @@ footer {
         margin-bottom: 20px;
     }
 
-      .circle {
-        width: 60vw; /* Adjust width relative to viewport width */
-        height: 60vw; /* Maintain aspect ratio */
-        max-width: 100px; /* Limit maximum width */
-        max-height: 100px; /* Limit maximum height */
-        margin: 10px auto; /* Center align horizontally with smaller top margin */
+      .rectangle {
+         width: 90vw; /* Adjust width for extra small screens */
+        height: 50vh; /* Adjust height for extra small screens */
+        left: -20%; /* Adjust horizontal position for extra small screens */
+   
     }
 	
     .service-box img {
