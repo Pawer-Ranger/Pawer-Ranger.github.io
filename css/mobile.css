@@ -60,11 +60,12 @@ body {
 
 .logo {
     margin-right: auto;
-    margin-top: -25px; /* Raise the logo slightly more */
+    top: 0vw; 
 }
 
 .logo img {
-    width: 25vw; /* Enlarge the logo */
+    width: 45vw; /* Enlarge the logo */
+	margin-top: 0vw;
     height: auto;
 }
 
