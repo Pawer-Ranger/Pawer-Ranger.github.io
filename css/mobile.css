@@ -14,7 +14,6 @@ body {
     padding: 2vw 1.5in;
     text-align: center;
 }
-
 .navbar {
     display: flex;
     justify-content: center;
@@ -61,11 +60,11 @@ body {
 
 .logo {
     margin-right: auto;
-    margin-top: -15px; /* Raise the logo slightly more */
+    margin-top: -25px; /* Raise the logo slightly more */
 }
 
 .logo img {
-    width: 15vw; /* Enlarge the logo */
+    width: 25vw; /* Enlarge the logo */
     height: auto;
 }
 
@@ -558,6 +557,7 @@ footer {
     .container {
         padding: 5vw;
     }
+	
    .navbar {
         flex-wrap: wrap;
         flex-direction: column;
@@ -566,7 +566,7 @@ footer {
 
     .logo {
         order: 1;
-        margin-top: -10px; /* Adjust raised position for smaller screens */
+        margin-top: -15px; /* Adjust raised position for smaller screens */
         margin-bottom: 10px;
     }
 
