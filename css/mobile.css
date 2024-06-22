@@ -130,18 +130,15 @@ body {
     text-align: justify;
 }
 
-
-/* Rectangle */
 .rectangle {
-    width: 60vw; /* Adjust width for different screen sizes */
-    height: 30vh; /* Adjust height for different screen sizes */
+    width: 80vw; /* Adjust width to be slightly narrower than the text box */
+    max-width: 90%; /* Ensure it doesn't exceed 90% of the viewport width */
+    height: 30vh; /* Adjust height */
     background-color: transparent; /* Set background color */
-    border: 5px solid #8C756A; /* Set border color and thickness */
+    border: 3px solid #8C756A; /* Set border color and thickness */
     border-radius: 10px; /* Adjust border radius for rounded corners if needed */
     position: relative; /* Positioning */
-    left: 50%; /* Adjust horizontal position */
-    transform: translateX(-50%); /* Center horizontally */
-    margin: 10px auto; /* Reduce top margin */
+    margin: 20px auto; /* Center horizontally with top and bottom margin */
     overflow: hidden; /* Hide overflow */
 }
 
@@ -150,7 +147,6 @@ body {
     height: 100%; /* Ensure the image fills the container */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
-
 
 /* Content - Therapeutic Puppies */
 #therapeutic-puppies {
@@ -613,7 +609,7 @@ footer {
         margin-top: 20px;
     }
 
-       .rectangle {
+      .rectangle {
         width: 70vw; /* Adjust width for small screens */
         height: 25vh; /* Adjust height for small screens */
         margin: 15px auto; /* Center the rectangle horizontally with top and bottom margin */
@@ -667,7 +663,7 @@ footer {
     }
 
 
-   .rectangle {
+     .rectangle {
         width: 80vw; /* Adjust width for extra small screens */
         height: 30vh; /* Adjust height for extra small screens */
         margin: 20px auto; /* Center the rectangle horizontally with top and bottom margin */
