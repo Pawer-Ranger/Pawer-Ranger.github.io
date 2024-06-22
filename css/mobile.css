@@ -431,6 +431,7 @@ body {
     display: block;
 }
 
+
 /* Content - Contact Us */
 #contact-us {
     text-align: center;
@@ -774,9 +775,22 @@ footer {
         margin-top: 20px; /* Adjusted for smaller screens */
     }
 
-    #our-services .text-box {
-        width: 45vw;
-        padding: 10px;
+  #our-services .text-box {
+        width: 80vw;
+    }
+
+    #our-services .text-box h2 {
+        font-size: 6vw;
+    }
+
+    #individual-sessions .text-box,
+    #group-sessions .text-box {
+        width: 80vw;
+    }
+
+    #individual-sessions .text-box h2,
+    #group-sessions .text-box h2 {
+        font-size: 6vw;
     }
 
     #our-services .text-box:first-child {
@@ -878,8 +892,22 @@ footer {
         margin-top: 15px; /* Further adjustment for extra small screens */
     }
 
+   #our-services .text-box {
+        width: 80vw;
+    }
+
     #our-services .text-box h2 {
-        margin-bottom: 10px; /* Add margin below the title */
+        font-size: 6vw;
+    }
+
+    #individual-sessions .text-box,
+    #group-sessions .text-box {
+        width: 80vw;
+    }
+
+    #individual-sessions .text-box h2,
+    #group-sessions .text-box h2 {
+        font-size: 6vw;
     }
 
     #our-services .text-box p {
