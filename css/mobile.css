@@ -102,6 +102,7 @@ font-weight: bold;
     text-align: justify; /* Justify text inside text box */
 }
 
+/* Content - Who am I */
 #who-am-i .text-box::before,
 #who-am-i .text-box::after {
     content: ""; /* Empty content for the rectangles */
@@ -117,6 +118,7 @@ font-weight: bold;
     left: 0; /* Left aligned */
     transform: skew(0deg, -2deg); /* Skew for an angled effect */
 }
+
 #who-am-i .text-box::after {
     bottom: 0; /* Bottom half */
     right: 0; /* Right aligned */
@@ -178,7 +180,6 @@ font-weight: bold;
     box-sizing: border-box;
     text-align: justify; /* Justify text inside text box */
 }
-
 #therapeutic-puppies .text-box::before,
 #therapeutic-puppies .text-box::after {
     content: ""; /* Empty content for the rectangles */
@@ -200,7 +201,6 @@ font-weight: bold;
     right: 0; /* Right aligned */
     transform: skew(0deg, 2deg); /* Skew opposite for angled effect */
 }
-
 
 #therapeutic-puppies .text-box h2 {
     color: #8C756A;
