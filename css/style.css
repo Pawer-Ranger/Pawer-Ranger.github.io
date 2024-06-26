@@ -1,114 +1,115 @@
 /* General Styles */
 body {
-	margin: 0;
+    margin: 0;
     width: 100vw;
     height: 100vh;
-    font-family: 'Calibri', sans-serif; /* general font */
-    background-color: #F5F6F3; /* background color */
-    padding-left: 1.5in; /* Add padding to the left side */
-}/*
-div {
-    width: 100vw;
-    height: 100vh;
-}
-*/
-.container {
-    max-width: 100vw;
-    margin: 0 auto;
-    padding: 2vw 1.5in; /* Add padding of 20px on top and bottom, 1.5 inches on left and right */
-    text-align: center;
+    font-family: 'Calibri', sans-serif;
+    background-color: #F5F6F3;
+    padding-left: 1.5in;
 }
 
 .navbar {
-    margin-top: 5vh; /* Adjust margin-top for the navbar */
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .navbar a {
     font-family: "Levenim MT", sans-serif;
     font-weight: bold;
-    margin: 0 6vw; /* Increase the horizontal margin to 60px */
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #6D8B85;
+    margin: 0 1.5vw;
+}
+
+.container {
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 2vw 1.5in;
+    text-align: center;
 }
 
 .main-title {
-    font-size: 2vh; /* Decreased font size */
-    color: #1B7895; /* Set the color of the main title */
-    text-align: center; /* Center-align the title */
+    font-size: 2vh;
+    color: #1B7895;
+    text-align: center;
 }
 
 .first-line {
-    font-family: "Monotype Corsiva", cursive; /* Set font for the first line */
-    font-size: 8vh; /* Decreased font size */
-    position: relative; /* Set relative position for absolute positioning */
-    left: 0vw; /* Adjust left position */
-    top: -0.3vw; /* Move the text up by 20px */
+    font-family: "Monotype Corsiva", cursive;
+    font-size: 14vh;
+    position: relative;
+    left: -3vw;
+    top: -0.3vw;
 }
 
 .second-line {
-    font-family: "Fb Liddar", cursive; /* Set font for the second line */
-    position: relative; /* Set relative position for absolute positioning */
-    left: -9.8vw; /* Adjust left position */
-    font-size: 8vh; /* Restore the original font size */
-	top: -1vw; /* Move the text up by 20px */
+    font-family: "Fb Liddar", cursive;
+    position: relative;
+    left: -17vw;
+    font-size: 14vh;
+    top: -1vw;
 }
 
 .section {
-    padding: 0.1vw 0vw; /* Decrease padding */
+    padding: 0.1vw 0;
 }
 
 .logo {
-    position: absolute; /* Positioning */
-    top: 0vw; /* Distance from the top */
-    left: 0vw; /* Distance from the left */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .logo img {
-    width: 10vw; /* Set the width of the logo to 4.5 centimeters */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 0vw; /* Set the top margin to half a centimeter */
-    margin-left: 0vw; /* Set the left margin to half a centimeter */
+    width: 10vw;
+    height: auto;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 .bold-text {
-font-weight: bold;
+    font-weight: bold;
 }
-
-
 
 /* Content - Who am I */
 #who-am-i {
-    text-align: right; /* Set text alignment to right */
-    color: black; /* Set text color to black */
-    margin-top: -20px; /* Reduce the margin-top to bring the section closer to the previous section */
+    text-align: right;
+    color: black;
+    margin-top: -20px;
+    position: relative;
 }
 
 #who-am-i h2 {
-    text-align: right; /* Set text alignment to right */
-    color: #1B7895; /* Set title color to #1B7895 */
-    font-family: "Levenim MT", bold; /* Set font for the first line */
-    font-size: 65px; /* Increase font size */
-    position: relative; /* Make positioning relative */
-    left: -1cm; /* Move the title slightly to the left */
-    margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
+    text-align: right;
+    color: #1B7895;
+    font-family: "Levenim MT", bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    position: absolute;
+    top: -60px;
+    right: 7em;
 }
 
-/* Text Box */
 .text-box {
-    width: 15cm; /* Set width to 15cm */
-    height: auto; /* Let the height adjust to content */
-    position: relative; /* Set position to relative for absolute positioning of frames */
-    margin: 0 auto; /* Center the text box horizontally */
-    overflow: hidden; /* Hide overflow content */
-    padding: 20px; /* Add padding inside the text box */
-    left: 7cm; /* Move the text box 4 centimeters to the right */
+    width: 40%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    left: 12em;
+    margin-top: 40px;
 }
 
-.text-box::before, .text-box::after {
+.text-box::before,
+.text-box::after {
     content: "";
     position: absolute;
-    border: 3px solid #8C756A; /* Increase the thickness of each frame */
+    border: 3px solid #8C756A;
 }
 
 .text-box::before {
@@ -123,73 +124,75 @@ font-weight: bold;
     right: 7px;
     bottom: 7px;
     left: 7px;
-    transform: rotate(2deg); /* Apply a small angle to the second frame */
+    transform: rotate(2deg);
 }
 
 .text-box h2 {
-    color: #8C756A; /* Set the color of the title text */
-    text-align: center; /* Center-align the title */
-    font-family: "Fb Liddar", bold; /* Set font for the first line */
-    font-size: 40px; /* Increase font size */
+    color: #8C756A;
+    text-align: center;
+    font-family: "Fb Liddar", bold;
+    font-size: 1.5em;
 }
 
 .text-box p {
-    color: black; /* Set the color of the paragraph text */
-    text-align: justify; /* Justify the paragraph text */
+    color: black;
+    text-align: justify;
 }
 
-/* Add this CSS to style the circle and the image */
+/* Circle Image */
 .circle {
-    width: 30vw; /* Set the width of the circle */
-    height: 50vh; /* Set the height of the circle */
-    background-color: transparent; /* Set background color */
-    border: 5px solid #8C756A; /* Set border color and thickness */
-    border-radius: 50%; /* Make it a circle */
-    position: absolute; /* Positioning */
-    left: 30%; /* Position it in the center horizontally */
-    /*top: 108%; /* Position it in the center vertically */
-    transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
-    overflow: hidden; /* Hide overflow */
+    width: 30vw;
+    height: 55vh;
+    background-color: transparent;
+    border: 5px solid #8C756A;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
 .circle img {
-    width: 100%; /* Ensure the image fills the circle */
-    height: 100%; /* Ensure the image fills the circle */
-    object-fit: cover; /* Maintain aspect ratio and cover the circle */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Content - Therapeutic Puppies */
 #therapeutic-puppies {
-    text-align: right; /* Set text alignment to right */
-    color: black; /* Set text color to black */
-    margin-top: -3vh; /* Reduce the margin-top to bring the section closer to the previous section */
+    text-align: right;
+    color: black;
+    margin-top: 9vh;
 }
 
 #therapeutic-puppies h2 {
-    text-align: right; /* Set text alignment to right */
-    color: #1B7895; /* Set title color to #1B7895 */
-    font-family: "Levenim MT", bold; /* Set font for the first line */
-    font-size: 6.5vh; /* Increase font size */
-    position: relative; /* Make positioning relative */
-    left: -0.9vw; /* Move the title slightly to the left */
-    margin-bottom: 0.1vh; /* Reduce the bottom margin to bring the title closer to the content below */
+    text-align: right;
+    color: #1B7895;
+    font-family: "Levenim MT", bold;
+    font-size: 2em;
+    position: absolute;
+    left: -0.9vw;
+    margin-bottom: 0.1vh;
+    right: 2em; /* Adjusted position */
 }
 
 #therapeutic-puppies .text-box {
-    width: 45vw; /* Increase the width to 20cm */
-    height: auto; /* Let the height adjust to content */
-    position: relative; /* Set position to relative for absolute positioning of frames */
-    margin: 0 auto; /* Center the text box horizontally */
-    overflow: hidden; /* Hide overflow content */
-    padding: 20px; /* Add padding inside the text box */
-    left: -1cm; /* Move the text box slightly to the left */
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    left: -6vw;
+    margin-top: 12vh;
 }
 
 #therapeutic-puppies .text-box::before,
 #therapeutic-puppies .text-box::after {
     content: "";
     position: absolute;
-    border: 3px solid #8C756A; /* Increase the thickness of each frame */
+    border: 3px solid #8C756A;
 }
 
 #therapeutic-puppies .text-box::before {
@@ -204,528 +207,224 @@ font-weight: bold;
     right: 7px;
     bottom: 7px;
     left: 7px;
-    transform: rotate(2deg); /* Apply a small angle to the second frame */
+    transform: rotate(2deg);
 }
 
 #therapeutic-puppies .text-box h2 {
-    color: #8C756A; /* Set the color of the title text */
-    text-align: center; /* Center-align the title */
+    color: #8C756A;
+    text-align: center;
+    font-family: "Fb Liddar", bold;
+    font-size: 1.5em;
 }
 
 #therapeutic-puppies .text-box p {
-    color: black; /* Set the color of the paragraph text */
-    text-align: justify; /* Justify the paragraph text */
+    color: black;
+    text-align: justify;
 }
 
 
-
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    #therapeutic-puppies .text-box {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
 
 /* Content - Our Services */
 #our-services {
-    text-align: right; /* Aligns section text to the right */
-    color: black; /* Sets text color to black */
-    margin-top: -20px; /* Reduces the margin-top to bring the section closer to the previous section */
+    text-align: center; /* Center align for better layout */
+    color: black;
+    margin-top: 12vh; /* Top margin for the section */
+    position: relative; /* Allow positioning of child elements */
 }
 
 #our-services h2 {
-    text-align: right; /* Aligns title text to the right */
-    color: #1B7895; /* Sets title color */
-    font-family: "Levenim MT", bold; /* Sets font for the title */
-    font-size: 65px; /* Sets font size for the title */
-    position: relative; /* Positions the title relative to its normal position */
-    left: -1cm; /* Moves the title slightly to the left */
-    margin-bottom: 10px; /* Reduces the bottom margin to bring the title closer to the content below */
+    color: #1B7895; /* Color for the heading */
+    text-align: right; /* Align the heading to the right */
+    font-family: "Levenim MT", bold; /* Font family for the heading */
+    font-size: 2em; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    right: 7em; /* Move heading to the right proportionally */
+    position: relative; /* Ensure it does not overlap with other elements */
+}
+
+
+#our-services .text-box {
+    width: 32%; /* Width of each text box */
+    height: auto; /* Automatic height based on content */
+    position: relative; /* Allow positioning of child elements */
+    overflow: hidden; /* Hide overflow content */
+    padding: 1.5%; /* Padding inside each text box */
+    border: 3px solid #8C756A; /* Border styling */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin-left: -20vw; /* Adjusted margin to bring boxes closer */
+    margin-right: 20vw; /* Adjusted margin to bring boxes closer */
+    margin-top: 1vh; /* Space above the text boxes */
 }
 
 #our-services .text-box-container {
-    display: flex; /* Uses flexbox for layout */
-    justify-content: space-between; /* Distributes space between text boxes */
-    margin-top: 20px; /* Adds top margin */
-    padding-left: 1.5in; /* Adds left padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the boxes */
+    gap: 3vw; /* Add gap between boxes */
 }
 
-#our-services .text-box {
-    width: 25vw; /* Sets width of text box */
-    height: auto; /* Allows height to adjust to content */
-    position: relative; /* Positions text box relative to its normal position */
-    overflow: hidden; /* Hides overflow content */
-    padding: 20px; /* Adds padding inside the text box */
-    border: 3px solid #8C756A; /* Sets border color and thickness */
-    box-sizing: border-box; /* Ensures padding and border are included in total width and height */
-    left: -1.3in; /* Moves the text box closer to the right */
-    margin-top: 20px; /* Adjust the value as needed */
-}
-
-#our-services .text-box:first-child {
-    left: -1.2in; /* Further adjusts positioning of the first text box */
-}
 
 #our-services .text-box::before,
 #our-services .text-box::after {
-    content: ""; /* Adds empty content for decorative frames */
-    position: absolute; /* Positions frames absolutely within the text box */
-    border: inherit; /* Inherits border properties from the text box */
-    top: 5px; /* Sets top position for the frames */
-    right: 5px; /* Sets right position for the frames */
-    bottom: 5px; /* Sets bottom position for the frames */
-    left: 5px; /* Sets left position for the frames */
+    content: ""; /* Pseudo-elements for decorative borders */
+    position: absolute; /* Absolute positioning */
+    border: inherit; /* Inherit border styling from parent */
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px; /* Set border distance from edges */
 }
 
 #our-services .text-box::after {
-    top: 7px; /* Adjusts top position for the second frame */
-    right: 7px; /* Adjusts right position for the second frame */
-    bottom: 7px; /* Adjusts bottom position for the second frame */
-    left: 7px; /* Adjusts left position for the second frame */
-    transform: rotate(2deg); /* Applies a slight rotation to the second frame */
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    left: 7px; /* Set second border distance from edges */
+    transform: rotate(2deg); /* Slightly rotate the border */
 }
 
-#our-services .text-box h2 {
-    color: #6D8B85; /* Sets color of the title text */
-    text-align: center; /* Centers the title text */
-    font-family: "Levenim MT", bold; /* Sets font for the title */
-    font-size: 55px; /* Sets font size for the title */
-    margin-bottom: 10px; /* Adjusts the bottom margin to raise the title higher */
-    position: relative; /* Positions the title relative to its normal position */
-    top: -47px; /* Raises the title higher */
-    left: 10px; /* Moves the title to the right */
+/* Rename the headings inside the text boxes */
+#our-services .text-box .session-title {
+    color: #6D8B85;
+    text-align: center; /* Center align the heading inside the text box */
+    font-family: "Levenim MT", bold; /* Ensure font family is applied */
+    font-size: 3vh; /* Ensure font size is applied */
+    margin-bottom: 10px; /* Space below the heading */
+    position: relative; /* Relative positioning */
+    top: 0; /* Ensure the heading is at the top */
+    left: 0; /* Reset left position */
 }
 
 #our-services .text-box p {
-    color: black; /* Sets color of paragraph text */
-    text-align: justify; /* Justifies the paragraph text */
-	
-	
-}
-
-#image-carousel {
-    text-align: center;
-    margin-top: 50px;
+    color: black;
+    text-align: justify; /* Justify text inside the text box */
+    margin-top: 3vh; /* Space above the text */
 }
 
 .carousel {
-    max-width: 50%; /* Adjust maximum width as needed */
-    margin: 0 auto;
-    overflow: hidden;
-    border: 5px solid  #8C756A;
-    border-radius: 20px;
-    position: relative; /* Ensure this is set to relative */
-    height: 50vh; /* Adjust height of carousel frame */
-    left: -50px; /* Adjust this value to move the carousel to the left */
+    width: 50%; /* Increase width of the carousel */
+    margin: 0 auto; /* Center the carousel horizontally */
+    overflow: hidden; /* Hide overflow content */
+    border: 5px solid #8C756A; /* Border styling */
+    border-radius: 20px; /* Rounded corners */
+    position: relative; /* Allow positioning of child elements */
+    left: -10%; /* Adjust left position to center it */
+    height: 60vh; /* Height of the carousel */
+    margin-top: 6vh;
 }
 
 .carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: none; /* Hide all images by default */
+    width: 100%; /* Image width */
+    height: auto; /* Automatic height based on aspect ratio */
+    object-fit: cover; /* Cover the area while preserving aspect ratio */
+    display: none; /* Hide images by default */
 }
 
 .carousel img.active {
-    display: block; /* Display only the image with 'active' class */
+    display: block; /* Display the active image */
 }
-/* Content - Contact Us */
+
+
+@media (max-width: 768px) {
+    .carousel {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+
+/* Contact Section */
 #contact-us {
-    text-align: center; /* Center align text in the contact section */
-    color: black; /* Set text color to black */
-    margin-top: -2vh; /* Reduce the margin-top to bring the section closer to the previous section */
+    text-align: center;
+    color: black;
+    margin-top: -2vh; /* Adjusts the top margin */
+    padding: 2vw 1.5in; /* Padding settings */
+    position: relative; /* Ensure relative positioning for absolute child elements */
 }
 
 #contact-us h2 {
-    text-align: right; /* Align heading text to the right */
-    color: #1B7895; /* Set heading text color */
-    font-family: "Fb Liddar", bold; /* Set font family and weight */
-    font-size: 6.5vh; /* Set font size */
-    position: relative; /* Set position to relative */
-    margin-bottom: 10px; /* Reduce the bottom margin to bring the title closer to the content below */
+    text-align: right; /* Aligns the heading text */
+    color: #1B7895; /* Heading color */
+    font-family: "Levenim MT", bold; /* Heading font family */
+    font-size: 2em; /* Heading font size */
+    position: absolute; /* Positioning */
+    margin-bottom: 10px; /* Margin below the heading */
+    right: 5em; /* Right position */
+    margin-top: 10vh;
+    transform: translateX(-50%); /* Adjust to center it properly */
 }
 
-/*icons*/
 #contact-us .contact-info {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space items evenly with space between them */
-    align-items: center; /* Align items vertically centered */
-    margin-top: 20px; /* Add top margin */
-    padding: 0 10%; /* Add padding on left and right */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    gap: 20px; /* Spacing between items */
+    margin-top: 60px; /* Top margin */
 }
 
 #contact-us .contact-info a {
-    font-family: 'Assistant', sans-serif; /* Set font family */
-    font-size: 26px; /* Set font size */
-    color: black; /* Set text color */
-    text-decoration: none; /* Remove text underline */
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically centered */
+    font-family: 'Assistant', sans-serif; /* Font family */
+    font-size: 3vh; /* Font size */
+    text-decoration: none; /* Remove underline */
+    color: #6D8B85; /* Text color */
+    padding: 0.5em 1em; /* Padding */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #6D8B85; /* Border */
+    border-radius: 10px; /* Border radius */
+    transition: background-color 0.3s, color 0.3s; /* Transition effect */
+    display: flex; /* Flex layout for inline-block */
+    align-items: center; /* Align items vertically */
 }
 
 #contact-us .contact-info a img {
-    width: 26px; /* Set image width */
-    height: 26px; /* Set image height */
-    margin-right: 8px; /* Add right margin */
+    width: 3vh; /* Adjust the width of the emoji image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0.5em; /* Adjust spacing between emoji and text */
 }
 
-/*form*/
-#contact-us .text-box {
-    width: 60vw; /* Set text box width */
-    height: auto; /* Set text box height to auto */
-    position: center; /* Center position */
-    overflow: hidden; /* Hide overflow content */
-    border: 3px solid #8C756A; /* Set border */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    margin: 0 auto; /* Center align text box */
+#contact-us .contact-info a:hover {
+    background-color: #6D8B85; /* Background color on hover */
+    color: white; /* Text color on hover */
 }
 
-#contact-us .text-box h2 {
-    color: #8C756A; /* Set heading text color */
-    text-align: center; /* Center align heading text */
-    font-family: "Fb Liddar", bold; /* Set font family and weight */
-    font-size: 5.5vw; /* Set font size */
-    color: #6D8B85; /* Set text color */
+/* Form Styling */
+#contact-us form {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Align items */
+    margin-top: 10vh; /* Top margin */
+    width: 80%; /* Form width */
+    margin: 0 auto; /* Center the form horizontally */
 }
 
-#contact-us .text-box p {
-    color: black; /* Set paragraph text color */
-    text-align: justify; /* Justify text alignment */
+#contact-us form input,
+#contact-us form textarea {
+    width: 100%; /* Input width */
+    padding: 10px; /* Padding */
+    margin-bottom: 10px; /* Bottom margin */
+    border: 0.2vw solid #6D8B85; /* Border */
+    border-radius: 5px; /* Border radius */
+    font-family: 'Assistant', sans-serif; /* Font family */
+    font-size: 2em; /* Font size */
 }
 
-/* Contact form styles */
-.contact-form {
-    width: 60vw; /* Set width of form */
-    max-width: 80vw; /* Limit maximum width */
-    font-family: 'Assistant', sans-serif; /* Set general font */
+#contact-us form button {
+    font-family: 'Assistant', sans-serif; /* Font family */
+    font-size: 2vh; /* Font size */
+    color: white; /* Text color */
+    background-color: #6D8B85; /* Background color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 20px; /* Border radius */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition effect */
 }
 
-.form-group {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items in a column */
-    align-items: flex-end; /* Align items to the right */
-    margin-bottom: 15px; /* Add bottom margin */
-    width: 60vw; /* Set width of form group */
-}
-
-.form-group label {
-    margin-bottom: 5px; /* Add bottom margin */
-    color: #6D8B85; /* Set label text color */
-    font-weight: bold; /* Set font weight to bold */
-    text-align: right; /* Align label text to the right */
-    width: 100%; /* Ensure labels take full width */
-}
-
-.contact-input {
-    width: 60vw; /* Set width of input fields */
-    padding: 10px; /* Add padding */
-    font-size: 1em; /* Set font size */
-    border: 2px solid #DBEFE1; /* Set border */
-    border-radius: 5px; /* Set border radius */
-    direction: rtl; /* Set text direction to right-to-left */
-    margin-bottom: 10px; /* Add bottom margin */
-}
-
-.contact-input:focus {
-    border-color: #666; /* Change border color on focus */
-}
-
-textarea.contact-input {
-    width: 60vw; /* Set width of textarea */
-    height: 10vh; /* Set height of textarea */
-    resize: vertical; /* Allow vertical resize */
-    direction: rtl; /* Set text direction to right-to-left */
-}
-
-.contact-button {
-    padding: 1vw 1vh; /* Add padding */
-    font-family: 'Assistant', sans-serif; /* Set font family */
-    font-size: 1.5em; /* Set font size */
-    color: #fff; /* Set text color */
-    background-color: #6D8B85; /* Set background color */
-    border: none; /* Remove border */
-    width: 20vw; /* Set width of submit button */
-    border-radius: 5px; /* Set border radius */
-    cursor: pointer; /* Set cursor to pointer */
-    margin-top: 1.5vh; /* Add top margin */
-    display: block; /* Make the button a block element */
-    margin-left: auto; /* Center the button horizontally */
-    margin-right: auto; /* Center the button horizontally */
-}
-
-.contact-button:hover {
-    background-color: #575757; /* Change background color on hover */
-}
-
-.success-message {
-    text-align: center; /* Center align text */
-    margin-top: 20px; /* Add top margin */
-    padding: 10px; /* Add padding */
-    border: 2px solid #6D8B85; /* Set border */
-    border-radius: 5px; /* Set border radius */
-    background-color: #DBEFE1; /* Set background color */
-    color: #6D8B85; /* Set text color */
-    font-family: 'Assistant', sans-serif; /* Set font family */
-    font-size: 1.2em; /* Set font size */
-}
-
-header {
-    margin-top: 0; /* Remove top margin */
-}
-
-footer {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 1em;
-    color: #6D8B85;
-}
-
-
-.footer p {
-    margin: 0;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-    body {
-        padding-left: 0.5in;
-    }
-
-    .container {
-        padding: 20px 1in;
-    }
-
-    .navbar a {
-        margin: 0 30px;
-        font-size: 30px;
-    }
-
-    .main-title {
-        font-size: 28px;
-    }
-
-    .first-line {
-        font-size: 80px;
-        left: 0;
-    }
-
-    .second-line {
-        font-size: 90px;
-        left: -50px;
-    }
-
-    #who-am-i h2,
-    #therapeutic-puppies h2,
-    #our-services h2,
-    #contact-us h2 {
-        font-size: 50px;
-        left: 0;
-    }
-
-    .text-box {
-        width: 100%;
-        left: 0;
-    }
-
-    .circle {
-        width: 30vw;
-        height: 50vh;
-        top: 100%;
-    }
-
-    .service-box {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .service-box img {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .text-box::before, .text-box::after {
-        display: none;
-    }
-}
-
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    body	{
-        padding-left: 0;
-    }
-
-    .container {
-        padding: 5vw;
-    }
-
-
-.nav-links {
-        display: none; /* Hide original nav links */
-        flex-direction: column; /* Stack links vertically */
-        position: absolute;
-        top: 60px; /* Adjust top distance from the header */
-        right: 0;
-        background-color: #f5f6f3; /* Background color */
-        width: 200px; /* Adjust width as needed */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
-        z-index: 1000; /* Ensure it's above other content */
-        padding: 20px; /* Optional: Add padding */
-        transform: translateX(100%); /* Off-screen initially */
-        transition: transform 0.3s ease-in-out; /* Smooth transition */
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        top: 20px; /* Adjust top distance from the header */
-        right: 20px; /* Adjust right distance from the header */
-        z-index: 1500; /* Ensure it's above other content */
-    }
-
-    .hamburger .line {
-        width: 30px; /* Width of each line */
-        height: 3px; /* Height of each line */
-        background-color: #1B7895; /* Color of each line */
-        margin: 5px; /* Spacing between lines */
-        transition: transform 0.3s ease-in-out; /* Smooth transition */
-    }
-
-    /* Rotate lines to form 'X' or 'Close' icon */
-    .hamburger.active .line:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    .hamburger.active .line:nth-child(2) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    /* Show nav links when hamburger is active */
-    .hamburger.active + .nav-links {
-        transform: translateX(0);
-    }
-
-
-    .navbar {
-        margin-top: 20px;
-    }
-
-    .navbar a {
-        margin: 0 3vw;
-        font-size: 4vw;
-    }
-
-    .main-title {
-        font-size: 4vw;
-    }
-
-    .first-line {
-        font-size: 6vw;
-    }
-
-    .second-line {
-        font-size: 6vw;
-        left: 0;
-    }
-
-    .logo img {
-        width: 20vw;
-        margin-left: 0;
-    }
-
-    .text-box {
-        width: 90%;
-        margin: 0 auto;
-        left: 0;
-    }
-
-    #therapeutic-puppies .text-box {
-        width: 90%;
-        left: 0;
-    }
-
-    #our-services .text-box-container {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-    }
-
-    #our-services .text-box {
-        width: 90%;
-        left: 0;
-        margin-top: 20px;
-    }
-
-    .circle {
-        width: 80vw;
-        height: auto;
-        left: 10%;
-        margin-top: 20px;
-    }
-
-    .carousel {
-        max-width: 90%;
-        left: 0;
-    }
-
-    .text-box input[type="text"],
-    .text-box input[type="email"],
-    .text-box input[type="submit"] {
-        width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar a {
-        font-size: 18px;
-        margin: 0 10px;
-    }
-
-    .main-title {
-        font-size: 16px;
-    }
-
-    .first-line,
-    .second-line {
-        font-size: 40px;
-    }
-
-    #who-am-i h2,
-    #therapeutic-puppies h2,
-    #our-services h2,
-    #contact-us h2 {
-        font-size: 30px;
-    }
-
-    .text-box {
-        padding: 5px;
-		width: 100vw;
-    }
-
-    .service-box {
-        margin-bottom: 20px;
-    }
-
-    .circle {
-        width: 150px;
-        height: 150px;
-    }
-
-    .service-box img {
-        width: 150px;
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-
-    .form-group {
-        width: 100%;
-    }
-
-    .contact-input {
-        width: 100%;
-    }
-
-    textarea.contact-input {
-        width: 100%;
-    }
-
-    .contact-button {
-        width: 100%;
-    }
+#contact-us form button:hover {
+    background-color: #1B7895; /* Background color on hover */
 }
